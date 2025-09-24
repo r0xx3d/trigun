@@ -1,4 +1,4 @@
-# trigun
+# Trigun
 TRIGUN is a tool for linux developed to automate both static and dynamic windows-based malware analysis to ease the process of triaging and IOC collection.
 
 The tool is being developed for PYTHON VERSION 3.13
