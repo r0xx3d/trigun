@@ -16,4 +16,7 @@ $ ./trigun.sh /path/to/samples.exe
 
 HUGE THANKS TO ALL THE REFERRED BELOW FOR ALL THE RESOURCES, TOOLING AND TUTORIALS.
 'add references here'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ac524a282d1674f3d674b0b9af47b5c03139fb6
