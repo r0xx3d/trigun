@@ -1,0 +1,4 @@
+pefile==2024.8.26
+pyfsig==1.1.1
+r2pipe==1.9.6
+yara-python==4.5.4
