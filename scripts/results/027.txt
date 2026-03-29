@@ -1,0 +1,271 @@
+TRIGUN
+==============================================================================
+File-Type 	: PE32 executable for MS Windows 5.01 (DLL), Intel i386, 5 sections 
+MD5 Hash	: 71b6a493388e7d0b40c83ce903bc6b04 
+SHA-256 Hash 	: 027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745 
+IMPHash		: 52dd60b5f3c9e2f17c2e303e8c8d4eab 
+
+=========================== Fuzzy Hashing ====================================
+ssdeep,1.1--blocksize:hash:hash,filename
+6144:y/Bt80VmNTBo/x95ZjAetGDN3VFNq7pC+9OqFoK30b3ni5rdQY/CdUOs2:y/X4NTS/x9jNG+w+9OqFoK323qdQYKUG,"/home/kali/tool/trigun-testing/samples/027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745"
+
+========================== Section Hashing ===================================
+b'.text\x00' MD5 hash    : c5bd3bb710ae377938b17980692b785b
+b'.text\x00' SHA256 hash : 7ed600e21728739d5871ef68aa30056f78c1acba343b5e6a097e40feed7cac48
+b'.rdata' MD5 hash    : 46418e52b546c1f696eb8a524f18c56e
+b'.rdata' SHA256 hash : ca50eb7a5a4e837f073be78690875078a48a59f866a5090e0d8a64fee5475e30
+b'.data\x00' MD5 hash    : 5216f0c62d1fd41b1d558e129e18d0fe
+b'.data\x00' SHA256 hash : eee838939aa2baca568bc3c17d10b3fb2543fc601708486af83f88cdff38927f
+b'.rsrc\x00' MD5 hash    : f07e68575f50a62382d99e182baa05d5
+b'.rsrc\x00' SHA256 hash : 91d94bcd1a59308c06ce69a8b1433d78f838ead86c83e470c7542849d0b4f0f2
+b'.reloc' MD5 hash    : c5d1d4cdade7dcfbe14ec10dcf66cfb1
+b'.reloc' SHA256 hash : 87b448c05b63df8c6e61e5a3958bdc2367ebf15f1f630472c0e13580c24780f5
+
+========================== Entropy Analysis ==================================
+7.801934335184354
+
+Section-wise entropy:
+
+.text
+	virtual address: 0x1000
+	virtual size: 0xbd63
+	raw size: 0xbe00
+	entropy: 6.546530609319315
+.rdata
+	virtual address: 0xd000
+	virtual size: 0x8546
+	raw size: 0x8600
+	entropy: 6.992129295327383
+.data
+	virtual address: 0x16000
+	virtual size: 0x9b4a
+	raw size: 0x5200
+	entropy: 5.4269891382345685
+
+============================== Strings =======================================
+Potential URLS
+http://www.microsoft.com
+http://www.microsoft.com
+http://technet.microsoft.com
+
+Potential IPv4 addresses
+255.255.255.255
+
+Potential IPv6 addresses
+:4:8
+
+Potential MAC addresses
+
+
+Potential Mail addresses
+wowsmith123456@posteo.net
+
+==================== Detecting Packers and Cryptors ==========================
+Cryptors Detected...
+[CRC32_poly_Constant, CRC32_table]
+Detecting Packers based on PEID ruleset
+PEID rules based strings for compiler info
+[Microsoft_Visual_Cpp_v50v60_MFC]
+
+======================= Known Malware Signatures =============================
+
+
+================================= Imports ====================================
+DLL: KERNEL32.dll
+ * ConnectNamedPipe
+ * GetModuleHandleW
+ * CreateNamedPipeW
+ * TerminateThread
+ * DisconnectNamedPipe
+ * FlushFileBuffers
+ * GetTempPathW
+ * GetProcAddress
+ * DeleteFileW
+ * FreeLibrary
+ * GlobalAlloc
+ * LoadLibraryW
+ * GetComputerNameExW
+ * GlobalFree
+ * ExitProcess
+ * GetVersionExW
+ * GetModuleFileNameW
+ * DisableThreadLibraryCalls
+ * ResumeThread
+ * GetEnvironmentVariableW
+ * GetFileSize
+ * SetFilePointer
+ * SetLastError
+ * LoadResource
+ * GetCurrentThread
+ * OpenProcess
+ * GetSystemDirectoryW
+ * SizeofResource
+ * GetLocalTime
+ * Process32FirstW
+ * LockResource
+ * Process32NextW
+ * GetModuleHandleA
+ * lstrcatW
+ * CreateToolhelp32Snapshot
+ * GetCurrentProcess
+ * VirtualFree
+ * VirtualAlloc
+ * LoadLibraryA
+ * VirtualProtect
+ * WideCharToMultiByte
+ * GetExitCodeProcess
+ * WaitForMultipleObjects
+ * CreateProcessW
+ * PeekNamedPipe
+ * GetTempFileNameW
+ * InterlockedExchange
+ * LeaveCriticalSection
+ * MultiByteToWideChar
+ * CreateFileA
+ * GetTickCount
+ * CreateThread
+ * LocalFree
+ * FindNextFileW
+ * CreateFileMappingW
+ * LocalAlloc
+ * FindClose
+ * GetFileSizeEx
+ * CreateFileW
+ * Sleep
+ * FlushViewOfFile
+ * GetLogicalDrives
+ * WaitForSingleObject
+ * GetDriveTypeW
+ * UnmapViewOfFile
+ * MapViewOfFile
+ * FindFirstFileW
+ * CloseHandle
+ * DeviceIoControl
+ * GetLastError
+ * GetSystemDirectoryA
+ * ReadFile
+ * WriteFile
+ * GetProcessHeap
+ * InitializeCriticalSection
+ * HeapReAlloc
+ * GetWindowsDirectoryW
+ * EnterCriticalSection
+ * HeapFree
+ * SetFilePointerEx
+ * HeapAlloc
+ * FindResourceW
+DLL: USER32.dll
+ * ExitWindowsEx
+ * wsprintfA
+ * wsprintfW
+DLL: ADVAPI32.dll
+ * CryptGenRandom
+ * CryptAcquireContextA
+ * CryptExportKey
+ * CryptAcquireContextW
+ * CreateProcessAsUserW
+ * InitiateSystemShutdownExW
+ * DuplicateTokenEx
+ * SetTokenInformation
+ * GetTokenInformation
+ * GetSidSubAuthorityCount
+ * OpenThreadToken
+ * GetSidSubAuthority
+ * AdjustTokenPrivileges
+ * LookupPrivilegeValueW
+ * OpenProcessToken
+ * SetThreadToken
+ * CredEnumerateW
+ * CredFree
+ * SetSecurityDescriptorDacl
+ * InitializeSecurityDescriptor
+ * CryptDestroyKey
+ * CryptGenKey
+ * CryptEncrypt
+ * CryptImportKey
+ * CryptSetKeyParam
+ * CryptReleaseContext
+DLL: SHELL32.dll
+ * CommandLineToArgvW
+ * SHGetFolderPathW
+DLL: ole32.dll
+ * CoCreateGuid
+ * CoTaskMemFree
+ * StringFromCLSID
+DLL: CRYPT32.dll
+ * CryptStringToBinaryW
+ * CryptBinaryToStringW
+ * CryptDecodeObjectEx
+DLL: SHLWAPI.dll
+ * PathAppendW
+ * StrToIntW
+ * PathFindFileNameW
+ * PathFileExistsW
+ * StrCmpW
+ * StrCmpIW
+ * StrChrW
+ * StrCatW
+ * StrStrW
+ * PathFindExtensionW
+ * PathCombineW
+ * StrStrIW
+DLL: IPHLPAPI.DLL
+ * GetIpNetTable
+ * GetAdaptersInfo
+DLL: WS2_32.dll
+ * inet_ntoa
+ * gethostbyname
+ * __WSAFDIsSet
+ * ntohl
+ * ioctlsocket
+ * connect
+ * inet_addr
+ * select
+ * recv
+ * send
+ * htons
+ * closesocket
+ * socket
+ * WSAStartup
+DLL: MPR.dll
+ * WNetOpenEnumW
+ * WNetEnumResourceW
+ * WNetCancelConnection2W
+ * WNetAddConnection2W
+ * WNetCloseEnum
+DLL: NETAPI32.dll
+ * NetServerEnum
+ * NetApiBufferFree
+ * NetServerGetInfo
+DLL: DHCPSAPI.DLL
+ * DhcpEnumSubnetClients
+ * DhcpRpcFreeMemory
+ * DhcpGetSubnetInfo
+ * DhcpEnumSubnets
+DLL: msvcrt.dll
+ * malloc
+ * _itoa
+ * free
+ * memset
+ * rand
+ * memcpy
+
+================================= Exports ====================================
+No exports found in this PE file...
+
+======================= Hybrid Analysis Submission ===========================
+Submitting file to Hybrid Analysis...
+{
+  "job_id": "59525e487ca3e130c036ef72",
+  "submission_id": "69c8099c73dea71886039001",
+  "environment_id": 100,
+  "sha256": "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745"
+}
+
+Metadata saved to: ./ha_results/027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745.meta
+  job_id : 59525e487ca3e130c036ef72
+  sha256 : 027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745
+
+Note: Full dynamic analysis takes time.
+Use './ha_fetch_results.sh 027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745' to fetch results later.
+

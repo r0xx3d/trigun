@@ -1,0 +1,5999 @@
+Binary analyzed: ../samples/027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745
+Architecture: x32
+
+Imports (165):
+  0x1000d000: CryptGenRandom
+  0x1000d004: CryptAcquireContextA
+  0x1000d008: CryptExportKey
+  0x1000d00c: CryptAcquireContextW
+  0x1000d010: CreateProcessAsUserW
+  0x1000d014: InitiateSystemShutdownExW
+  0x1000d018: DuplicateTokenEx
+  0x1000d01c: SetTokenInformation
+  0x1000d020: GetTokenInformation
+  0x1000d024: GetSidSubAuthorityCount
+  0x1000d028: OpenThreadToken
+  0x1000d02c: GetSidSubAuthority
+  0x1000d030: AdjustTokenPrivileges
+  0x1000d034: LookupPrivilegeValueW
+  0x1000d038: OpenProcessToken
+  0x1000d03c: SetThreadToken
+  0x1000d040: CredEnumerateW
+  0x1000d044: CredFree
+  0x1000d048: SetSecurityDescriptorDacl
+  0x1000d04c: InitializeSecurityDescriptor
+  0x1000d050: CryptDestroyKey
+  0x1000d054: CryptGenKey
+  0x1000d058: CryptEncrypt
+  0x1000d05c: CryptImportKey
+  0x1000d060: CryptSetKeyParam
+  0x1000d064: CryptReleaseContext
+  0x1000d06c: CryptStringToBinaryW
+  0x1000d070: CryptBinaryToStringW
+  0x1000d074: CryptDecodeObjectEx
+  0x1000d07c: DhcpEnumSubnetClients
+  0x1000d080: DhcpRpcFreeMemory
+  0x1000d084: DhcpGetSubnetInfo
+  0x1000d088: DhcpEnumSubnets
+  0x1000d090: GetIpNetTable
+  0x1000d094: GetAdaptersInfo
+  0x1000d09c: ConnectNamedPipe
+  0x1000d0a0: GetModuleHandleW
+  0x1000d0a4: CreateNamedPipeW
+  0x1000d0a8: TerminateThread
+  0x1000d0ac: DisconnectNamedPipe
+  0x1000d0b0: FlushFileBuffers
+  0x1000d0b4: GetTempPathW
+  0x1000d0b8: GetProcAddress
+  0x1000d0bc: DeleteFileW
+  0x1000d0c0: FreeLibrary
+  0x1000d0c4: GlobalAlloc
+  0x1000d0c8: LoadLibraryW
+  0x1000d0cc: GetComputerNameExW
+  0x1000d0d0: GlobalFree
+  0x1000d0d4: ExitProcess
+  0x1000d0d8: GetVersionExW
+  0x1000d0dc: GetModuleFileNameW
+  0x1000d0e0: DisableThreadLibraryCalls
+  0x1000d0e4: ResumeThread
+  0x1000d0e8: GetEnvironmentVariableW
+  0x1000d0ec: GetFileSize
+  0x1000d0f0: SetFilePointer
+  0x1000d0f4: SetLastError
+  0x1000d0f8: LoadResource
+  0x1000d0fc: GetCurrentThread
+  0x1000d100: OpenProcess
+  0x1000d104: GetSystemDirectoryW
+  0x1000d108: SizeofResource
+  0x1000d10c: GetLocalTime
+  0x1000d110: Process32FirstW
+  0x1000d114: LockResource
+  0x1000d118: Process32NextW
+  0x1000d11c: GetModuleHandleA
+  0x1000d120: lstrcatW
+  0x1000d124: CreateToolhelp32Snapshot
+  0x1000d128: GetCurrentProcess
+  0x1000d12c: VirtualFree
+  0x1000d130: VirtualAlloc
+  0x1000d134: LoadLibraryA
+  0x1000d138: VirtualProtect
+  0x1000d13c: WideCharToMultiByte
+  0x1000d140: GetExitCodeProcess
+  0x1000d144: WaitForMultipleObjects
+  0x1000d148: CreateProcessW
+  0x1000d14c: PeekNamedPipe
+  0x1000d150: GetTempFileNameW
+  0x1000d154: InterlockedExchange
+  0x1000d158: LeaveCriticalSection
+  0x1000d15c: MultiByteToWideChar
+  0x1000d160: CreateFileA
+  0x1000d164: GetTickCount
+  0x1000d168: CreateThread
+  0x1000d16c: LocalFree
+  0x1000d170: FindNextFileW
+  0x1000d174: CreateFileMappingW
+  0x1000d178: LocalAlloc
+  0x1000d17c: FindClose
+  0x1000d180: GetFileSizeEx
+  0x1000d184: CreateFileW
+  0x1000d188: Sleep
+  0x1000d18c: FlushViewOfFile
+  0x1000d190: GetLogicalDrives
+  0x1000d194: WaitForSingleObject
+  0x1000d198: GetDriveTypeW
+  0x1000d19c: UnmapViewOfFile
+  0x1000d1a0: MapViewOfFile
+  0x1000d1a4: FindFirstFileW
+  0x1000d1a8: CloseHandle
+  0x1000d1ac: DeviceIoControl
+  0x1000d1b0: GetLastError
+  0x1000d1b4: GetSystemDirectoryA
+  0x1000d1b8: ReadFile
+  0x1000d1bc: WriteFile
+  0x1000d1c0: GetProcessHeap
+  0x1000d1c4: InitializeCriticalSection
+  0x1000d1c8: HeapReAlloc
+  0x1000d1cc: GetWindowsDirectoryW
+  0x1000d1d0: EnterCriticalSection
+  0x1000d1d4: HeapFree
+  0x1000d1d8: SetFilePointerEx
+  0x1000d1dc: HeapAlloc
+  0x1000d1e0: FindResourceW
+  0x1000d1e8: WNetOpenEnumW
+  0x1000d1ec: WNetEnumResourceW
+  0x1000d1f0: WNetCancelConnection2W
+  0x1000d1f4: WNetAddConnection2W
+  0x1000d1f8: WNetCloseEnum
+  0x1000d200: NetServerEnum
+  0x1000d204: NetApiBufferFree
+  0x1000d208: NetServerGetInfo
+  0x1000d210: CommandLineToArgvW
+  0x1000d214: SHGetFolderPathW
+  0x1000d21c: PathAppendW
+  0x1000d220: StrToIntW
+  0x1000d224: PathFindFileNameW
+  0x1000d228: PathFileExistsW
+  0x1000d22c: StrCmpW
+  0x1000d230: StrCmpIW
+  0x1000d234: StrChrW
+  0x1000d238: StrCatW
+  0x1000d23c: StrStrW
+  0x1000d240: PathFindExtensionW
+  0x1000d244: PathCombineW
+  0x1000d248: StrStrIW
+  0x1000d250: ExitWindowsEx
+  0x1000d254: wsprintfA
+  0x1000d258: wsprintfW
+  0x1000d260: inet_ntoa
+  0x1000d264: gethostbyname
+  0x1000d268: __WSAFDIsSet
+  0x1000d26c: ntohl
+  0x1000d270: ioctlsocket
+  0x1000d274: connect
+  0x1000d278: inet_addr
+  0x1000d27c: select
+  0x1000d280: recv
+  0x1000d284: send
+  0x1000d288: htons
+  0x1000d28c: closesocket
+  0x1000d290: socket
+  0x1000d294: WSAStartup
+  0x1000d29c: malloc
+  0x1000d2a0: _itoa
+  0x1000d2a4: free
+  0x1000d2a8: memset
+  0x1000d2ac: rand
+  0x1000d2b0: memcpy
+  0x1000d2b8: CoCreateGuid
+  0x1000d2bc: CoTaskMemFree
+  0x1000d2c0: StringFromCLSID
+
+Suspicious strings (41):
+  0x1000e215: Z* ,\t\a\vm8
+  0x10010118: Ooops, your important files are encrypted.\r\n\r\nIf you see this text, then your files are no longer accessible, because\r\nthey have been encrypted. Perhaps you are busy looking for a way to recover\r\nyour files, but don't waste your time. Nobody can recover your files without\r\nour decryption service.\r\n\r\nWe guarantee that you can recover all your files safely and easily.\r\nAll you need to do is submit the payment and purchase the decryption key.\r\n\r\nPlease follow the instructions:\r\n\r\n1.\tSend $300 worth of Bitcoin to following address:\r\n\r\n
+  0x10010840: .3ds.7z.accdb.ai.asp.aspx.avhd.back.bak.c.cfg.conf.cpp.cs.ctl.dbf.disk.djvu.doc.docx.dwg.eml.fdb.gz.h.hdd.kdbx.mail.mdb.msg.nrg.ora.ost.ova.ovf.pdf.php.pmf.ppt.pptx.pst.pvi.py.pyc.rar.rtf.sln.sql.tar.vbox.vbs.vcb.vdi.vfd.vmc.vmdk.vmsd.vmx.vsdx.vsv.work.xls.xlsx.xvd.zip.
+  0x10014034: IsWow64Process
+  0x10014140: SeDebugPrivilege
+  0x1001419c: \\cmd.exe
+  0x10014518: process call create "C:\\Windows\\System32\\rundll32.exe \\"C:\\Windows\\%s\\" #1
+  0x10014a0c: GetProcessHeap
+  0x10014b6e: CreateThread
+  0x10014c48: CreateProcessW
+  0x10014c5a: GetCurrentProcess
+  0x10014caa: TerminateThread
+  0x10014d66: ExitProcess
+  0x10014d9a: DisableThreadLibraryCalls
+  0x10014db6: ResumeThread
+  0x10014e20: GetCurrentThread
+  0x10014e34: OpenProcess
+  0x10014e7a: Process32FirstW
+  0x10014e9c: Process32NextW
+  0x10014f02: VirtualFree
+  0x10014f10: VirtualAlloc
+  0x10014f30: VirtualProtect
+  0x10014f58: GetExitCodeProcess
+  0x100150e4: SetThreadToken
+  0x100150f6: OpenProcessToken
+  0x10015150: OpenThreadToken
+  0x100151d8: CreateProcessAsUserW
+  0x10015226: SHELL32.dll
+  0x10016d26: CreateProcessW
+  0x10016d50: GetProcessHeap
+  0x10016dba: IsProcessorFeaturePresent
+  0x1001862a: CreateProcessW
+  0x1001867c: GetProcessHeap
+  0x1001a90e: \r\n  Repairing file system on C: \r\n\r\n  The type of the file system is NTFS.\r\n  One of your disks contains errors and needs to be repaired. This process\r\n  may take several hours to complete. It is strongly recommended to let it\r\n  complete.\r\n\r\n  WARNING: DO NOT TURN OFF YOUR PC! IF YOU ABORT THIS PROCESS, YOU COULD\r\n  DESTROY ALL OF YOUR DATA! PLEASE ENSURE THAT YOUR POWER CABLE IS PLUGGED\r\n  IN!\r\n\r\n
+  0x1001ab26:  If you see this text, then your files are no longer accessible, because they\r\n have been encrypted.  Perhaps you are busy looking for a way to recover your\r\n files, but don't waste your time.  Nobody can recover your files without our\r\n decryption service.\r\n\r\n We guarantee that you can recover all your files safely and easily.  All you\r\n need to do is submit the payment and purchase the decryption key.\r\n\r\n Please follow the instructions:\r\n\r\n 1. Send $300 worth of Bitcoin to following address:\r\n    \r\n
+  0x1003083a: D6\vM]
+  0x10037708: LVmg-
+  0x10048563: hY\vM
+  0x1004bf5d: CmdAe/
+  0x100505b4: Z^\vM
+  0x100529b5: 0vM5
+
+Total functions analyzed: 157
+
+Function: entry0 at 0x10007d39 (size: 31)
+Suspicious Score: 0.16575633419228028
+API Calls:
+Suspicious Instructions:
+  0x10007d39: push ebp
+  0x10007d3a: mov ebp, esp
+  0x10007d3c: mov eax, dword ptr [ebp + 0xc]
+  0x10007d42: mov eax, dword ptr [ebp + 8]
+  0x10007d45: push eax
+  0x10007d46: mov dword ptr [0x1001f120], eax
+  0x10007d4b: call dword ptr [0x1000d0e0]
+  0x10007d51: xor eax, eax
+  0x10007d54: pop ebp
+  0x10007d55: ret 0xc
+Disassembly:
+  0x10007d39: push ebp
+  0x10007d3a: mov ebp, esp
+  0x10007d3c: mov eax, dword ptr [ebp + 0xc]
+  0x10007d3f: dec eax
+  0x10007d40: jne 0x10007d51
+  0x10007d42: mov eax, dword ptr [ebp + 8]
+  0x10007d45: push eax
+  0x10007d46: mov dword ptr [0x1001f120], eax
+  0x10007d4b: call dword ptr [0x1000d0e0]
+  0x10007d51: xor eax, eax
+  0x10007d53: inc eax
+  0x10007d54: pop ebp
+  0x10007d55: ret 0xc
+
+--------------------------------------------------------------------------------
+
+Function: sub.msvcrt.dll_memset at 0x1000a4e4 (size: 6)
+Suspicious Score: 2.0
+API Calls:
+Suspicious Instructions:
+  0x1000a4e4: jmp dword ptr [0x1000d2a8]
+Disassembly:
+  0x1000a4e4: jmp dword ptr [0x1000d2a8]
+
+--------------------------------------------------------------------------------
+
+Function: sub.msvcrt.dll__itoa at 0x1000a4de (size: 6)
+Suspicious Score: 2.0
+API Calls:
+Suspicious Instructions:
+  0x1000a4de: jmp dword ptr [0x1000d2a0]
+Disassembly:
+  0x1000a4de: jmp dword ptr [0x1000d2a0]
+
+--------------------------------------------------------------------------------
+
+Function: sub.msvcrt.dll_memcpy at 0x1000a40c (size: 6)
+Suspicious Score: 2.0
+API Calls:
+Suspicious Instructions:
+  0x1000a40c: jmp dword ptr [0x1000d2b0]
+Disassembly:
+  0x1000a40c: jmp dword ptr [0x1000d2b0]
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000122d at 0x1000122d (size: 168)
+Suspicious Score: 0.033908211076880405
+API Calls:
+Suspicious Instructions:
+  0x1000122d: push ebp
+  0x1000122e: mov ebp, esp
+  0x10001236: push esi
+  0x10001237: xor esi, esi
+  0x10001239: push edi
+  0x1000123a: mov dword ptr [ebp - 4], esi
+  0x10001242: mov eax, 0x80070057
+  0x10001247: jmp 0x100012cf
+  0x1000124c: push esi
+  0x1000124d: push esi
+  0x1000124e: push 3
+  0x10001250: push esi
+  0x10001251: push 3
+  0x10001253: push 0x80100000
+  0x10001258: push dword ptr [ebp + 8]
+  0x1000125b: call dword ptr [0x1000d160]
+  0x10001261: mov edi, eax
+  0x10001268: call dword ptr [0x1000d1b0]
+  0x1000127c: mov esi, eax
+  0x1000127e: jmp 0x100012cd
+  0x10001280: push esi
+  0x10001284: push eax
+  0x10001285: push 0x90
+  0x10001290: push eax
+  0x10001291: push esi
+  0x10001292: push esi
+  0x10001293: push 0x70048
+  0x10001298: push edi
+  0x10001299: call dword ptr [0x1000d1ac]
+  0x100012a3: call dword ptr [0x1000d1b0]
+  0x100012b7: mov esi, eax
+  0x100012b9: jmp 0x100012c6
+  0x100012bb: mov eax, dword ptr [ebp - 0x98]
+  0x100012c1: mov ecx, dword ptr [ebp + 0xc]
+  0x100012c4: mov dword ptr [ecx], eax
+  0x100012c6: push edi
+  0x100012c7: call dword ptr [0x1000d1a8]
+  0x100012cd: mov eax, esi
+  0x100012cf: pop edi
+  0x100012d0: pop esi
+  0x100012d2: ret 8
+Disassembly:
+  0x1000122d: push ebp
+  0x1000122e: mov ebp, esp
+  0x10001230: sub esp, 0x98
+  0x10001236: push esi
+  0x10001237: xor esi, esi
+  0x10001239: push edi
+  0x1000123a: mov dword ptr [ebp - 4], esi
+  0x1000123d: cmp dword ptr [ebp + 8], esi
+  0x10001240: jne 0x1000124c
+  0x10001242: mov eax, 0x80070057
+  0x10001247: jmp 0x100012cf
+  0x1000124c: push esi
+  0x1000124d: push esi
+  0x1000124e: push 3
+  0x10001250: push esi
+  0x10001251: push 3
+  0x10001253: push 0x80100000
+  0x10001258: push dword ptr [ebp + 8]
+  0x1000125b: call dword ptr [0x1000d160]
+  0x10001261: mov edi, eax
+  0x10001263: cmp edi, -1
+  0x10001266: jne 0x10001280
+  0x10001268: call dword ptr [0x1000d1b0]
+  0x1000126e: cmp eax, esi
+  0x10001270: jle 0x1000127c
+  0x10001272: and eax, 0xffff
+  0x10001277: or eax, 0x80070000
+  0x1000127c: mov esi, eax
+  0x1000127e: jmp 0x100012cd
+  0x10001280: push esi
+  0x10001281: lea eax, [ebp - 4]
+  0x10001284: push eax
+  0x10001285: push 0x90
+  0x1000128a: lea eax, [ebp - 0x98]
+  0x10001290: push eax
+  0x10001291: push esi
+  0x10001292: push esi
+  0x10001293: push 0x70048
+  0x10001298: push edi
+  0x10001299: call dword ptr [0x1000d1ac]
+  0x1000129f: test eax, eax
+  0x100012a1: jne 0x100012bb
+  0x100012a3: call dword ptr [0x1000d1b0]
+  0x100012a9: cmp eax, esi
+  0x100012ab: jle 0x100012b7
+  0x100012ad: and eax, 0xffff
+  0x100012b2: or eax, 0x80070000
+  0x100012b7: mov esi, eax
+  0x100012b9: jmp 0x100012c6
+  0x100012bb: mov eax, dword ptr [ebp - 0x98]
+  0x100012c1: mov ecx, dword ptr [ebp + 0xc]
+  0x100012c4: mov dword ptr [ecx], eax
+  0x100012c6: push edi
+  0x100012c7: call dword ptr [0x1000d1a8]
+  0x100012cd: mov eax, esi
+  0x100012cf: pop edi
+  0x100012d0: pop esi
+  0x100012d1: leave 
+  0x100012d2: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10001424 at 0x10001424 (size: 133)
+Suspicious Score: 0.03923106497278098
+API Calls:
+Suspicious Instructions:
+  0x10001424: push ebp
+  0x10001425: mov ebp, esp
+  0x10001427: push ecx
+  0x10001428: push ebx
+  0x10001429: push esi
+  0x1000142a: push edi
+  0x1000142b: push 0xf0000000
+  0x10001430: xor eax, eax
+  0x10001432: push 1
+  0x10001434: push eax
+  0x10001435: push eax
+  0x10001436: mov dword ptr [ebp - 4], eax
+  0x1000143c: push eax
+  0x1000143d: call dword ptr [0x1000d004]
+  0x10001443: mov ebx, dword ptr [0x1000d1b0]
+  0x10001449: mov edi, 0xffff
+  0x1000144e: mov esi, 0x80070000
+  0x10001457: call ebx
+  0x10001461: mov dword ptr [0x1001f8f8], eax
+  0x1000146a: push dword ptr [ebp + 8]
+  0x1000146d: push dword ptr [ebp + 0xc]
+  0x10001470: push dword ptr [ebp - 4]
+  0x10001473: call dword ptr [0x1000d000]
+  0x1000147d: call ebx
+  0x10001487: mov dword ptr [0x1001f8f8], eax
+  0x10001490: pop edi
+  0x10001491: pop esi
+  0x10001492: pop ebx
+  0x10001495: push 0
+  0x10001497: push dword ptr [ebp - 4]
+  0x1000149a: call dword ptr [0x1000d064]
+  0x100014a0: mov eax, dword ptr [0x1001f8f8]
+  0x100014a6: ret 8
+Disassembly:
+  0x10001424: push ebp
+  0x10001425: mov ebp, esp
+  0x10001427: push ecx
+  0x10001428: push ebx
+  0x10001429: push esi
+  0x1000142a: push edi
+  0x1000142b: push 0xf0000000
+  0x10001430: xor eax, eax
+  0x10001432: push 1
+  0x10001434: push eax
+  0x10001435: push eax
+  0x10001436: mov dword ptr [ebp - 4], eax
+  0x10001439: lea eax, [ebp - 4]
+  0x1000143c: push eax
+  0x1000143d: call dword ptr [0x1000d004]
+  0x10001443: mov ebx, dword ptr [0x1000d1b0]
+  0x10001449: mov edi, 0xffff
+  0x1000144e: mov esi, 0x80070000
+  0x10001453: test eax, eax
+  0x10001455: jne 0x1000146a
+  0x10001457: call ebx
+  0x10001459: test eax, eax
+  0x1000145b: jle 0x10001461
+  0x1000145d: and eax, edi
+  0x1000145f: or eax, esi
+  0x10001461: mov dword ptr [0x1001f8f8], eax
+  0x10001466: test eax, eax
+  0x10001468: js 0x1000148c
+  0x1000146a: push dword ptr [ebp + 8]
+  0x1000146d: push dword ptr [ebp + 0xc]
+  0x10001470: push dword ptr [ebp - 4]
+  0x10001473: call dword ptr [0x1000d000]
+  0x10001479: test eax, eax
+  0x1000147b: jne 0x1000148c
+  0x1000147d: call ebx
+  0x1000147f: test eax, eax
+  0x10001481: jle 0x10001487
+  0x10001483: and eax, edi
+  0x10001485: or eax, esi
+  0x10001487: mov dword ptr [0x1001f8f8], eax
+  0x1000148c: cmp dword ptr [ebp - 4], 0
+  0x10001490: pop edi
+  0x10001491: pop esi
+  0x10001492: pop ebx
+  0x10001493: je 0x100014a0
+  0x10001495: push 0
+  0x10001497: push dword ptr [ebp - 4]
+  0x1000149a: call dword ptr [0x1000d064]
+  0x100014a0: mov eax, dword ptr [0x1001f8f8]
+  0x100014a5: leave 
+  0x100014a6: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10001384 at 0x10001384 (size: 160)
+Suspicious Score: 0.031257750496031744
+API Calls:
+Suspicious Instructions:
+  0x10001384: push ebp
+  0x10001385: mov ebp, esp
+  0x10001387: push ecx
+  0x10001388: push ebx
+  0x10001389: push esi
+  0x1000138a: push edi
+  0x1000138b: xor edi, edi
+  0x1000138d: mov esi, eax
+  0x1000138f: mov dword ptr [ebp - 4], edi
+  0x10001397: mov eax, 0x80070057
+  0x1000139c: jmp 0x1000141d
+  0x1000139e: push edi
+  0x1000139f: push edi
+  0x100013a0: push 3
+  0x100013a2: push edi
+  0x100013a3: push 3
+  0x100013a5: push 0xc0000000
+  0x100013aa: push dword ptr [ebp + 8]
+  0x100013ad: call dword ptr [0x1000d160]
+  0x100013b3: mov ebx, eax
+  0x100013ba: call dword ptr [0x1000d1b0]
+  0x100013ce: mov edi, eax
+  0x100013d0: jmp 0x1000141b
+  0x100013d2: push edi
+  0x100013d3: push edi
+  0x100013d4: xor eax, eax
+  0x100013d6: push eax
+  0x100013d7: shl esi, 9
+  0x100013da: push esi
+  0x100013db: push ebx
+  0x100013dc: call dword ptr [0x1000d1d8]
+  0x100013e6: push edi
+  0x100013ea: push eax
+  0x100013eb: push 0x200
+  0x100013f0: push dword ptr [ebp + 0xc]
+  0x100013f3: push ebx
+  0x100013f4: call dword ptr [0x1000d1bc]
+  0x100013fe: call dword ptr [0x1000d1b0]
+  0x10001412: mov edi, eax
+  0x10001414: push ebx
+  0x10001415: call dword ptr [0x1000d1a8]
+  0x1000141b: mov eax, edi
+  0x1000141d: pop edi
+  0x1000141e: pop esi
+  0x1000141f: pop ebx
+  0x10001421: ret 8
+Disassembly:
+  0x10001384: push ebp
+  0x10001385: mov ebp, esp
+  0x10001387: push ecx
+  0x10001388: push ebx
+  0x10001389: push esi
+  0x1000138a: push edi
+  0x1000138b: xor edi, edi
+  0x1000138d: mov esi, eax
+  0x1000138f: mov dword ptr [ebp - 4], edi
+  0x10001392: cmp dword ptr [ebp + 8], edi
+  0x10001395: jne 0x1000139e
+  0x10001397: mov eax, 0x80070057
+  0x1000139c: jmp 0x1000141d
+  0x1000139e: push edi
+  0x1000139f: push edi
+  0x100013a0: push 3
+  0x100013a2: push edi
+  0x100013a3: push 3
+  0x100013a5: push 0xc0000000
+  0x100013aa: push dword ptr [ebp + 8]
+  0x100013ad: call dword ptr [0x1000d160]
+  0x100013b3: mov ebx, eax
+  0x100013b5: cmp ebx, -1
+  0x100013b8: jne 0x100013d2
+  0x100013ba: call dword ptr [0x1000d1b0]
+  0x100013c0: cmp eax, edi
+  0x100013c2: jle 0x100013ce
+  0x100013c4: and eax, 0xffff
+  0x100013c9: or eax, 0x80070000
+  0x100013ce: mov edi, eax
+  0x100013d0: jmp 0x1000141b
+  0x100013d2: push edi
+  0x100013d3: push edi
+  0x100013d4: xor eax, eax
+  0x100013d6: push eax
+  0x100013d7: shl esi, 9
+  0x100013da: push esi
+  0x100013db: push ebx
+  0x100013dc: call dword ptr [0x1000d1d8]
+  0x100013e2: test eax, eax
+  0x100013e4: je 0x100013fe
+  0x100013e6: push edi
+  0x100013e7: lea eax, [ebp - 4]
+  0x100013ea: push eax
+  0x100013eb: push 0x200
+  0x100013f0: push dword ptr [ebp + 0xc]
+  0x100013f3: push ebx
+  0x100013f4: call dword ptr [0x1000d1bc]
+  0x100013fa: test eax, eax
+  0x100013fc: jne 0x10001414
+  0x100013fe: call dword ptr [0x1000d1b0]
+  0x10001404: cmp eax, edi
+  0x10001406: jle 0x10001412
+  0x10001408: and eax, 0xffff
+  0x1000140d: or eax, 0x80070000
+  0x10001412: mov edi, eax
+  0x10001414: push ebx
+  0x10001415: call dword ptr [0x1000d1a8]
+  0x1000141b: mov eax, edi
+  0x1000141d: pop edi
+  0x1000141e: pop esi
+  0x1000141f: pop ebx
+  0x10001420: leave 
+  0x10001421: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006973 at 0x10006973 (size: 47)
+Suspicious Score: 0.11764714657379856
+API Calls:
+Suspicious Instructions:
+  0x10006973: call dword ptr [0x1000d164]
+  0x10006979: mov ecx, dword ptr [0x1001f118]
+  0x10006981: xor edx, edx
+  0x10006983: push 0x3c
+  0x10006985: pop ecx
+  0x10006988: xor edx, edx
+  0x1000698a: mov ecx, 0x3e8
+  0x10006991: mov ecx, dword ptr [0x1001f760]
+  0x10006997: mov edx, ecx
+  0x100069a1: ret 
+Disassembly:
+  0x10006973: call dword ptr [0x1000d164]
+  0x10006979: mov ecx, dword ptr [0x1001f118]
+  0x1000697f: sub eax, ecx
+  0x10006981: xor edx, edx
+  0x10006983: push 0x3c
+  0x10006985: pop ecx
+  0x10006986: div ecx
+  0x10006988: xor edx, edx
+  0x1000698a: mov ecx, 0x3e8
+  0x1000698f: div ecx
+  0x10006991: mov ecx, dword ptr [0x1001f760]
+  0x10006997: mov edx, ecx
+  0x10006999: sub edx, eax
+  0x1000699b: cmp eax, ecx
+  0x1000699d: sbb eax, eax
+  0x1000699f: and eax, edx
+  0x100069a1: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10001b4e at 0x10001b4e (size: 82)
+Suspicious Score: 0.05266901250280752
+API Calls:
+Suspicious Instructions:
+  0x10001b4e: push ebp
+  0x10001b4f: mov ebp, esp
+  0x10001b54: push ebx
+  0x10001b55: push esi
+  0x10001b59: push esi
+  0x10001b5a: xor ebx, ebx
+  0x10001b5d: push ebx
+  0x10001b5e: push 0x660e
+  0x10001b63: push dword ptr [eax + 8]
+  0x10001b66: call dword ptr [0x1000d054]
+  0x10001b6c: mov dword ptr [ebp - 0xc], eax
+  0x10001b73: push edi
+  0x10001b74: mov edi, dword ptr [0x1000d060]
+  0x10001b7a: push 0
+  0x10001b7f: push eax
+  0x10001b80: push 4
+  0x10001b82: push dword ptr [esi]
+  0x10001b84: mov dword ptr [ebp - 4], ebx
+  0x10001b87: call edi
+  0x10001b89: push 0
+  0x10001b8e: push eax
+  0x10001b8f: push 3
+  0x10001b91: push dword ptr [esi]
+  0x10001b93: mov dword ptr [ebp - 8], ebx
+  0x10001b96: call edi
+  0x10001b98: pop edi
+  0x10001b99: mov eax, dword ptr [ebp - 0xc]
+  0x10001b9c: pop esi
+  0x10001b9d: pop ebx
+  0x10001b9f: ret 
+Disassembly:
+  0x10001b4e: push ebp
+  0x10001b4f: mov ebp, esp
+  0x10001b51: sub esp, 0xc
+  0x10001b54: push ebx
+  0x10001b55: push esi
+  0x10001b56: lea esi, [eax + 0x14]
+  0x10001b59: push esi
+  0x10001b5a: xor ebx, ebx
+  0x10001b5c: inc ebx
+  0x10001b5d: push ebx
+  0x10001b5e: push 0x660e
+  0x10001b63: push dword ptr [eax + 8]
+  0x10001b66: call dword ptr [0x1000d054]
+  0x10001b6c: mov dword ptr [ebp - 0xc], eax
+  0x10001b6f: test eax, eax
+  0x10001b71: je 0x10001b99
+  0x10001b73: push edi
+  0x10001b74: mov edi, dword ptr [0x1000d060]
+  0x10001b7a: push 0
+  0x10001b7c: lea eax, [ebp - 4]
+  0x10001b7f: push eax
+  0x10001b80: push 4
+  0x10001b82: push dword ptr [esi]
+  0x10001b84: mov dword ptr [ebp - 4], ebx
+  0x10001b87: call edi
+  0x10001b89: push 0
+  0x10001b8b: lea eax, [ebp - 8]
+  0x10001b8e: push eax
+  0x10001b8f: push 3
+  0x10001b91: push dword ptr [esi]
+  0x10001b93: mov dword ptr [ebp - 8], ebx
+  0x10001b96: call edi
+  0x10001b98: pop edi
+  0x10001b99: mov eax, dword ptr [ebp - 0xc]
+  0x10001b9c: pop esi
+  0x10001b9d: pop ebx
+  0x10001b9e: leave 
+  0x10001b9f: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100085d0 at 0x100085d0 (size: 167)
+Suspicious Score: 0.03226659388273827
+API Calls:
+Suspicious Instructions:
+  0x100085d0: push ebp
+  0x100085d1: mov ebp, esp
+  0x100085d3: push ecx
+  0x100085d4: push ecx
+  0x100085d5: push dword ptr [ebp + 0xc]
+  0x100085dc: push dword ptr [0x1001f120]
+  0x100085e2: call dword ptr [0x1000d0f8]
+  0x100085f0: push esi
+  0x100085f1: push eax
+  0x100085f2: call dword ptr [0x1000d114]
+  0x100085f8: mov esi, eax
+  0x100085fe: push dword ptr [ebp + 0xc]
+  0x10008601: push dword ptr [0x1001f120]
+  0x10008607: call dword ptr [0x1000d108]
+  0x1000860d: mov dword ptr [ebp - 8], eax
+  0x10008614: push edi
+  0x10008615: push dword ptr [esi]
+  0x10008617: mov edi, dword ptr [0x1000d1c0]
+  0x1000861d: push 8
+  0x1000861f: call edi
+  0x10008621: push eax
+  0x10008622: call dword ptr [0x1000d1dc]
+  0x10008628: mov dword ptr [ebx], eax
+  0x1000862e: mov ecx, dword ptr [esi]
+  0x10008630: mov dword ptr [ebp + 0xc], ecx
+  0x10008633: mov ecx, dword ptr [ebp - 8]
+  0x10008639: push ecx
+  0x1000863d: push esi
+  0x10008641: push ecx
+  0x10008642: push eax
+  0x10008643: call 0x1000a520
+  0x1000864c: mov eax, dword ptr [ebp + 8]
+  0x10008653: mov ecx, dword ptr [ebp + 0xc]
+  0x10008656: mov dword ptr [eax], ecx
+  0x10008658: mov dword ptr [ebp - 4], 1
+  0x1000865f: jmp 0x1000866e
+  0x10008661: push dword ptr [ebx]
+  0x10008663: push 0
+  0x10008665: call edi
+  0x10008667: push eax
+  0x10008668: call dword ptr [0x1000d1d4]
+  0x1000866e: pop edi
+  0x1000866f: pop esi
+  0x10008670: mov eax, dword ptr [ebp - 4]
+  0x10008674: ret 8
+Disassembly:
+  0x100085d0: push ebp
+  0x100085d1: mov ebp, esp
+  0x100085d3: push ecx
+  0x100085d4: push ecx
+  0x100085d5: push dword ptr [ebp + 0xc]
+  0x100085d8: and dword ptr [ebp - 4], 0
+  0x100085dc: push dword ptr [0x1001f120]
+  0x100085e2: call dword ptr [0x1000d0f8]
+  0x100085e8: test eax, eax
+  0x100085ea: je 0x10008670
+  0x100085f0: push esi
+  0x100085f1: push eax
+  0x100085f2: call dword ptr [0x1000d114]
+  0x100085f8: mov esi, eax
+  0x100085fa: test esi, esi
+  0x100085fc: je 0x1000866f
+  0x100085fe: push dword ptr [ebp + 0xc]
+  0x10008601: push dword ptr [0x1001f120]
+  0x10008607: call dword ptr [0x1000d108]
+  0x1000860d: mov dword ptr [ebp - 8], eax
+  0x10008610: test eax, eax
+  0x10008612: je 0x1000866f
+  0x10008614: push edi
+  0x10008615: push dword ptr [esi]
+  0x10008617: mov edi, dword ptr [0x1000d1c0]
+  0x1000861d: push 8
+  0x1000861f: call edi
+  0x10008621: push eax
+  0x10008622: call dword ptr [0x1000d1dc]
+  0x10008628: mov dword ptr [ebx], eax
+  0x1000862a: test eax, eax
+  0x1000862c: je 0x1000866e
+  0x1000862e: mov ecx, dword ptr [esi]
+  0x10008630: mov dword ptr [ebp + 0xc], ecx
+  0x10008633: mov ecx, dword ptr [ebp - 8]
+  0x10008636: add ecx, -4
+  0x10008639: push ecx
+  0x1000863a: add esi, 4
+  0x1000863d: push esi
+  0x1000863e: lea ecx, [ebp + 0xc]
+  0x10008641: push ecx
+  0x10008642: push eax
+  0x10008643: call 0x1000a520
+  0x10008648: test eax, eax
+  0x1000864a: jne 0x10008661
+  0x1000864c: mov eax, dword ptr [ebp + 8]
+  0x1000864f: test eax, eax
+  0x10008651: je 0x10008658
+  0x10008653: mov ecx, dword ptr [ebp + 0xc]
+  0x10008656: mov dword ptr [eax], ecx
+  0x10008658: mov dword ptr [ebp - 4], 1
+  0x1000865f: jmp 0x1000866e
+  0x10008661: push dword ptr [ebx]
+  0x10008663: push 0
+  0x10008665: call edi
+  0x10008667: push eax
+  0x10008668: call dword ptr [0x1000d1d4]
+  0x1000866e: pop edi
+  0x1000866f: pop esi
+  0x10008670: mov eax, dword ptr [ebp - 4]
+  0x10008673: leave 
+  0x10008674: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10001000 at 0x10001000 (size: 25)
+Suspicious Score: 0.2499999993547063
+API Calls:
+Suspicious Instructions:
+  0x10001000: push ebp
+  0x10001001: mov ebp, esp
+  0x10001003: push dword ptr [ebp + 8]
+  0x10001006: push 8
+  0x10001008: call dword ptr [0x1000d1c0]
+  0x1000100e: push eax
+  0x1000100f: call dword ptr [0x1000d1dc]
+  0x10001015: pop ebp
+  0x10001016: ret 4
+Disassembly:
+  0x10001000: push ebp
+  0x10001001: mov ebp, esp
+  0x10001003: push dword ptr [ebp + 8]
+  0x10001006: push 8
+  0x10001008: call dword ptr [0x1000d1c0]
+  0x1000100e: push eax
+  0x1000100f: call dword ptr [0x1000d1dc]
+  0x10001015: pop ebp
+  0x10001016: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100024d0 at 0x100024d0 (size: 119)
+Suspicious Score: 0.05263155678036641
+API Calls:
+Suspicious Instructions:
+  0x100024d0: push ebp
+  0x100024d1: mov ebp, esp
+  0x100024d9: xor eax, eax
+  0x100024db: jmp 0x10002543
+  0x100024dd: mov eax, 0x418
+  0x100024e2: push esi
+  0x100024e3: mov ecx, eax
+  0x100024e5: push eax
+  0x100024e6: mov word ptr [edx], cx
+  0x100024e9: call 0x10001000
+  0x100024ee: mov esi, eax
+  0x100024f4: push 0x1e
+  0x100024f6: pop eax
+  0x100024f7: mov dword ptr [esi + 4], eax
+  0x100024fa: mov dword ptr [esi + 0xc], eax
+  0x100024fd: mov dword ptr [esi + 0x14], eax
+  0x10002500: mov eax, 0x3ec
+  0x10002505: push eax
+  0x10002506: push dword ptr [ebp + 8]
+  0x10002509: mov ecx, eax
+  0x1000250e: push eax
+  0x1000250f: mov word ptr [esi], 0x114
+  0x10002514: mov dword ptr [esi + 8], 0x103d0
+  0x1000251b: mov dword ptr [esi + 0x18], 0x4b
+  0x10002522: mov dword ptr [esi + 0x1c], 0x3d0
+  0x10002529: mov dword ptr [esi + 0x20], 0x68
+  0x10002530: mov byte ptr [esi + 0x24], 1
+  0x10002534: mov word ptr [esi + 0x29], cx
+  0x10002538: call 0x1000a40c
+  0x10002540: mov eax, esi
+  0x10002542: pop esi
+  0x10002543: pop ebp
+  0x10002544: ret 4
+Disassembly:
+  0x100024d0: push ebp
+  0x100024d1: mov ebp, esp
+  0x100024d3: cmp dword ptr [ebp + 8], 0
+  0x100024d7: jne 0x100024dd
+  0x100024d9: xor eax, eax
+  0x100024db: jmp 0x10002543
+  0x100024dd: mov eax, 0x418
+  0x100024e2: push esi
+  0x100024e3: mov ecx, eax
+  0x100024e5: push eax
+  0x100024e6: mov word ptr [edx], cx
+  0x100024e9: call 0x10001000
+  0x100024ee: mov esi, eax
+  0x100024f0: test esi, esi
+  0x100024f2: je 0x10002542
+  0x100024f4: push 0x1e
+  0x100024f6: pop eax
+  0x100024f7: mov dword ptr [esi + 4], eax
+  0x100024fa: mov dword ptr [esi + 0xc], eax
+  0x100024fd: mov dword ptr [esi + 0x14], eax
+  0x10002500: mov eax, 0x3ec
+  0x10002505: push eax
+  0x10002506: push dword ptr [ebp + 8]
+  0x10002509: mov ecx, eax
+  0x1000250b: lea eax, [esi + 0x2c]
+  0x1000250e: push eax
+  0x1000250f: mov word ptr [esi], 0x114
+  0x10002514: mov dword ptr [esi + 8], 0x103d0
+  0x1000251b: mov dword ptr [esi + 0x18], 0x4b
+  0x10002522: mov dword ptr [esi + 0x1c], 0x3d0
+  0x10002529: mov dword ptr [esi + 0x20], 0x68
+  0x10002530: mov byte ptr [esi + 0x24], 1
+  0x10002534: mov word ptr [esi + 0x29], cx
+  0x10002538: call 0x1000a40c
+  0x1000253d: add esp, 0xc
+  0x10002540: mov eax, esi
+  0x10002542: pop esi
+  0x10002543: pop ebp
+  0x10002544: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100020d0 at 0x100020d0 (size: 26)
+Suspicious Score: 0.20222220019999998
+API Calls:
+Suspicious Instructions:
+  0x100020d0: mov eax, dword ptr [esi]
+  0x100020d6: push eax
+  0x100020d7: push 8
+  0x100020d9: call dword ptr [0x1000d1c0]
+  0x100020df: push eax
+  0x100020e0: call dword ptr [0x1000d1d4]
+  0x100020e9: ret 
+Disassembly:
+  0x100020d0: mov eax, dword ptr [esi]
+  0x100020d2: test eax, eax
+  0x100020d4: je 0x100020e9
+  0x100020d6: push eax
+  0x100020d7: push 8
+  0x100020d9: call dword ptr [0x1000d1c0]
+  0x100020df: push eax
+  0x100020e0: call dword ptr [0x1000d1d4]
+  0x100020e6: and dword ptr [esi], 0
+  0x100020e9: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002466 at 0x10002466 (size: 106)
+Suspicious Score: 0.0625
+API Calls:
+Suspicious Instructions:
+  0x10002466: push ebp
+  0x10002467: mov ebp, esp
+  0x10002469: push esi
+  0x1000246a: push 0x24
+  0x1000246c: call 0x10001000
+  0x10002471: mov esi, eax
+  0x10002477: mov eax, dword ptr [ebp + 8]
+  0x1000247d: push eax
+  0x1000247e: call dword ptr [0x1000d288]
+  0x10002484: mov word ptr [esi + 2], ax
+  0x10002488: mov al, byte ptr [ebp + 0xc]
+  0x1000248b: mov byte ptr [esi + 8], al
+  0x1000248e: mov ax, word ptr [ebp + 0x10]
+  0x10002492: mov word ptr [esi + 0xe], ax
+  0x10002496: mov ax, word ptr [ebp + 0x14]
+  0x1000249a: mov word ptr [esi + 0x10], ax
+  0x1000249e: mov ax, word ptr [ebp + 0x18]
+  0x100024a2: mov word ptr [esi + 0x1c], ax
+  0x100024a6: mov ax, word ptr [ebp + 0x1c]
+  0x100024aa: mov word ptr [esi + 0x1e], ax
+  0x100024ae: mov ax, word ptr [ebp + 0x20]
+  0x100024b2: mov word ptr [esi + 0x20], ax
+  0x100024b6: mov ax, word ptr [ebp + 0x24]
+  0x100024ba: mov word ptr [esi + 0x22], ax
+  0x100024be: mov dword ptr [esi + 4], 0x424d53ff
+  0x100024c5: mov byte ptr [esi + 0xd], 0x18
+  0x100024c9: mov eax, esi
+  0x100024cb: pop esi
+  0x100024cc: pop ebp
+  0x100024cd: ret 0x20
+Disassembly:
+  0x10002466: push ebp
+  0x10002467: mov ebp, esp
+  0x10002469: push esi
+  0x1000246a: push 0x24
+  0x1000246c: call 0x10001000
+  0x10002471: mov esi, eax
+  0x10002473: test esi, esi
+  0x10002475: je 0x100024cb
+  0x10002477: mov eax, dword ptr [ebp + 8]
+  0x1000247a: add eax, -4
+  0x1000247d: push eax
+  0x1000247e: call dword ptr [0x1000d288]
+  0x10002484: mov word ptr [esi + 2], ax
+  0x10002488: mov al, byte ptr [ebp + 0xc]
+  0x1000248b: mov byte ptr [esi + 8], al
+  0x1000248e: mov ax, word ptr [ebp + 0x10]
+  0x10002492: mov word ptr [esi + 0xe], ax
+  0x10002496: mov ax, word ptr [ebp + 0x14]
+  0x1000249a: mov word ptr [esi + 0x10], ax
+  0x1000249e: mov ax, word ptr [ebp + 0x18]
+  0x100024a2: mov word ptr [esi + 0x1c], ax
+  0x100024a6: mov ax, word ptr [ebp + 0x1c]
+  0x100024aa: mov word ptr [esi + 0x1e], ax
+  0x100024ae: mov ax, word ptr [ebp + 0x20]
+  0x100024b2: mov word ptr [esi + 0x20], ax
+  0x100024b6: mov ax, word ptr [ebp + 0x24]
+  0x100024ba: mov word ptr [esi + 0x22], ax
+  0x100024be: mov dword ptr [esi + 4], 0x424d53ff
+  0x100024c5: mov byte ptr [esi + 0xd], 0x18
+  0x100024c9: mov eax, esi
+  0x100024cb: pop esi
+  0x100024cc: pop ebp
+  0x100024cd: ret 0x20
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002802 at 0x10002802 (size: 179)
+Suspicious Score: 0.031249999973481348
+API Calls:
+Suspicious Instructions:
+  0x10002802: push ebp
+  0x10002803: mov ebp, esp
+  0x10002810: xor eax, eax
+  0x10002812: jmp 0x100028b1
+  0x1000281b: push ebx
+  0x1000281c: push 0x1b
+  0x1000281e: pop ebx
+  0x10002821: push 0x1d
+  0x10002823: pop ebx
+  0x10002827: mov word ptr [ecx], ax
+  0x1000282d: push esi
+  0x1000282e: push eax
+  0x1000282f: call 0x10001000
+  0x10002834: mov esi, eax
+  0x1000283a: mov al, byte ptr [ebp + 0xc]
+  0x1000283d: mov ecx, 0x1104
+  0x10002842: mov word ptr [esi + 5], cx
+  0x10002846: push 0xa
+  0x10002848: pop ecx
+  0x10002849: mov word ptr [esi + 7], cx
+  0x1000284d: mov cx, word ptr [ebp + 0x10]
+  0x10002851: mov byte ptr [esi], al
+  0x10002853: mov byte ptr [esi + 1], 0xff
+  0x10002857: mov word ptr [esi + 9], cx
+  0x1000285f: mov cx, word ptr [ebp + 0x14]
+  0x10002863: mov edx, dword ptr [ebp + 8]
+  0x10002866: mov dword ptr [esi + 0x15], 0x80000000
+  0x1000286d: mov word ptr [esi + 0x19], di
+  0x10002871: mov word ptr [edx], cx
+  0x10002878: mov eax, 0x88
+  0x1000287d: mov word ptr [esi + 3], ax
+  0x10002881: xor eax, eax
+  0x10002884: mov word ptr [esi + 0xf], ax
+  0x10002888: mov dword ptr [esi + 0x17], 0xd4
+  0x1000288f: mov word ptr [esi + 0x1b], di
+  0x1000289b: push eax
+  0x1000289c: push dword ptr [ebp + 8]
+  0x100028a4: push eax
+  0x100028a5: call 0x1000a40c
+  0x100028ad: mov eax, esi
+  0x100028af: pop esi
+  0x100028b0: pop ebx
+  0x100028b1: pop ebp
+  0x100028b2: ret 0x10
+Disassembly:
+  0x10002802: push ebp
+  0x10002803: mov ebp, esp
+  0x10002805: test di, di
+  0x10002808: je 0x10002817
+  0x1000280a: cmp dword ptr [ebp + 8], 0
+  0x1000280e: jne 0x10002817
+  0x10002810: xor eax, eax
+  0x10002812: jmp 0x100028b1
+  0x10002817: cmp byte ptr [ebp + 0xc], 0xd
+  0x1000281b: push ebx
+  0x1000281c: push 0x1b
+  0x1000281e: pop ebx
+  0x1000281f: jne 0x10002824
+  0x10002821: push 0x1d
+  0x10002823: pop ebx
+  0x10002824: lea eax, [ebx + edi]
+  0x10002827: mov word ptr [ecx], ax
+  0x1000282a: movzx eax, ax
+  0x1000282d: push esi
+  0x1000282e: push eax
+  0x1000282f: call 0x10001000
+  0x10002834: mov esi, eax
+  0x10002836: test esi, esi
+  0x10002838: je 0x100028af
+  0x1000283a: mov al, byte ptr [ebp + 0xc]
+  0x1000283d: mov ecx, 0x1104
+  0x10002842: mov word ptr [esi + 5], cx
+  0x10002846: push 0xa
+  0x10002848: pop ecx
+  0x10002849: mov word ptr [esi + 7], cx
+  0x1000284d: mov cx, word ptr [ebp + 0x10]
+  0x10002851: mov byte ptr [esi], al
+  0x10002853: mov byte ptr [esi + 1], 0xff
+  0x10002857: mov word ptr [esi + 9], cx
+  0x1000285b: cmp al, 0xc
+  0x1000285d: jne 0x10002874
+  0x1000285f: mov cx, word ptr [ebp + 0x14]
+  0x10002863: mov edx, dword ptr [ebp + 8]
+  0x10002866: mov dword ptr [esi + 0x15], 0x80000000
+  0x1000286d: mov word ptr [esi + 0x19], di
+  0x10002871: mov word ptr [edx], cx
+  0x10002874: cmp al, 0xd
+  0x10002876: jne 0x10002893
+  0x10002878: mov eax, 0x88
+  0x1000287d: mov word ptr [esi + 3], ax
+  0x10002881: xor eax, eax
+  0x10002883: inc eax
+  0x10002884: mov word ptr [esi + 0xf], ax
+  0x10002888: mov dword ptr [esi + 0x17], 0xd4
+  0x1000288f: mov word ptr [esi + 0x1b], di
+  0x10002893: test di, di
+  0x10002896: je 0x100028ad
+  0x10002898: movzx eax, di
+  0x1000289b: push eax
+  0x1000289c: push dword ptr [ebp + 8]
+  0x1000289f: movzx eax, bx
+  0x100028a2: add eax, esi
+  0x100028a4: push eax
+  0x100028a5: call 0x1000a40c
+  0x100028aa: add esp, 0xc
+  0x100028ad: mov eax, esi
+  0x100028af: pop esi
+  0x100028b0: pop ebx
+  0x100028b1: pop ebp
+  0x100028b2: ret 0x10
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000688f at 0x1000688f (size: 135)
+Suspicious Score: 0.041684759006580245
+API Calls:
+Suspicious Instructions:
+  0x1000688f: push ebp
+  0x10006890: mov ebp, esp
+  0x10006898: push esi
+  0x10006899: xor esi, esi
+  0x100068a0: push edi
+  0x100068a1: push 0x100
+  0x100068ac: push esi
+  0x100068ad: push eax
+  0x100068ae: call 0x1000a4e4
+  0x100068b3: xor eax, eax
+  0x100068b8: mov dword ptr [ebp - 8], esi
+  0x100068c2: push eax
+  0x100068c3: push esi
+  0x100068ca: push eax
+  0x100068cb: push esi
+  0x100068cc: push esi
+  0x100068cd: mov dword ptr [ebp - 4], 0xc65d40
+  0x100068d4: mov dword ptr [ebp - 0x108], ebx
+  0x100068da: mov dword ptr [ebp - 0x10c], 1
+  0x100068e4: call dword ptr [0x1000d27c]
+  0x100068ea: pop edi
+  0x100068f4: push esi
+  0x100068f5: push dword ptr [ebp + 0xc]
+  0x100068f8: push dword ptr [ebp + 8]
+  0x100068fb: push ebx
+  0x100068fc: call dword ptr [0x1000d284]
+  0x10006902: xor ecx, ecx
+  0x1000690c: jmp 0x10006911
+  0x10006911: pop esi
+  0x10006913: ret 8
+Disassembly:
+  0x1000688f: push ebp
+  0x10006890: mov ebp, esp
+  0x10006892: sub esp, 0x10c
+  0x10006898: push esi
+  0x10006899: xor esi, esi
+  0x1000689b: cmp dword ptr [ebp + 8], esi
+  0x1000689e: je 0x1000690e
+  0x100068a0: push edi
+  0x100068a1: push 0x100
+  0x100068a6: lea eax, [ebp - 0x108]
+  0x100068ac: push esi
+  0x100068ad: push eax
+  0x100068ae: call 0x1000a4e4
+  0x100068b3: xor eax, eax
+  0x100068b5: add esp, 0xc
+  0x100068b8: mov dword ptr [ebp - 8], esi
+  0x100068bb: lea edi, [ebp - 4]
+  0x100068be: stosd dword ptr es:[edi], eax
+  0x100068bf: lea eax, [ebp - 8]
+  0x100068c2: push eax
+  0x100068c3: push esi
+  0x100068c4: lea eax, [ebp - 0x10c]
+  0x100068ca: push eax
+  0x100068cb: push esi
+  0x100068cc: push esi
+  0x100068cd: mov dword ptr [ebp - 4], 0xc65d40
+  0x100068d4: mov dword ptr [ebp - 0x108], ebx
+  0x100068da: mov dword ptr [ebp - 0x10c], 1
+  0x100068e4: call dword ptr [0x1000d27c]
+  0x100068ea: pop edi
+  0x100068eb: cmp eax, -1
+  0x100068ee: je 0x1000690e
+  0x100068f0: cmp eax, esi
+  0x100068f2: je 0x1000690e
+  0x100068f4: push esi
+  0x100068f5: push dword ptr [ebp + 0xc]
+  0x100068f8: push dword ptr [ebp + 8]
+  0x100068fb: push ebx
+  0x100068fc: call dword ptr [0x1000d284]
+  0x10006902: xor ecx, ecx
+  0x10006904: test eax, eax
+  0x10006906: setg cl
+  0x10006909: lea eax, [ecx - 1]
+  0x1000690c: jmp 0x10006911
+  0x1000690e: or eax, 0xffffffff
+  0x10006911: pop esi
+  0x10006912: leave 
+  0x10006913: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000243f at 0x1000243f (size: 39)
+Suspicious Score: 0.12548840837746458
+API Calls:
+Suspicious Instructions:
+  0x1000243f: push ebp
+  0x10002440: mov ebp, esp
+  0x10002442: push ecx
+  0x10002443: push ebx
+  0x10002447: push eax
+  0x10002448: push dword ptr [ebp + 0xc]
+  0x1000244e: push dword ptr [ebp + 8]
+  0x10002451: mov dword ptr [ebp - 4], 0x1000
+  0x10002458: call 0x100067af
+  0x10002461: pop ebx
+  0x10002463: ret 0xc
+Disassembly:
+  0x1000243f: push ebp
+  0x10002440: mov ebp, esp
+  0x10002442: push ecx
+  0x10002443: push ebx
+  0x10002444: lea eax, [ebp - 4]
+  0x10002447: push eax
+  0x10002448: push dword ptr [ebp + 0xc]
+  0x1000244b: lea ebx, [ebp + 0x10]
+  0x1000244e: push dword ptr [ebp + 8]
+  0x10002451: mov dword ptr [ebp - 4], 0x1000
+  0x10002458: call 0x100067af
+  0x1000245d: neg eax
+  0x1000245f: sbb eax, eax
+  0x10002461: pop ebx
+  0x10002462: leave 
+  0x10002463: ret 0xc
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002c1e at 0x10002c1e (size: 177)
+Suspicious Score: 0.030310093946452024
+API Calls:
+Suspicious Instructions:
+  0x10002c1e: push ebp
+  0x10002c1f: mov ebp, esp
+  0x10002c21: push ecx
+  0x10002c26: push esi
+  0x10002c27: push dword ptr [ebp + 0x24]
+  0x10002c2a: mov esi, dword ptr [ebp + 0x28]
+  0x10002c2d: push dword ptr [ebp + 0x20]
+  0x10002c33: call 0x10002adf
+  0x10002c38: mov dword ptr [ebp + 0x28], eax
+  0x10002c43: push ebx
+  0x10002c44: push dword ptr [ebp + 0x1c]
+  0x10002c47: mov ebx, dword ptr [ebp - 4]
+  0x10002c4a: push dword ptr [ebp + 0x18]
+  0x10002c50: push dword ptr [ebp + 0x14]
+  0x10002c53: mov word ptr [esi], ax
+  0x10002c56: push dword ptr [ebp + 0x10]
+  0x10002c59: push dword ptr [ebp + 0xc]
+  0x10002c5c: push dword ptr [ebp + 8]
+  0x10002c5f: push 0x25
+  0x10002c61: push eax
+  0x10002c62: call 0x10002466
+  0x10002c67: mov dword ptr [ebp + 0x24], eax
+  0x10002c71: jmp 0x10002c8e
+  0x10002c76: push eax
+  0x10002c77: call 0x10001000
+  0x10002c7c: mov dword ptr [ebp + 0x20], eax
+  0x10002c86: call 0x100020d0
+  0x10002c8e: call 0x100020d0
+  0x10002c93: xor eax, eax
+  0x10002c95: jmp 0x10002cc9
+  0x10002c97: mov esi, dword ptr [ebp + 0x24]
+  0x10002c9a: push edi
+  0x10002c9b: push 9
+  0x10002c9d: pop ecx
+  0x10002c9e: mov edi, eax
+  0x10002ca5: push ecx
+  0x10002ca6: push dword ptr [ebp + 0x28]
+  0x10002cac: push eax
+  0x10002cad: call 0x1000a40c
+  0x10002cb8: call 0x100020d0
+  0x10002cc0: call 0x100020d0
+  0x10002cc5: mov eax, dword ptr [ebp + 0x20]
+  0x10002cc8: pop edi
+  0x10002cc9: pop ebx
+  0x10002cca: pop esi
+  0x10002ccc: ret 0x24
+Disassembly:
+  0x10002c1e: push ebp
+  0x10002c1f: mov ebp, esp
+  0x10002c21: push ecx
+  0x10002c22: and dword ptr [ebp - 4], 0
+  0x10002c26: push esi
+  0x10002c27: push dword ptr [ebp + 0x24]
+  0x10002c2a: mov esi, dword ptr [ebp + 0x28]
+  0x10002c2d: push dword ptr [ebp + 0x20]
+  0x10002c30: lea eax, [ebp - 4]
+  0x10002c33: call 0x10002adf
+  0x10002c38: mov dword ptr [ebp + 0x28], eax
+  0x10002c3b: test eax, eax
+  0x10002c3d: je 0x10002cca
+  0x10002c43: push ebx
+  0x10002c44: push dword ptr [ebp + 0x1c]
+  0x10002c47: mov ebx, dword ptr [ebp - 4]
+  0x10002c4a: push dword ptr [ebp + 0x18]
+  0x10002c4d: lea eax, [ebx + 0x24]
+  0x10002c50: push dword ptr [ebp + 0x14]
+  0x10002c53: mov word ptr [esi], ax
+  0x10002c56: push dword ptr [ebp + 0x10]
+  0x10002c59: push dword ptr [ebp + 0xc]
+  0x10002c5c: push dword ptr [ebp + 8]
+  0x10002c5f: push 0x25
+  0x10002c61: push eax
+  0x10002c62: call 0x10002466
+  0x10002c67: mov dword ptr [ebp + 0x24], eax
+  0x10002c6a: test eax, eax
+  0x10002c6c: jne 0x10002c73
+  0x10002c6e: lea esi, [ebp + 0x28]
+  0x10002c71: jmp 0x10002c8e
+  0x10002c73: movzx eax, word ptr [esi]
+  0x10002c76: push eax
+  0x10002c77: call 0x10001000
+  0x10002c7c: mov dword ptr [ebp + 0x20], eax
+  0x10002c7f: test eax, eax
+  0x10002c81: jne 0x10002c97
+  0x10002c83: lea esi, [ebp + 0x28]
+  0x10002c86: call 0x100020d0
+  0x10002c8b: lea esi, [ebp + 0x24]
+  0x10002c8e: call 0x100020d0
+  0x10002c93: xor eax, eax
+  0x10002c95: jmp 0x10002cc9
+  0x10002c97: mov esi, dword ptr [ebp + 0x24]
+  0x10002c9a: push edi
+  0x10002c9b: push 9
+  0x10002c9d: pop ecx
+  0x10002c9e: mov edi, eax
+  0x10002ca0: rep movsd dword ptr es:[edi], dword ptr [esi]
+  0x10002ca2: movzx ecx, bx
+  0x10002ca5: push ecx
+  0x10002ca6: push dword ptr [ebp + 0x28]
+  0x10002ca9: add eax, 0x24
+  0x10002cac: push eax
+  0x10002cad: call 0x1000a40c
+  0x10002cb2: add esp, 0xc
+  0x10002cb5: lea esi, [ebp + 0x24]
+  0x10002cb8: call 0x100020d0
+  0x10002cbd: lea esi, [ebp + 0x28]
+  0x10002cc0: call 0x100020d0
+  0x10002cc5: mov eax, dword ptr [ebp + 0x20]
+  0x10002cc8: pop edi
+  0x10002cc9: pop ebx
+  0x10002cca: pop esi
+  0x10002ccb: leave 
+  0x10002ccc: ret 0x24
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002d82 at 0x10002d82 (size: 174)
+Suspicious Score: 0.03226659384695006
+API Calls:
+Suspicious Instructions:
+  0x10002d82: push ebp
+  0x10002d83: mov ebp, esp
+  0x10002d85: push ecx
+  0x10002d86: push ebx
+  0x10002d87: push esi
+  0x10002d88: push edi
+  0x10002d89: xor edi, edi
+  0x10002d8b: xor esi, esi
+  0x10002d91: mov dword ptr [ebp - 4], edi
+  0x10002d96: push 0xf
+  0x10002d98: pop esi
+  0x10002d99: push 0xc
+  0x10002d9b: mov dword ptr [ebp - 4], 0x10018bc4
+  0x10002da2: pop edi
+  0x10002da3: xor ebx, ebx
+  0x10002dab: push 0x11
+  0x10002dad: pop esi
+  0x10002dae: push 0xe
+  0x10002db0: mov dword ptr [ebp - 4], 0x10018b34
+  0x10002db7: pop edi
+  0x10002dbb: mov word ptr [ecx], ax
+  0x10002dc1: push eax
+  0x10002dc2: call 0x10001000
+  0x10002dcb: push 0x62
+  0x10002dcd: pop ecx
+  0x10002dce: mov word ptr [eax + 3], cx
+  0x10002dd2: xor dl, dl
+  0x10002dd4: mov word ptr [eax], 0xff18
+  0x10002dd9: mov word ptr [eax + 6], di
+  0x10002ddd: mov dword ptr [eax + 8], 0x16
+  0x10002de4: mov dword ptr [eax + 0x10], 0x2019f
+  0x10002deb: mov dword ptr [eax + 0x20], 3
+  0x10002df2: mov dword ptr [eax + 0x24], ebx
+  0x10002df5: mov dword ptr [eax + 0x28], 0x40
+  0x10002dfc: mov dword ptr [eax + 0x2c], 2
+  0x10002e03: mov byte ptr [eax + 0x30], 3
+  0x10002e07: mov word ptr [eax + 0x31], si
+  0x10002e0b: xor ecx, ecx
+  0x10002e0d: jmp 0x10002e24
+  0x10002e0f: mov edi, dword ptr [ebp - 4]
+  0x10002e15: mov bl, byte ptr [ecx + edi]
+  0x10002e18: xor bl, 0xa2
+  0x10002e1d: mov byte ptr [ecx + eax + 0x33], bl
+  0x10002e29: pop edi
+  0x10002e2a: pop esi
+  0x10002e2b: pop ebx
+  0x10002e2d: ret 4
+Disassembly:
+  0x10002d82: push ebp
+  0x10002d83: mov ebp, esp
+  0x10002d85: push ecx
+  0x10002d86: push ebx
+  0x10002d87: push esi
+  0x10002d88: push edi
+  0x10002d89: xor edi, edi
+  0x10002d8b: xor esi, esi
+  0x10002d8d: cmp byte ptr [ebp + 8], 0
+  0x10002d91: mov dword ptr [ebp - 4], edi
+  0x10002d94: jne 0x10002da3
+  0x10002d96: push 0xf
+  0x10002d98: pop esi
+  0x10002d99: push 0xc
+  0x10002d9b: mov dword ptr [ebp - 4], 0x10018bc4
+  0x10002da2: pop edi
+  0x10002da3: xor ebx, ebx
+  0x10002da5: inc ebx
+  0x10002da6: cmp byte ptr [ebp + 8], bl
+  0x10002da9: jne 0x10002db8
+  0x10002dab: push 0x11
+  0x10002dad: pop esi
+  0x10002dae: push 0xe
+  0x10002db0: mov dword ptr [ebp - 4], 0x10018b34
+  0x10002db7: pop edi
+  0x10002db8: lea eax, [esi + 0x33]
+  0x10002dbb: mov word ptr [ecx], ax
+  0x10002dbe: movzx eax, ax
+  0x10002dc1: push eax
+  0x10002dc2: call 0x10001000
+  0x10002dc7: test eax, eax
+  0x10002dc9: je 0x10002e29
+  0x10002dcb: push 0x62
+  0x10002dcd: pop ecx
+  0x10002dce: mov word ptr [eax + 3], cx
+  0x10002dd2: xor dl, dl
+  0x10002dd4: mov word ptr [eax], 0xff18
+  0x10002dd9: mov word ptr [eax + 6], di
+  0x10002ddd: mov dword ptr [eax + 8], 0x16
+  0x10002de4: mov dword ptr [eax + 0x10], 0x2019f
+  0x10002deb: mov dword ptr [eax + 0x20], 3
+  0x10002df2: mov dword ptr [eax + 0x24], ebx
+  0x10002df5: mov dword ptr [eax + 0x28], 0x40
+  0x10002dfc: mov dword ptr [eax + 0x2c], 2
+  0x10002e03: mov byte ptr [eax + 0x30], 3
+  0x10002e07: mov word ptr [eax + 0x31], si
+  0x10002e0b: xor ecx, ecx
+  0x10002e0d: jmp 0x10002e24
+  0x10002e0f: mov edi, dword ptr [ebp - 4]
+  0x10002e12: movzx ecx, dl
+  0x10002e15: mov bl, byte ptr [ecx + edi]
+  0x10002e18: xor bl, 0xa2
+  0x10002e1b: inc dl
+  0x10002e1d: mov byte ptr [ecx + eax + 0x33], bl
+  0x10002e21: movzx ecx, dl
+  0x10002e24: cmp cx, si
+  0x10002e27: jb 0x10002e0f
+  0x10002e29: pop edi
+  0x10002e2a: pop esi
+  0x10002e2b: pop ebx
+  0x10002e2c: leave 
+  0x10002e2d: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000369d at 0x1000369d (size: 151)
+Suspicious Score: 0.035087719245693115
+API Calls:
+Suspicious Instructions:
+  0x1000369d: push ebp
+  0x1000369e: mov ebp, esp
+  0x100036a0: push ecx
+  0x100036a5: push ebx
+  0x100036a6: mov ebx, eax
+  0x100036ab: push eax
+  0x100036ac: push dword ptr [ebp + 0x18]
+  0x100036af: push dword ptr [ebp + 0x14]
+  0x100036b2: push dword ptr [ebp + 0x10]
+  0x100036b5: push dword ptr [ebp + 0xc]
+  0x100036b8: push dword ptr [ebp + 8]
+  0x100036bb: call 0x10002620
+  0x100036c0: mov dword ptr [ebp + 0x18], eax
+  0x100036ca: jmp 0x100036ee
+  0x100036cc: push esi
+  0x100036cd: push edi
+  0x100036ce: push 0x1000
+  0x100036d3: call 0x10001000
+  0x100036d8: mov edi, eax
+  0x100036da: mov dword ptr [ebp + 0x10], edi
+  0x100036e4: call 0x100020d0
+  0x100036ec: pop edi
+  0x100036ed: pop esi
+  0x100036ee: pop ebx
+  0x100036f0: ret 0x14
+  0x100036fb: push eax
+  0x100036fc: push dword ptr [ebp + 0x18]
+  0x100036ff: call 0x1000688f
+  0x10003708: push edi
+  0x10003709: push 1
+  0x1000370b: push ebx
+  0x1000370f: call 0x1000243f
+  0x1000371e: call 0x100020d0
+  0x10003726: call 0x100020d0
+  0x1000372b: mov eax, edi
+  0x1000372d: jmp 0x100036ec
+  0x1000372f: mov edi, dword ptr [edi + 9]
+  0x10003732: jmp 0x1000371b
+Disassembly:
+  0x1000369d: push ebp
+  0x1000369e: mov ebp, esp
+  0x100036a0: push ecx
+  0x100036a1: and dword ptr [ebp - 4], 0
+  0x100036a5: push ebx
+  0x100036a6: mov ebx, eax
+  0x100036a8: lea eax, [ebp - 4]
+  0x100036ab: push eax
+  0x100036ac: push dword ptr [ebp + 0x18]
+  0x100036af: push dword ptr [ebp + 0x14]
+  0x100036b2: push dword ptr [ebp + 0x10]
+  0x100036b5: push dword ptr [ebp + 0xc]
+  0x100036b8: push dword ptr [ebp + 8]
+  0x100036bb: call 0x10002620
+  0x100036c0: mov dword ptr [ebp + 0x18], eax
+  0x100036c3: test eax, eax
+  0x100036c5: jne 0x100036cc
+  0x100036c7: or eax, 0xffffffff
+  0x100036ca: jmp 0x100036ee
+  0x100036cc: push esi
+  0x100036cd: push edi
+  0x100036ce: push 0x1000
+  0x100036d3: call 0x10001000
+  0x100036d8: mov edi, eax
+  0x100036da: mov dword ptr [ebp + 0x10], edi
+  0x100036dd: test edi, edi
+  0x100036df: jne 0x100036f3
+  0x100036e1: lea esi, [ebp + 0x18]
+  0x100036e4: call 0x100020d0
+  0x100036e9: or eax, 0xffffffff
+  0x100036ec: pop edi
+  0x100036ed: pop esi
+  0x100036ee: pop ebx
+  0x100036ef: leave 
+  0x100036f0: ret 0x14
+  0x100036f3: movzx eax, word ptr [ebp - 4]
+  0x100036f7: and dword ptr [ebp + 0x14], 0
+  0x100036fb: push eax
+  0x100036fc: push dword ptr [ebp + 0x18]
+  0x100036ff: call 0x1000688f
+  0x10003704: test eax, eax
+  0x10003706: jne 0x10003718
+  0x10003708: push edi
+  0x10003709: push 1
+  0x1000370b: push ebx
+  0x1000370c: lea esi, [ebp + 0x14]
+  0x1000370f: call 0x1000243f
+  0x10003714: test eax, eax
+  0x10003716: je 0x1000372f
+  0x10003718: or edi, 0xffffffff
+  0x1000371b: lea esi, [ebp + 0x10]
+  0x1000371e: call 0x100020d0
+  0x10003723: lea esi, [ebp + 0x18]
+  0x10003726: call 0x100020d0
+  0x1000372b: mov eax, edi
+  0x1000372d: jmp 0x100036ec
+  0x1000372f: mov edi, dword ptr [edi + 9]
+  0x10003732: jmp 0x1000371b
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100020b2 at 0x100020b2 (size: 30)
+Suspicious Score: 0.2220020022
+API Calls:
+Suspicious Instructions:
+  0x100020b2: call dword ptr [0x1000d164]
+  0x100020b8: mov ecx, dword ptr [0x1001fb48]
+  0x100020c5: xor ecx, ecx
+  0x100020cc: push 0x40
+  0x100020ce: pop eax
+  0x100020cf: ret 
+Disassembly:
+  0x100020b2: call dword ptr [0x1000d164]
+  0x100020b8: mov ecx, dword ptr [0x1001fb48]
+  0x100020be: lea eax, [eax + ecx + 0x40]
+  0x100020c2: movzx eax, ax
+  0x100020c5: xor ecx, ecx
+  0x100020c7: cmp cx, ax
+  0x100020ca: jne 0x100020cf
+  0x100020cc: push 0x40
+  0x100020ce: pop eax
+  0x100020cf: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100035fa at 0x100035fa (size: 163)
+Suspicious Score: 0.0327868852106812
+API Calls:
+Suspicious Instructions:
+  0x100035fa: push ebp
+  0x100035fb: mov ebp, esp
+  0x100035fd: push ecx
+  0x100035fe: push ebx
+  0x100035ff: mov ecx, dword ptr [ebp + 0x28]
+  0x10003606: mov ebx, eax
+  0x1000360b: push eax
+  0x1000360c: push dword ptr [ebp + 0x24]
+  0x1000360f: push dword ptr [ebp + 0x20]
+  0x10003612: push dword ptr [ebp + 0x1c]
+  0x10003615: push dword ptr [ebp + 0x18]
+  0x10003618: push dword ptr [ebp + 0x14]
+  0x1000361b: push dword ptr [ebp + 0x10]
+  0x1000361e: push dword ptr [ebp + 0xc]
+  0x10003621: push dword ptr [ebp + 8]
+  0x10003624: call 0x10002c1e
+  0x10003629: mov dword ptr [ebp + 0x24], eax
+  0x10003633: jmp 0x10003657
+  0x10003635: push esi
+  0x10003636: push edi
+  0x10003637: push 0x1000
+  0x1000363c: call 0x10001000
+  0x10003641: mov edi, eax
+  0x10003643: mov dword ptr [ebp + 0x1c], edi
+  0x1000364d: call 0x100020d0
+  0x10003655: pop edi
+  0x10003656: pop esi
+  0x10003657: pop ebx
+  0x10003659: ret 0x24
+  0x10003664: push eax
+  0x10003665: push dword ptr [ebp + 0x24]
+  0x10003668: call 0x1000688f
+  0x10003671: push edi
+  0x10003672: push 1
+  0x10003674: push ebx
+  0x10003678: call 0x1000243f
+  0x10003687: call 0x100020d0
+  0x1000368f: call 0x100020d0
+  0x10003694: mov eax, edi
+  0x10003696: jmp 0x10003655
+  0x10003698: mov edi, dword ptr [edi + 9]
+  0x1000369b: jmp 0x10003684
+Disassembly:
+  0x100035fa: push ebp
+  0x100035fb: mov ebp, esp
+  0x100035fd: push ecx
+  0x100035fe: push ebx
+  0x100035ff: mov ecx, dword ptr [ebp + 0x28]
+  0x10003602: and dword ptr [ebp - 4], 0
+  0x10003606: mov ebx, eax
+  0x10003608: lea eax, [ebp - 4]
+  0x1000360b: push eax
+  0x1000360c: push dword ptr [ebp + 0x24]
+  0x1000360f: push dword ptr [ebp + 0x20]
+  0x10003612: push dword ptr [ebp + 0x1c]
+  0x10003615: push dword ptr [ebp + 0x18]
+  0x10003618: push dword ptr [ebp + 0x14]
+  0x1000361b: push dword ptr [ebp + 0x10]
+  0x1000361e: push dword ptr [ebp + 0xc]
+  0x10003621: push dword ptr [ebp + 8]
+  0x10003624: call 0x10002c1e
+  0x10003629: mov dword ptr [ebp + 0x24], eax
+  0x1000362c: test eax, eax
+  0x1000362e: jne 0x10003635
+  0x10003630: or eax, 0xffffffff
+  0x10003633: jmp 0x10003657
+  0x10003635: push esi
+  0x10003636: push edi
+  0x10003637: push 0x1000
+  0x1000363c: call 0x10001000
+  0x10003641: mov edi, eax
+  0x10003643: mov dword ptr [ebp + 0x1c], edi
+  0x10003646: test edi, edi
+  0x10003648: jne 0x1000365c
+  0x1000364a: lea esi, [ebp + 0x24]
+  0x1000364d: call 0x100020d0
+  0x10003652: or eax, 0xffffffff
+  0x10003655: pop edi
+  0x10003656: pop esi
+  0x10003657: pop ebx
+  0x10003658: leave 
+  0x10003659: ret 0x24
+  0x1000365c: movzx eax, word ptr [ebp - 4]
+  0x10003660: and dword ptr [ebp + 0x20], 0
+  0x10003664: push eax
+  0x10003665: push dword ptr [ebp + 0x24]
+  0x10003668: call 0x1000688f
+  0x1000366d: test eax, eax
+  0x1000366f: jne 0x10003681
+  0x10003671: push edi
+  0x10003672: push 1
+  0x10003674: push ebx
+  0x10003675: lea esi, [ebp + 0x20]
+  0x10003678: call 0x1000243f
+  0x1000367d: test eax, eax
+  0x1000367f: je 0x10003698
+  0x10003681: or edi, 0xffffffff
+  0x10003684: lea esi, [ebp + 0x1c]
+  0x10003687: call 0x100020d0
+  0x1000368c: lea esi, [ebp + 0x24]
+  0x1000368f: call 0x100020d0
+  0x10003694: mov eax, edi
+  0x10003696: jmp 0x10003655
+  0x10003698: mov edi, dword ptr [edi + 9]
+  0x1000369b: jmp 0x10003684
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10003061 at 0x10003061 (size: 157)
+Suspicious Score: 0.034482758620689426
+API Calls:
+Suspicious Instructions:
+  0x10003061: push ebp
+  0x10003062: mov ebp, esp
+  0x10003064: push ecx
+  0x10003069: push ebx
+  0x1000306a: push dword ptr [ebp + 0x18]
+  0x1000306d: mov ebx, eax
+  0x1000306f: push dword ptr [ebp + 0x14]
+  0x10003075: push dword ptr [ebp + 0x10]
+  0x10003078: push dword ptr [ebp + 8]
+  0x1000307b: call 0x100029ce
+  0x10003080: mov dword ptr [ebp + 0x18], eax
+  0x1000308a: jmp 0x100030ae
+  0x1000308c: push esi
+  0x1000308d: push edi
+  0x1000308e: push 0x1000
+  0x10003093: call 0x10001000
+  0x10003098: mov edi, eax
+  0x1000309a: mov dword ptr [ebp + 0x10], edi
+  0x100030a4: call 0x100020d0
+  0x100030ac: pop edi
+  0x100030ad: pop esi
+  0x100030ae: pop ebx
+  0x100030b0: ret 0x14
+  0x100030bb: push eax
+  0x100030bc: push dword ptr [ebp + 0x18]
+  0x100030bf: call 0x1000688f
+  0x100030c8: push edi
+  0x100030c9: push 1
+  0x100030cb: push ebx
+  0x100030cf: call 0x1000243f
+  0x100030de: call 0x100020d0
+  0x100030e6: call 0x100020d0
+  0x100030eb: mov eax, edi
+  0x100030ed: jmp 0x100030ac
+  0x100030ef: mov ax, word ptr [edi + 0x1c]
+  0x100030f3: mov ecx, dword ptr [ebp + 0xc]
+  0x100030f6: mov edi, dword ptr [edi + 9]
+  0x100030f9: mov word ptr [ecx], ax
+  0x100030fc: jmp 0x100030db
+Disassembly:
+  0x10003061: push ebp
+  0x10003062: mov ebp, esp
+  0x10003064: push ecx
+  0x10003065: and dword ptr [ebp - 4], 0
+  0x10003069: push ebx
+  0x1000306a: push dword ptr [ebp + 0x18]
+  0x1000306d: mov ebx, eax
+  0x1000306f: push dword ptr [ebp + 0x14]
+  0x10003072: lea eax, [ebp - 4]
+  0x10003075: push dword ptr [ebp + 0x10]
+  0x10003078: push dword ptr [ebp + 8]
+  0x1000307b: call 0x100029ce
+  0x10003080: mov dword ptr [ebp + 0x18], eax
+  0x10003083: test eax, eax
+  0x10003085: jne 0x1000308c
+  0x10003087: or eax, 0xffffffff
+  0x1000308a: jmp 0x100030ae
+  0x1000308c: push esi
+  0x1000308d: push edi
+  0x1000308e: push 0x1000
+  0x10003093: call 0x10001000
+  0x10003098: mov edi, eax
+  0x1000309a: mov dword ptr [ebp + 0x10], edi
+  0x1000309d: test edi, edi
+  0x1000309f: jne 0x100030b3
+  0x100030a1: lea esi, [ebp + 0x18]
+  0x100030a4: call 0x100020d0
+  0x100030a9: or eax, 0xffffffff
+  0x100030ac: pop edi
+  0x100030ad: pop esi
+  0x100030ae: pop ebx
+  0x100030af: leave 
+  0x100030b0: ret 0x14
+  0x100030b3: movzx eax, word ptr [ebp - 4]
+  0x100030b7: and dword ptr [ebp + 0x14], 0
+  0x100030bb: push eax
+  0x100030bc: push dword ptr [ebp + 0x18]
+  0x100030bf: call 0x1000688f
+  0x100030c4: test eax, eax
+  0x100030c6: jne 0x100030d8
+  0x100030c8: push edi
+  0x100030c9: push 1
+  0x100030cb: push ebx
+  0x100030cc: lea esi, [ebp + 0x14]
+  0x100030cf: call 0x1000243f
+  0x100030d4: test eax, eax
+  0x100030d6: je 0x100030ef
+  0x100030d8: or edi, 0xffffffff
+  0x100030db: lea esi, [ebp + 0x10]
+  0x100030de: call 0x100020d0
+  0x100030e3: lea esi, [ebp + 0x18]
+  0x100030e6: call 0x100020d0
+  0x100030eb: mov eax, edi
+  0x100030ed: jmp 0x100030ac
+  0x100030ef: mov ax, word ptr [edi + 0x1c]
+  0x100030f3: mov ecx, dword ptr [ebp + 0xc]
+  0x100030f6: mov edi, dword ptr [edi + 9]
+  0x100030f9: mov word ptr [ecx], ax
+  0x100030fc: jmp 0x100030db
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002088 at 0x10002088 (size: 42)
+Suspicious Score: 0.12499858622879548
+API Calls:
+Suspicious Instructions:
+  0x10002088: push ebp
+  0x10002089: mov ebp, esp
+  0x1000208b: mov ecx, dword ptr [ebp + 8]
+  0x1000208e: mov eax, dword ptr [ebp + 0xc]
+  0x100020a7: xor eax, eax
+  0x100020aa: jmp 0x100020ae
+  0x100020ac: xor eax, eax
+  0x100020ae: pop ebp
+  0x100020af: ret 8
+Disassembly:
+  0x10002088: push ebp
+  0x10002089: mov ebp, esp
+  0x1000208b: mov ecx, dword ptr [ebp + 8]
+  0x1000208e: mov eax, dword ptr [ebp + 0xc]
+  0x10002091: add ecx, -1
+  0x10002094: adc eax, 0xfff
+  0x10002099: cmp eax, 0xffe
+  0x1000209e: ja 0x100020ac
+  0x100020a0: jb 0x100020a7
+  0x100020a2: cmp ecx, -2
+  0x100020a5: ja 0x100020ac
+  0x100020a7: xor eax, eax
+  0x100020a9: inc eax
+  0x100020aa: jmp 0x100020ae
+  0x100020ac: xor eax, eax
+  0x100020ae: pop ebp
+  0x100020af: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10004820 at 0x10004820 (size: 124)
+Suspicious Score: 0.03774954130949494
+API Calls:
+Suspicious Instructions:
+  0x10004820: push ebp
+  0x10004821: mov ebp, esp
+  0x10004823: push ecx
+  0x10004824: push esi
+  0x10004825: push edi
+  0x10004826: mov edi, eax
+  0x10004831: push eax
+  0x10004832: call 0x10001000
+  0x10004837: mov dword ptr [ebp - 4], eax
+  0x10004841: jmp 0x10004896
+  0x10004843: push 4
+  0x10004845: pop ecx
+  0x10004849: mov ecx, dword ptr [ebp + 0x20]
+  0x1000484e: mov dword ptr [eax + 0xf], ecx
+  0x10004851: push 8
+  0x10004853: pop edx
+  0x10004859: mov dword ptr [eax + 0xf], ecx
+  0x1000485c: mov ecx, dword ptr [ebp + 0x24]
+  0x1000485f: mov dword ptr [eax + 0x13], ecx
+  0x10004862: push 0
+  0x10004867: push ecx
+  0x1000486b: push ecx
+  0x1000486c: push eax
+  0x1000486d: push dword ptr [ebp + 0x28]
+  0x10004870: mov eax, esi
+  0x10004872: push edi
+  0x10004873: push dword ptr [ebp + 0x1c]
+  0x10004876: push dword ptr [ebp + 0x18]
+  0x10004879: push dword ptr [ebp + 0x14]
+  0x1000487c: push dword ptr [ebp + 0x10]
+  0x1000487f: push dword ptr [ebp + 0xc]
+  0x10004882: push dword ptr [ebp + 8]
+  0x10004885: call 0x10003986
+  0x1000488d: mov edi, eax
+  0x1000488f: call 0x100020d0
+  0x10004894: mov eax, edi
+  0x10004896: pop edi
+  0x10004897: pop esi
+  0x10004899: ret 0x24
+Disassembly:
+  0x10004820: push ebp
+  0x10004821: mov ebp, esp
+  0x10004823: push ecx
+  0x10004824: push esi
+  0x10004825: push edi
+  0x10004826: mov edi, eax
+  0x10004828: lea eax, [edi + 0xf]
+  0x1000482b: movzx esi, ax
+  0x1000482e: movzx eax, si
+  0x10004831: push eax
+  0x10004832: call 0x10001000
+  0x10004837: mov dword ptr [ebp - 4], eax
+  0x1000483a: test eax, eax
+  0x1000483c: jne 0x10004843
+  0x1000483e: or eax, 0xffffffff
+  0x10004841: jmp 0x10004896
+  0x10004843: push 4
+  0x10004845: pop ecx
+  0x10004846: cmp cx, di
+  0x10004849: mov ecx, dword ptr [ebp + 0x20]
+  0x1000484c: jne 0x10004851
+  0x1000484e: mov dword ptr [eax + 0xf], ecx
+  0x10004851: push 8
+  0x10004853: pop edx
+  0x10004854: cmp dx, di
+  0x10004857: jne 0x10004862
+  0x10004859: mov dword ptr [eax + 0xf], ecx
+  0x1000485c: mov ecx, dword ptr [ebp + 0x24]
+  0x1000485f: mov dword ptr [eax + 0x13], ecx
+  0x10004862: push 0
+  0x10004864: lea ecx, [ebp + 0x28]
+  0x10004867: push ecx
+  0x10004868: lea ecx, [ebp - 4]
+  0x1000486b: push ecx
+  0x1000486c: push eax
+  0x1000486d: push dword ptr [ebp + 0x28]
+  0x10004870: mov eax, esi
+  0x10004872: push edi
+  0x10004873: push dword ptr [ebp + 0x1c]
+  0x10004876: push dword ptr [ebp + 0x18]
+  0x10004879: push dword ptr [ebp + 0x14]
+  0x1000487c: push dword ptr [ebp + 0x10]
+  0x1000487f: push dword ptr [ebp + 0xc]
+  0x10004882: push dword ptr [ebp + 8]
+  0x10004885: call 0x10003986
+  0x1000488a: lea esi, [ebp - 4]
+  0x1000488d: mov edi, eax
+  0x1000488f: call 0x100020d0
+  0x10004894: mov eax, edi
+  0x10004896: pop edi
+  0x10004897: pop esi
+  0x10004898: leave 
+  0x10004899: ret 0x24
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10004afe at 0x10004afe (size: 163)
+Suspicious Score: 0.03508771929824562
+API Calls:
+Suspicious Instructions:
+  0x10004afe: push ebp
+  0x10004aff: mov ebp, esp
+  0x10004b01: push ebx
+  0x10004b02: mov ebx, dword ptr [ebp + 0x30]
+  0x10004b05: push esi
+  0x10004b06: mov esi, dword ptr [ebp + 0x2c]
+  0x10004b09: push edi
+  0x10004b0a: mov edi, dword ptr [ebp + 0x28]
+  0x10004b1d: mov ecx, dword ptr [0x1001fb24]
+  0x10004b23: mov eax, dword ptr [0x1001fb08]
+  0x10004b32: mov ecx, 0xfe80
+  0x10004b3c: push eax
+  0x10004b3d: mov eax, dword ptr [ebp + 0x20]
+  0x10004b40: push ebx
+  0x10004b41: push esi
+  0x10004b42: push dword ptr [ebp + 0x1c]
+  0x10004b45: push dword ptr [ebp + 0x18]
+  0x10004b48: push dword ptr [ebp + 0x14]
+  0x10004b4b: push dword ptr [ebp + 0x10]
+  0x10004b4e: push dword ptr [ebp + 0xc]
+  0x10004b51: push dword ptr [ebp + 8]
+  0x10004b54: call 0x10004820
+  0x10004b60: jmp 0x10004b9a
+  0x10004b62: mov dword ptr [0x1001faf0], esi
+  0x10004b68: mov dword ptr [0x1001faf4], ebx
+  0x10004b6e: push 0
+  0x10004b73: push eax
+  0x10004b77: push eax
+  0x10004b78: push dword ptr [ebp + 0x24]
+  0x10004b7e: push dword ptr [ebp + 0x34]
+  0x10004b81: push eax
+  0x10004b82: push 0
+  0x10004b84: push dword ptr [ebp + 0x18]
+  0x10004b87: mov eax, edi
+  0x10004b89: push dword ptr [ebp + 0x14]
+  0x10004b8c: push dword ptr [ebp + 0x10]
+  0x10004b8f: push dword ptr [ebp + 0xc]
+  0x10004b92: push dword ptr [ebp + 8]
+  0x10004b95: call 0x10003986
+  0x10004b9a: pop edi
+  0x10004b9b: pop esi
+  0x10004b9c: pop ebx
+  0x10004b9d: pop ebp
+  0x10004b9e: ret 0x30
+Disassembly:
+  0x10004afe: push ebp
+  0x10004aff: mov ebp, esp
+  0x10004b01: push ebx
+  0x10004b02: mov ebx, dword ptr [ebp + 0x30]
+  0x10004b05: push esi
+  0x10004b06: mov esi, dword ptr [ebp + 0x2c]
+  0x10004b09: push edi
+  0x10004b0a: mov edi, dword ptr [ebp + 0x28]
+  0x10004b0d: cmp dword ptr [0x1001faf0], esi
+  0x10004b13: jne 0x10004b1d
+  0x10004b15: cmp dword ptr [0x1001faf4], ebx
+  0x10004b1b: je 0x10004b6e
+  0x10004b1d: mov ecx, dword ptr [0x1001fb24]
+  0x10004b23: mov eax, dword ptr [0x1001fb08]
+  0x10004b28: lea eax, [eax + ecx - 0x200]
+  0x10004b2f: movzx eax, ax
+  0x10004b32: mov ecx, 0xfe80
+  0x10004b37: cmp ax, cx
+  0x10004b3a: ja 0x10004b5d
+  0x10004b3c: push eax
+  0x10004b3d: mov eax, dword ptr [ebp + 0x20]
+  0x10004b40: push ebx
+  0x10004b41: push esi
+  0x10004b42: push dword ptr [ebp + 0x1c]
+  0x10004b45: push dword ptr [ebp + 0x18]
+  0x10004b48: push dword ptr [ebp + 0x14]
+  0x10004b4b: push dword ptr [ebp + 0x10]
+  0x10004b4e: push dword ptr [ebp + 0xc]
+  0x10004b51: push dword ptr [ebp + 8]
+  0x10004b54: call 0x10004820
+  0x10004b59: test eax, eax
+  0x10004b5b: je 0x10004b62
+  0x10004b5d: or eax, 0xffffffff
+  0x10004b60: jmp 0x10004b9a
+  0x10004b62: mov dword ptr [0x1001faf0], esi
+  0x10004b68: mov dword ptr [0x1001faf4], ebx
+  0x10004b6e: push 0
+  0x10004b70: lea eax, [ebp + 0x28]
+  0x10004b73: push eax
+  0x10004b74: lea eax, [ebp + 0x24]
+  0x10004b77: push eax
+  0x10004b78: push dword ptr [ebp + 0x24]
+  0x10004b7b: lea eax, [edi - 0xf]
+  0x10004b7e: push dword ptr [ebp + 0x34]
+  0x10004b81: push eax
+  0x10004b82: push 0
+  0x10004b84: push dword ptr [ebp + 0x18]
+  0x10004b87: mov eax, edi
+  0x10004b89: push dword ptr [ebp + 0x14]
+  0x10004b8c: push dword ptr [ebp + 0x10]
+  0x10004b8f: push dword ptr [ebp + 0xc]
+  0x10004b92: push dword ptr [ebp + 8]
+  0x10004b95: call 0x10003986
+  0x10004b9a: pop edi
+  0x10004b9b: pop esi
+  0x10004b9c: pop ebx
+  0x10004b9d: pop ebp
+  0x10004b9e: ret 0x30
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10004fb3 at 0x10004fb3 (size: 104)
+Suspicious Score: 0.04347827058473933
+API Calls:
+Suspicious Instructions:
+  0x10004fb3: push ebp
+  0x10004fb4: mov ebp, esp
+  0x10004fb6: push ecx
+  0x10004fb7: push ecx
+  0x10004fbb: mov ecx, dword ptr [eax + 0x70]
+  0x10004fbe: push ebx
+  0x10004fbf: push edi
+  0x10004fc5: mov ecx, dword ptr [eax + 0x74]
+  0x10004fcd: mov ecx, dword ptr [eax]
+  0x10004fcf: mov eax, dword ptr [eax + 4]
+  0x10004fd2: xor ebx, ebx
+  0x10004fde: mov edi, 0x100000
+  0x10004fec: mov eax, dword ptr [esi + edx]
+  0x10004ff8: mov ecx, dword ptr [esi + edx + 4]
+  0x10004fff: mov dword ptr [ebp - 4], ecx
+  0x1000500a: xor eax, eax
+  0x1000500c: pop edi
+  0x1000500d: pop ebx
+  0x1000500f: ret 8
+  0x10005019: jmp 0x1000500c
+Disassembly:
+  0x10004fb3: push ebp
+  0x10004fb4: mov ebp, esp
+  0x10004fb6: push ecx
+  0x10004fb7: push ecx
+  0x10004fb8: lea eax, [esi + edx]
+  0x10004fbb: mov ecx, dword ptr [eax + 0x70]
+  0x10004fbe: push ebx
+  0x10004fbf: push edi
+  0x10004fc0: cmp ecx, dword ptr [eax + 0x78]
+  0x10004fc3: jne 0x1000500a
+  0x10004fc5: mov ecx, dword ptr [eax + 0x74]
+  0x10004fc8: cmp ecx, dword ptr [eax + 0x7c]
+  0x10004fcb: jne 0x1000500a
+  0x10004fcd: mov ecx, dword ptr [eax]
+  0x10004fcf: mov eax, dword ptr [eax + 4]
+  0x10004fd2: xor ebx, ebx
+  0x10004fd4: sub ecx, dword ptr [ebp + 8]
+  0x10004fd7: sbb eax, dword ptr [ebp + 0xc]
+  0x10004fda: test eax, eax
+  0x10004fdc: jg 0x1000500a
+  0x10004fde: mov edi, 0x100000
+  0x10004fe3: jl 0x10004fe9
+  0x10004fe5: cmp ecx, edi
+  0x10004fe7: ja 0x1000500a
+  0x10004fe9: add edx, 8
+  0x10004fec: mov eax, dword ptr [esi + edx]
+  0x10004fef: inc ebx
+  0x10004ff0: cmp ebx, 0x12
+  0x10004ff3: jae 0x10005012
+  0x10004ff5: sub eax, dword ptr [ebp + 8]
+  0x10004ff8: mov ecx, dword ptr [esi + edx + 4]
+  0x10004ffc: sbb ecx, dword ptr [ebp + 0xc]
+  0x10004fff: mov dword ptr [ebp - 4], ecx
+  0x10005002: js 0x10004fe9
+  0x10005004: jg 0x1000500a
+  0x10005006: cmp eax, edi
+  0x10005008: jbe 0x10004fe9
+  0x1000500a: xor eax, eax
+  0x1000500c: pop edi
+  0x1000500d: pop ebx
+  0x1000500e: leave 
+  0x1000500f: ret 8
+  0x10005012: or eax, dword ptr [esi + edx + 4]
+  0x10005016: jne 0x1000500a
+  0x10005018: inc eax
+  0x10005019: jmp 0x1000500c
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002ef5 at 0x10002ef5 (size: 147)
+Suspicious Score: 0.03636363629876653
+API Calls:
+Suspicious Instructions:
+  0x10002ef5: push ebp
+  0x10002ef6: mov ebp, esp
+  0x10002ef8: push ecx
+  0x10002efd: push ebx
+  0x10002efe: push dword ptr [ebp + 0x14]
+  0x10002f01: mov ebx, eax
+  0x10002f03: push dword ptr [ebp + 0x10]
+  0x10002f09: push dword ptr [ebp + 0xc]
+  0x10002f0c: push dword ptr [ebp + 8]
+  0x10002f0f: call 0x1000270a
+  0x10002f14: mov dword ptr [ebp + 0x14], eax
+  0x10002f1e: jmp 0x10002f42
+  0x10002f20: push esi
+  0x10002f21: push edi
+  0x10002f22: push 0x1000
+  0x10002f27: call 0x10001000
+  0x10002f2c: mov edi, eax
+  0x10002f2e: mov dword ptr [ebp + 0xc], edi
+  0x10002f38: call 0x100020d0
+  0x10002f40: pop edi
+  0x10002f41: pop esi
+  0x10002f42: pop ebx
+  0x10002f44: ret 0x10
+  0x10002f4f: push eax
+  0x10002f50: push dword ptr [ebp + 0x14]
+  0x10002f53: call 0x1000688f
+  0x10002f5c: push edi
+  0x10002f5d: push 1
+  0x10002f5f: push ebx
+  0x10002f63: call 0x1000243f
+  0x10002f72: call 0x100020d0
+  0x10002f7a: call 0x100020d0
+  0x10002f7f: mov eax, edi
+  0x10002f81: jmp 0x10002f40
+  0x10002f83: mov edi, dword ptr [edi + 9]
+  0x10002f86: jmp 0x10002f6f
+Disassembly:
+  0x10002ef5: push ebp
+  0x10002ef6: mov ebp, esp
+  0x10002ef8: push ecx
+  0x10002ef9: and dword ptr [ebp - 4], 0
+  0x10002efd: push ebx
+  0x10002efe: push dword ptr [ebp + 0x14]
+  0x10002f01: mov ebx, eax
+  0x10002f03: push dword ptr [ebp + 0x10]
+  0x10002f06: lea eax, [ebp - 4]
+  0x10002f09: push dword ptr [ebp + 0xc]
+  0x10002f0c: push dword ptr [ebp + 8]
+  0x10002f0f: call 0x1000270a
+  0x10002f14: mov dword ptr [ebp + 0x14], eax
+  0x10002f17: test eax, eax
+  0x10002f19: jne 0x10002f20
+  0x10002f1b: or eax, 0xffffffff
+  0x10002f1e: jmp 0x10002f42
+  0x10002f20: push esi
+  0x10002f21: push edi
+  0x10002f22: push 0x1000
+  0x10002f27: call 0x10001000
+  0x10002f2c: mov edi, eax
+  0x10002f2e: mov dword ptr [ebp + 0xc], edi
+  0x10002f31: test edi, edi
+  0x10002f33: jne 0x10002f47
+  0x10002f35: lea esi, [ebp + 0x14]
+  0x10002f38: call 0x100020d0
+  0x10002f3d: or eax, 0xffffffff
+  0x10002f40: pop edi
+  0x10002f41: pop esi
+  0x10002f42: pop ebx
+  0x10002f43: leave 
+  0x10002f44: ret 0x10
+  0x10002f47: movzx eax, word ptr [ebp - 4]
+  0x10002f4b: and dword ptr [ebp + 0x10], 0
+  0x10002f4f: push eax
+  0x10002f50: push dword ptr [ebp + 0x14]
+  0x10002f53: call 0x1000688f
+  0x10002f58: test eax, eax
+  0x10002f5a: jne 0x10002f6c
+  0x10002f5c: push edi
+  0x10002f5d: push 1
+  0x10002f5f: push ebx
+  0x10002f60: lea esi, [ebp + 0x10]
+  0x10002f63: call 0x1000243f
+  0x10002f68: test eax, eax
+  0x10002f6a: je 0x10002f83
+  0x10002f6c: or edi, 0xffffffff
+  0x10002f6f: lea esi, [ebp + 0xc]
+  0x10002f72: call 0x100020d0
+  0x10002f77: lea esi, [ebp + 0x14]
+  0x10002f7a: call 0x100020d0
+  0x10002f7f: mov eax, edi
+  0x10002f81: jmp 0x10002f40
+  0x10002f83: mov edi, dword ptr [edi + 9]
+  0x10002f86: jmp 0x10002f6f
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10004ba1 at 0x10004ba1 (size: 123)
+Suspicious Score: 0.04446689113343886
+API Calls:
+Suspicious Instructions:
+  0x10004ba1: push ebp
+  0x10004ba2: mov ebp, esp
+  0x10004ba4: push ecx
+  0x10004ba5: push ecx
+  0x10004bad: push esi
+  0x10004bae: push edi
+  0x10004baf: push 4
+  0x10004bb1: pop eax
+  0x10004bb2: mov dword ptr [ebp - 4], eax
+  0x10004bb7: mov dword ptr [ebp - 4], 8
+  0x10004bbe: mov esi, dword ptr [0x1001fad0]
+  0x10004bc4: mov edi, dword ptr [0x1001fad4]
+  0x10004bcc: push 0x13
+  0x10004bd1: call 0x10001000
+  0x10004bd6: mov dword ptr [ebp - 8], eax
+  0x10004be0: jmp 0x10004c16
+  0x10004be2: push 0
+  0x10004be4: push edi
+  0x10004be5: push esi
+  0x10004be6: push 0x13
+  0x10004be8: push eax
+  0x10004be9: push dword ptr [ebp - 4]
+  0x10004bec: mov dword ptr [eax + 0xf], 0x1000
+  0x10004bf3: push dword ptr [ebp + 0x1c]
+  0x10004bf6: push dword ptr [ebp + 0x18]
+  0x10004bf9: push dword ptr [ebp + 0x14]
+  0x10004bfc: push dword ptr [ebp + 0x10]
+  0x10004bff: push dword ptr [ebp + 0xc]
+  0x10004c02: push dword ptr [ebp + 8]
+  0x10004c05: call 0x10004afe
+  0x10004c0d: mov edi, eax
+  0x10004c0f: call 0x100020d0
+  0x10004c14: mov eax, edi
+  0x10004c16: pop edi
+  0x10004c17: pop esi
+  0x10004c19: ret 0x18
+Disassembly:
+  0x10004ba1: push ebp
+  0x10004ba2: mov ebp, esp
+  0x10004ba4: push ecx
+  0x10004ba5: push ecx
+  0x10004ba6: cmp byte ptr [0x1001f8fc], 0
+  0x10004bad: push esi
+  0x10004bae: push edi
+  0x10004baf: push 4
+  0x10004bb1: pop eax
+  0x10004bb2: mov dword ptr [ebp - 4], eax
+  0x10004bb5: je 0x10004bbe
+  0x10004bb7: mov dword ptr [ebp - 4], 8
+  0x10004bbe: mov esi, dword ptr [0x1001fad0]
+  0x10004bc4: mov edi, dword ptr [0x1001fad4]
+  0x10004bca: add esi, eax
+  0x10004bcc: push 0x13
+  0x10004bce: adc edi, 0
+  0x10004bd1: call 0x10001000
+  0x10004bd6: mov dword ptr [ebp - 8], eax
+  0x10004bd9: test eax, eax
+  0x10004bdb: jne 0x10004be2
+  0x10004bdd: or eax, 0xffffffff
+  0x10004be0: jmp 0x10004c16
+  0x10004be2: push 0
+  0x10004be4: push edi
+  0x10004be5: push esi
+  0x10004be6: push 0x13
+  0x10004be8: push eax
+  0x10004be9: push dword ptr [ebp - 4]
+  0x10004bec: mov dword ptr [eax + 0xf], 0x1000
+  0x10004bf3: push dword ptr [ebp + 0x1c]
+  0x10004bf6: push dword ptr [ebp + 0x18]
+  0x10004bf9: push dword ptr [ebp + 0x14]
+  0x10004bfc: push dword ptr [ebp + 0x10]
+  0x10004bff: push dword ptr [ebp + 0xc]
+  0x10004c02: push dword ptr [ebp + 8]
+  0x10004c05: call 0x10004afe
+  0x10004c0a: lea esi, [ebp - 8]
+  0x10004c0d: mov edi, eax
+  0x10004c0f: call 0x100020d0
+  0x10004c14: mov eax, edi
+  0x10004c16: pop edi
+  0x10004c17: pop esi
+  0x10004c18: leave 
+  0x10004c19: ret 0x18
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10003b5d at 0x10003b5d (size: 173)
+Suspicious Score: 0.033342595165335616
+API Calls:
+Suspicious Instructions:
+  0x10003b5d: push ebp
+  0x10003b5e: mov ebp, esp
+  0x10003b60: push ecx
+  0x10003b61: push ecx
+  0x10003b62: push esi
+  0x10003b63: push 0xf000
+  0x10003b68: call 0x10001000
+  0x10003b6d: mov esi, eax
+  0x10003b6f: mov dword ptr [ebp - 8], esi
+  0x10003b79: jmp 0x10003bf8
+  0x10003b7b: push ebx
+  0x10003b7c: push edi
+  0x10003b7d: push 0xe7f4
+  0x10003b88: push 0x54
+  0x10003b8a: push eax
+  0x10003b8b: mov dword ptr [esi + 0x807], 0x3668f383
+  0x10003b95: call 0x1000a4e4
+  0x10003ba1: mov ebx, 0x3d0
+  0x10003ba6: mov edi, 0x1000
+  0x10003bab: push 0
+  0x10003bad: push esi
+  0x10003bae: push ebx
+  0x10003baf: push dword ptr [ebp + 0x1c]
+  0x10003bb2: push dword ptr [ebp + 0x18]
+  0x10003bb5: push dword ptr [ebp + 0x14]
+  0x10003bb8: push dword ptr [ebp + 0x10]
+  0x10003bbb: push dword ptr [ebp + 0xc]
+  0x10003bbe: push dword ptr [ebp + 8]
+  0x10003bc1: call 0x10003469
+  0x10003bda: call 0x100020d0
+  0x10003bdf: push dword ptr [ebp + 0x1c]
+  0x10003be2: mov eax, dword ptr [ebp + 8]
+  0x10003be5: push dword ptr [ebp + 0x18]
+  0x10003be8: push dword ptr [ebp + 0x14]
+  0x10003beb: push dword ptr [ebp + 0x10]
+  0x10003bee: push dword ptr [ebp + 0xc]
+  0x10003bf1: call 0x1000369d
+  0x10003bf6: pop edi
+  0x10003bf7: pop ebx
+  0x10003bf8: pop esi
+  0x10003bfa: ret 0x18
+  0x10003c00: call 0x100020d0
+  0x10003c08: jmp 0x10003bf6
+Disassembly:
+  0x10003b5d: push ebp
+  0x10003b5e: mov ebp, esp
+  0x10003b60: push ecx
+  0x10003b61: push ecx
+  0x10003b62: push esi
+  0x10003b63: push 0xf000
+  0x10003b68: call 0x10001000
+  0x10003b6d: mov esi, eax
+  0x10003b6f: mov dword ptr [ebp - 8], esi
+  0x10003b72: test esi, esi
+  0x10003b74: jne 0x10003b7b
+  0x10003b76: or eax, 0xffffffff
+  0x10003b79: jmp 0x10003bf8
+  0x10003b7b: push ebx
+  0x10003b7c: push edi
+  0x10003b7d: push 0xe7f4
+  0x10003b82: lea eax, [esi + 0x80b]
+  0x10003b88: push 0x54
+  0x10003b8a: push eax
+  0x10003b8b: mov dword ptr [esi + 0x807], 0x3668f383
+  0x10003b95: call 0x1000a4e4
+  0x10003b9a: add esp, 0xc
+  0x10003b9d: and dword ptr [ebp - 4], 0
+  0x10003ba1: mov ebx, 0x3d0
+  0x10003ba6: mov edi, 0x1000
+  0x10003bab: push 0
+  0x10003bad: push esi
+  0x10003bae: push ebx
+  0x10003baf: push dword ptr [ebp + 0x1c]
+  0x10003bb2: push dword ptr [ebp + 0x18]
+  0x10003bb5: push dword ptr [ebp + 0x14]
+  0x10003bb8: push dword ptr [ebp + 0x10]
+  0x10003bbb: push dword ptr [ebp + 0xc]
+  0x10003bbe: push dword ptr [ebp + 8]
+  0x10003bc1: call 0x10003469
+  0x10003bc6: test eax, eax
+  0x10003bc8: jne 0x10003bfd
+  0x10003bca: add ebx, edi
+  0x10003bcc: inc dword ptr [ebp - 4]
+  0x10003bcf: add esi, edi
+  0x10003bd1: cmp dword ptr [ebp - 4], 0xf
+  0x10003bd5: jl 0x10003bab
+  0x10003bd7: lea esi, [ebp - 8]
+  0x10003bda: call 0x100020d0
+  0x10003bdf: push dword ptr [ebp + 0x1c]
+  0x10003be2: mov eax, dword ptr [ebp + 8]
+  0x10003be5: push dword ptr [ebp + 0x18]
+  0x10003be8: push dword ptr [ebp + 0x14]
+  0x10003beb: push dword ptr [ebp + 0x10]
+  0x10003bee: push dword ptr [ebp + 0xc]
+  0x10003bf1: call 0x1000369d
+  0x10003bf6: pop edi
+  0x10003bf7: pop ebx
+  0x10003bf8: pop esi
+  0x10003bf9: leave 
+  0x10003bfa: ret 0x18
+  0x10003bfd: lea esi, [ebp - 8]
+  0x10003c00: call 0x100020d0
+  0x10003c05: or eax, 0xffffffff
+  0x10003c08: jmp 0x10003bf6
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006727 at 0x10006727 (size: 136)
+Suspicious Score: 0.035725881261595184
+API Calls:
+Suspicious Instructions:
+  0x10006727: push ebp
+  0x10006728: mov ebp, esp
+  0x1000672d: push esi
+  0x1000672e: push edi
+  0x1000672f: push 6
+  0x10006731: xor edi, edi
+  0x10006734: push edi
+  0x10006735: push 2
+  0x10006737: call dword ptr [0x1000d290]
+  0x1000673d: mov esi, eax
+  0x10006742: push eax
+  0x10006743: push 0x8004667e
+  0x10006748: push esi
+  0x10006749: mov dword ptr [ebp - 8], edi
+  0x1000674c: call dword ptr [0x1000d270]
+  0x1000675a: jmp 0x100067a9
+  0x1000675c: mov al, byte ptr [ebx]
+  0x10006762: mov edx, dword ptr [ebp + 8]
+  0x10006765: mov edx, dword ptr [edx]
+  0x1000676c: mov byte ptr [ebx], al
+  0x1000676e: mov dword ptr [edx + ecx*4], esi
+  0x10006771: xor eax, eax
+  0x10006779: push 2
+  0x1000677c: pop eax
+  0x1000677d: push dword ptr [ebp + 0x10]
+  0x10006780: mov word ptr [ebp - 0x18], ax
+  0x10006784: call dword ptr [0x1000d288]
+  0x1000678a: push dword ptr [ebp + 0xc]
+  0x1000678d: mov word ptr [ebp - 0x16], ax
+  0x10006791: call dword ptr [0x1000d278]
+  0x10006797: mov dword ptr [ebp - 0x14], eax
+  0x1000679a: push 0x10
+  0x1000679f: push eax
+  0x100067a0: push esi
+  0x100067a1: call dword ptr [0x1000d274]
+  0x100067a7: xor eax, eax
+  0x100067a9: pop edi
+  0x100067aa: pop esi
+  0x100067ac: ret 0xc
+Disassembly:
+  0x10006727: push ebp
+  0x10006728: mov ebp, esp
+  0x1000672a: sub esp, 0x1c
+  0x1000672d: push esi
+  0x1000672e: push edi
+  0x1000672f: push 6
+  0x10006731: xor edi, edi
+  0x10006733: inc edi
+  0x10006734: push edi
+  0x10006735: push 2
+  0x10006737: call dword ptr [0x1000d290]
+  0x1000673d: mov esi, eax
+  0x1000673f: lea eax, [ebp - 8]
+  0x10006742: push eax
+  0x10006743: push 0x8004667e
+  0x10006748: push esi
+  0x10006749: mov dword ptr [ebp - 8], edi
+  0x1000674c: call dword ptr [0x1000d270]
+  0x10006752: cmp esi, -1
+  0x10006755: jne 0x1000675c
+  0x10006757: or eax, 0xffffffff
+  0x1000675a: jmp 0x100067a9
+  0x1000675c: mov al, byte ptr [ebx]
+  0x1000675e: cmp al, 0x20
+  0x10006760: jae 0x10006757
+  0x10006762: mov edx, dword ptr [ebp + 8]
+  0x10006765: mov edx, dword ptr [edx]
+  0x10006767: movzx ecx, al
+  0x1000676a: inc al
+  0x1000676c: mov byte ptr [ebx], al
+  0x1000676e: mov dword ptr [edx + ecx*4], esi
+  0x10006771: xor eax, eax
+  0x10006773: lea edi, [ebp - 0x18]
+  0x10006776: stosd dword ptr es:[edi], eax
+  0x10006777: stosd dword ptr es:[edi], eax
+  0x10006778: stosd dword ptr es:[edi], eax
+  0x10006779: push 2
+  0x1000677b: stosd dword ptr es:[edi], eax
+  0x1000677c: pop eax
+  0x1000677d: push dword ptr [ebp + 0x10]
+  0x10006780: mov word ptr [ebp - 0x18], ax
+  0x10006784: call dword ptr [0x1000d288]
+  0x1000678a: push dword ptr [ebp + 0xc]
+  0x1000678d: mov word ptr [ebp - 0x16], ax
+  0x10006791: call dword ptr [0x1000d278]
+  0x10006797: mov dword ptr [ebp - 0x14], eax
+  0x1000679a: push 0x10
+  0x1000679c: lea eax, [ebp - 0x18]
+  0x1000679f: push eax
+  0x100067a0: push esi
+  0x100067a1: call dword ptr [0x1000d274]
+  0x100067a7: xor eax, eax
+  0x100067a9: pop edi
+  0x100067aa: pop esi
+  0x100067ab: leave 
+  0x100067ac: ret 0xc
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10003c0a at 0x10003c0a (size: 150)
+Suspicious Score: 0.0392310649727801
+API Calls:
+Suspicious Instructions:
+  0x10003c0a: push ebp
+  0x10003c0b: mov ebp, esp
+  0x10003c0d: push ecx
+  0x10003c0e: push esi
+  0x10003c0f: push 0x1000
+  0x10003c14: call 0x10001000
+  0x10003c19: mov esi, eax
+  0x10003c1b: mov dword ptr [ebp - 4], esi
+  0x10003c25: jmp 0x10003c9b
+  0x10003c27: push 0xb8c
+  0x10003c2c: push 0x54
+  0x10003c2e: push esi
+  0x10003c2f: call 0x1000a4e4
+  0x10003c37: xor eax, eax
+  0x10003c39: mov cl, byte ptr [eax + 0x10010b08]
+  0x10003c3f: mov byte ptr [esi + eax + 0xb8c], cl
+  0x10003c4e: push edi
+  0x10003c4f: push 0x3c5
+  0x10003c5a: push 0x54
+  0x10003c5c: push eax
+  0x10003c5d: call 0x1000a4e4
+  0x10003c65: push 1
+  0x10003c67: push esi
+  0x10003c68: push 0xf3d0
+  0x10003c6d: push dword ptr [ebp + 0x1c]
+  0x10003c70: push dword ptr [ebp + 0x18]
+  0x10003c73: push dword ptr [ebp + 0x14]
+  0x10003c76: push dword ptr [ebp + 0x10]
+  0x10003c79: push dword ptr [ebp + 0xc]
+  0x10003c7c: push dword ptr [ebp + 8]
+  0x10003c7f: call 0x10003469
+  0x10003c84: mov edi, eax
+  0x10003c8e: xor edi, edi
+  0x10003c93: call 0x100020d0
+  0x10003c98: mov eax, edi
+  0x10003c9a: pop edi
+  0x10003c9b: pop esi
+  0x10003c9d: ret 0x18
+Disassembly:
+  0x10003c0a: push ebp
+  0x10003c0b: mov ebp, esp
+  0x10003c0d: push ecx
+  0x10003c0e: push esi
+  0x10003c0f: push 0x1000
+  0x10003c14: call 0x10001000
+  0x10003c19: mov esi, eax
+  0x10003c1b: mov dword ptr [ebp - 4], esi
+  0x10003c1e: test esi, esi
+  0x10003c20: jne 0x10003c27
+  0x10003c22: or eax, 0xffffffff
+  0x10003c25: jmp 0x10003c9b
+  0x10003c27: push 0xb8c
+  0x10003c2c: push 0x54
+  0x10003c2e: push esi
+  0x10003c2f: call 0x1000a4e4
+  0x10003c34: add esp, 0xc
+  0x10003c37: xor eax, eax
+  0x10003c39: mov cl, byte ptr [eax + 0x10010b08]
+  0x10003c3f: mov byte ptr [esi + eax + 0xb8c], cl
+  0x10003c46: inc eax
+  0x10003c47: cmp eax, 0xaf
+  0x10003c4c: jb 0x10003c39
+  0x10003c4e: push edi
+  0x10003c4f: push 0x3c5
+  0x10003c54: lea eax, [esi + 0xc3b]
+  0x10003c5a: push 0x54
+  0x10003c5c: push eax
+  0x10003c5d: call 0x1000a4e4
+  0x10003c62: add esp, 0xc
+  0x10003c65: push 1
+  0x10003c67: push esi
+  0x10003c68: push 0xf3d0
+  0x10003c6d: push dword ptr [ebp + 0x1c]
+  0x10003c70: push dword ptr [ebp + 0x18]
+  0x10003c73: push dword ptr [ebp + 0x14]
+  0x10003c76: push dword ptr [ebp + 0x10]
+  0x10003c79: push dword ptr [ebp + 0xc]
+  0x10003c7c: push dword ptr [ebp + 8]
+  0x10003c7f: call 0x10003469
+  0x10003c84: mov edi, eax
+  0x10003c86: cmp edi, 0xc000000d
+  0x10003c8c: jne 0x10003c90
+  0x10003c8e: xor edi, edi
+  0x10003c90: lea esi, [ebp - 4]
+  0x10003c93: call 0x100020d0
+  0x10003c98: mov eax, edi
+  0x10003c9a: pop edi
+  0x10003c9b: pop esi
+  0x10003c9c: leave 
+  0x10003c9d: ret 0x18
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10005a46 at 0x10005a46 (size: 56)
+Suspicious Score: 0.11111111111111112
+API Calls:
+Suspicious Instructions:
+  0x10005a46: push ebp
+  0x10005a47: mov ebp, esp
+  0x10005a49: push dword ptr [ebp + 0x20]
+  0x10005a4c: push dword ptr [ebp + 0x1c]
+  0x10005a4f: push dword ptr [ebp + 0x18]
+  0x10005a52: push dword ptr [ebp + 0x14]
+  0x10005a55: push dword ptr [ebp + 0x10]
+  0x10005a58: push dword ptr [ebp + 0xc]
+  0x10005a5b: call 0x100030fe
+  0x10005a60: push dword ptr [ebp + 0x20]
+  0x10005a63: push dword ptr [ebp + 0x1c]
+  0x10005a66: push dword ptr [ebp + 0x18]
+  0x10005a69: push dword ptr [ebp + 0x14]
+  0x10005a6c: push dword ptr [ebp + 0x10]
+  0x10005a6f: push dword ptr [ebp + 0xc]
+  0x10005a72: call 0x100031fb
+  0x10005a77: mov eax, dword ptr [ebp + 8]
+  0x10005a7a: pop ebp
+  0x10005a7b: ret 0x1c
+Disassembly:
+  0x10005a46: push ebp
+  0x10005a47: mov ebp, esp
+  0x10005a49: push dword ptr [ebp + 0x20]
+  0x10005a4c: push dword ptr [ebp + 0x1c]
+  0x10005a4f: push dword ptr [ebp + 0x18]
+  0x10005a52: push dword ptr [ebp + 0x14]
+  0x10005a55: push dword ptr [ebp + 0x10]
+  0x10005a58: push dword ptr [ebp + 0xc]
+  0x10005a5b: call 0x100030fe
+  0x10005a60: push dword ptr [ebp + 0x20]
+  0x10005a63: push dword ptr [ebp + 0x1c]
+  0x10005a66: push dword ptr [ebp + 0x18]
+  0x10005a69: push dword ptr [ebp + 0x14]
+  0x10005a6c: push dword ptr [ebp + 0x10]
+  0x10005a6f: push dword ptr [ebp + 0xc]
+  0x10005a72: call 0x100031fb
+  0x10005a77: mov eax, dword ptr [ebp + 8]
+  0x10005a7a: pop ebp
+  0x10005a7b: ret 0x1c
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10002068 at 0x10002068 (size: 32)
+Suspicious Score: 0.12497455760054323
+API Calls:
+Suspicious Instructions:
+  0x10002068: push esi
+  0x10002069: push edi
+  0x1000206a: push 0x15
+  0x1000206c: mov esi, eax
+  0x1000206e: pop edi
+  0x1000206f: mov eax, dword ptr [esi]
+  0x10002075: push eax
+  0x10002076: call dword ptr [0x1000d28c]
+  0x10002085: pop edi
+  0x10002086: pop esi
+  0x10002087: ret 
+Disassembly:
+  0x10002068: push esi
+  0x10002069: push edi
+  0x1000206a: push 0x15
+  0x1000206c: mov esi, eax
+  0x1000206e: pop edi
+  0x1000206f: mov eax, dword ptr [esi]
+  0x10002071: test eax, eax
+  0x10002073: je 0x1000207c
+  0x10002075: push eax
+  0x10002076: call dword ptr [0x1000d28c]
+  0x1000207c: or dword ptr [esi], 0xffffffff
+  0x1000207f: add esi, 4
+  0x10002082: dec edi
+  0x10002083: jne 0x1000206f
+  0x10002085: pop edi
+  0x10002086: pop esi
+  0x10002087: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006fc7 at 0x10006fc7 (size: 60)
+Suspicious Score: 0.08348429949870591
+API Calls:
+Suspicious Instructions:
+  0x10006fc7: push ebp
+  0x10006fc8: mov ebp, esp
+  0x10006fda: mov dword ptr [ebp - 4], esi
+  0x10006fe2: mov word ptr [edx + eax], cx
+  0x10006fee: push esi
+  0x10006ff2: push eax
+  0x10006ff3: push dword ptr [ebp + 8]
+  0x10006ff6: call 0x10007298
+  0x10006ffb: jmp 0x10006fff
+  0x10006ffd: xor eax, eax
+  0x10007000: ret 4
+Disassembly:
+  0x10006fc7: push ebp
+  0x10006fc8: mov ebp, esp
+  0x10006fca: sub esp, 0x24
+  0x10006fcd: test eax, eax
+  0x10006fcf: je 0x10006ffd
+  0x10006fd1: cmp word ptr [eax], 0
+  0x10006fd5: je 0x10006ffd
+  0x10006fd7: lea edx, [ebp - 0x24]
+  0x10006fda: mov dword ptr [ebp - 4], esi
+  0x10006fdd: sub edx, eax
+  0x10006fdf: movzx ecx, word ptr [eax]
+  0x10006fe2: mov word ptr [edx + eax], cx
+  0x10006fe6: add eax, 2
+  0x10006fe9: test cx, cx
+  0x10006fec: jne 0x10006fdf
+  0x10006fee: push esi
+  0x10006fef: lea eax, [ebp - 0x24]
+  0x10006ff2: push eax
+  0x10006ff3: push dword ptr [ebp + 8]
+  0x10006ff6: call 0x10007298
+  0x10006ffb: jmp 0x10006fff
+  0x10006ffd: xor eax, eax
+  0x10006fff: leave 
+  0x10007000: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100069a2 at 0x100069a2 (size: 137)
+Suspicious Score: 0.03509871169150915
+API Calls:
+Suspicious Instructions:
+  0x100069a2: push ebp
+  0x100069a3: mov ebp, esp
+  0x100069a5: push ecx
+  0x100069a6: push ecx
+  0x100069a7: push ebx
+  0x100069a8: push edi
+  0x100069ac: xor edi, edi
+  0x100069ae: mov dword ptr [ebp - 8], 1
+  0x100069b5: mov ecx, eax
+  0x100069c5: push 0x20
+  0x100069c7: pop edx
+  0x100069c8: mov word ptr [ecx], dx
+  0x100069d3: push ecx
+  0x100069d4: push eax
+  0x100069d5: mov dword ptr [ebp - 4], edi
+  0x100069d8: call dword ptr [0x1000d210]
+  0x100069de: mov ebx, eax
+  0x100069e9: push esi
+  0x100069ea: mov eax, dword ptr [ebx + edi*4]
+  0x100069ed: mov ecx, eax
+  0x100069f2: mov dx, word ptr [ecx]
+  0x100069ff: sar ecx, 1
+  0x10006a06: push dword ptr [0x1001f140]
+  0x10006a0c: xor esi, esi
+  0x10006a0e: call 0x10006fc7
+  0x10006a1c: pop esi
+  0x10006a1d: push ebx
+  0x10006a1e: call dword ptr [0x1000d16c]
+  0x10006a24: mov eax, dword ptr [ebp - 8]
+  0x10006a27: pop edi
+  0x10006a28: pop ebx
+  0x10006a2a: ret 
+Disassembly:
+  0x100069a2: push ebp
+  0x100069a3: mov ebp, esp
+  0x100069a5: push ecx
+  0x100069a6: push ecx
+  0x100069a7: push ebx
+  0x100069a8: push edi
+  0x100069a9: add eax, 4
+  0x100069ac: xor edi, edi
+  0x100069ae: mov dword ptr [ebp - 8], 1
+  0x100069b5: mov ecx, eax
+  0x100069b7: cmp word ptr [eax], di
+  0x100069ba: je 0x100069d0
+  0x100069bc: add ecx, 2
+  0x100069bf: cmp word ptr [ecx], 0x3b
+  0x100069c3: jne 0x100069cb
+  0x100069c5: push 0x20
+  0x100069c7: pop edx
+  0x100069c8: mov word ptr [ecx], dx
+  0x100069cb: cmp word ptr [ecx], di
+  0x100069ce: jne 0x100069bc
+  0x100069d0: lea ecx, [ebp - 4]
+  0x100069d3: push ecx
+  0x100069d4: push eax
+  0x100069d5: mov dword ptr [ebp - 4], edi
+  0x100069d8: call dword ptr [0x1000d210]
+  0x100069de: mov ebx, eax
+  0x100069e0: cmp ebx, edi
+  0x100069e2: je 0x10006a24
+  0x100069e4: cmp dword ptr [ebp - 4], edi
+  0x100069e7: jle 0x10006a1d
+  0x100069e9: push esi
+  0x100069ea: mov eax, dword ptr [ebx + edi*4]
+  0x100069ed: mov ecx, eax
+  0x100069ef: lea esi, [ecx + 2]
+  0x100069f2: mov dx, word ptr [ecx]
+  0x100069f5: add ecx, 2
+  0x100069f8: test dx, dx
+  0x100069fb: jne 0x100069f2
+  0x100069fd: sub ecx, esi
+  0x100069ff: sar ecx, 1
+  0x10006a01: cmp ecx, 0x10
+  0x10006a04: jae 0x10006a16
+  0x10006a06: push dword ptr [0x1001f140]
+  0x10006a0c: xor esi, esi
+  0x10006a0e: call 0x10006fc7
+  0x10006a13: and dword ptr [ebp - 8], eax
+  0x10006a16: inc edi
+  0x10006a17: cmp edi, dword ptr [ebp - 4]
+  0x10006a1a: jl 0x100069ea
+  0x10006a1c: pop esi
+  0x10006a1d: push ebx
+  0x10006a1e: call dword ptr [0x1000d16c]
+  0x10006a24: mov eax, dword ptr [ebp - 8]
+  0x10006a27: pop edi
+  0x10006a28: pop ebx
+  0x10006a29: leave 
+  0x10006a2a: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000711f at 0x1000711f (size: 72)
+Suspicious Score: 0.06666666666666667
+API Calls:
+Suspicious Instructions:
+  0x1000711f: push ebp
+  0x10007120: mov ebp, esp
+  0x10007122: push ebx
+  0x10007123: push edi
+  0x10007124: mov edi, dword ptr [0x1000d1c0]
+  0x1000712a: push 8
+  0x1000712c: push 8
+  0x1000712e: call edi
+  0x10007130: push eax
+  0x10007131: call dword ptr [0x1000d1dc]
+  0x10007137: mov ebx, eax
+  0x1000713d: mov eax, dword ptr [ebp + 8]
+  0x10007140: push dword ptr [ebp + 0xc]
+  0x10007146: mov dword ptr [ebx + 4], eax
+  0x10007149: call 0x10007167
+  0x10007152: push ebx
+  0x10007153: xor ebx, ebx
+  0x10007155: push ebx
+  0x10007156: call edi
+  0x10007158: push eax
+  0x10007159: call dword ptr [0x1000d1d4]
+  0x1000715f: pop edi
+  0x10007160: mov eax, ebx
+  0x10007162: pop ebx
+  0x10007163: pop ebp
+  0x10007164: ret 8
+Disassembly:
+  0x1000711f: push ebp
+  0x10007120: mov ebp, esp
+  0x10007122: push ebx
+  0x10007123: push edi
+  0x10007124: mov edi, dword ptr [0x1000d1c0]
+  0x1000712a: push 8
+  0x1000712c: push 8
+  0x1000712e: call edi
+  0x10007130: push eax
+  0x10007131: call dword ptr [0x1000d1dc]
+  0x10007137: mov ebx, eax
+  0x10007139: test ebx, ebx
+  0x1000713b: je 0x1000715f
+  0x1000713d: mov eax, dword ptr [ebp + 8]
+  0x10007140: push dword ptr [ebp + 0xc]
+  0x10007143: and dword ptr [ebx], 0
+  0x10007146: mov dword ptr [ebx + 4], eax
+  0x10007149: call 0x10007167
+  0x1000714e: test eax, eax
+  0x10007150: jne 0x1000715f
+  0x10007152: push ebx
+  0x10007153: xor ebx, ebx
+  0x10007155: push ebx
+  0x10007156: call edi
+  0x10007158: push eax
+  0x10007159: call dword ptr [0x1000d1d4]
+  0x1000715f: pop edi
+  0x10007160: mov eax, ebx
+  0x10007162: pop ebx
+  0x10007163: pop ebp
+  0x10007164: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10007167 at 0x10007167 (size: 111)
+Suspicious Score: 0.042553191485883934
+API Calls:
+Suspicious Instructions:
+  0x10007167: push ebp
+  0x10007168: mov ebp, esp
+  0x1000716a: xor eax, eax
+  0x10007174: push edi
+  0x10007175: push esi
+  0x10007176: xor edi, edi
+  0x10007178: call dword ptr [0x1000d1d0]
+  0x1000717e: mov ecx, dword ptr [ebx]
+  0x10007180: mov eax, dword ptr [esi + 0x24]
+  0x10007187: mov eax, dword ptr [esi + 0x18]
+  0x1000718a: mov eax, dword ptr [eax + ecx*4]
+  0x1000718d: mov edx, dword ptr [eax + 4]
+  0x10007199: xor edi, edi
+  0x1000719b: jmp 0x100071a9
+  0x1000719d: mov edx, dword ptr [ebp + 8]
+  0x100071a0: xor edi, edi
+  0x100071a7: mov dword ptr [edx], eax
+  0x100071aa: mov dword ptr [ebx], ecx
+  0x100071b0: push esi
+  0x100071b1: call dword ptr [0x1000d158]
+  0x100071b7: mov eax, edi
+  0x100071bd: mov ecx, dword ptr [esi + 0x28]
+  0x100071c4: push 0x2710
+  0x100071c9: call dword ptr [0x1000d188]
+  0x100071cf: jmp 0x10007175
+  0x100071d1: pop edi
+  0x100071d2: pop ebp
+  0x100071d3: ret 4
+Disassembly:
+  0x10007167: push ebp
+  0x10007168: mov ebp, esp
+  0x1000716a: xor eax, eax
+  0x1000716c: test ebx, ebx
+  0x1000716e: je 0x100071d2
+  0x10007170: test esi, esi
+  0x10007172: je 0x100071d2
+  0x10007174: push edi
+  0x10007175: push esi
+  0x10007176: xor edi, edi
+  0x10007178: call dword ptr [0x1000d1d0]
+  0x1000717e: mov ecx, dword ptr [ebx]
+  0x10007180: mov eax, dword ptr [esi + 0x24]
+  0x10007183: cmp ecx, eax
+  0x10007185: jae 0x100071b0
+  0x10007187: mov eax, dword ptr [esi + 0x18]
+  0x1000718a: mov eax, dword ptr [eax + ecx*4]
+  0x1000718d: mov edx, dword ptr [eax + 4]
+  0x10007190: test edx, edx
+  0x10007192: je 0x1000719d
+  0x10007194: test dword ptr [ebx + 4], edx
+  0x10007197: jne 0x1000719d
+  0x10007199: xor edi, edi
+  0x1000719b: jmp 0x100071a9
+  0x1000719d: mov edx, dword ptr [ebp + 8]
+  0x100071a0: xor edi, edi
+  0x100071a2: inc edi
+  0x100071a3: test edx, edx
+  0x100071a5: je 0x100071a9
+  0x100071a7: mov dword ptr [edx], eax
+  0x100071a9: inc ecx
+  0x100071aa: mov dword ptr [ebx], ecx
+  0x100071ac: test edi, edi
+  0x100071ae: je 0x1000717e
+  0x100071b0: push esi
+  0x100071b1: call dword ptr [0x1000d158]
+  0x100071b7: mov eax, edi
+  0x100071b9: test edi, edi
+  0x100071bb: jne 0x100071d1
+  0x100071bd: mov ecx, dword ptr [esi + 0x28]
+  0x100071c0: test ecx, ecx
+  0x100071c2: jne 0x100071d1
+  0x100071c4: push 0x2710
+  0x100071c9: call dword ptr [0x1000d188]
+  0x100071cf: jmp 0x10007175
+  0x100071d1: pop edi
+  0x100071d2: pop ebp
+  0x100071d3: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006af0 at 0x10006af0 (size: 192)
+Suspicious Score: 0.03175415921833104
+API Calls:
+Suspicious Instructions:
+  0x10006af0: push ebp
+  0x10006af1: mov ebp, esp
+  0x10006af9: push ebx
+  0x10006afa: push esi
+  0x10006afb: mov esi, dword ptr [0x1001f108]
+  0x10006b01: xor eax, eax
+  0x10006b03: push edi
+  0x10006b04: mov word ptr [0x1001b110], ax
+  0x10006b0d: push eax
+  0x10006b0e: xor edi, edi
+  0x10006b10: push 1
+  0x10006b12: mov dword ptr [ebp - 4], edi
+  0x10006b15: call 0x1000711f
+  0x10006b1a: mov ebx, eax
+  0x10006b20: mov eax, dword ptr [ebp - 4]
+  0x10006b23: mov eax, dword ptr [eax]
+  0x10006b25: push dword ptr [eax + 4]
+  0x10006b28: push dword ptr [eax]
+  0x10006b30: push 0x10013ff8
+  0x10006b35: push eax
+  0x10006b36: call dword ptr [0x1000d258]
+  0x10006b48: mov dx, word ptr [eax]
+  0x10006b55: sar eax, 1
+  0x10006b68: push eax
+  0x10006b69: push 0x1001b110
+  0x10006b6e: call dword ptr [0x1000d238]
+  0x10006b7b: mov edi, esi
+  0x10006b7d: mov esi, dword ptr [0x1001f108]
+  0x10006b83: push eax
+  0x10006b84: call 0x10007167
+  0x10006b8d: push ebx
+  0x10006b8e: push 0
+  0x10006b90: call dword ptr [0x1000d1c0]
+  0x10006b96: push eax
+  0x10006b97: call dword ptr [0x1000d1d4]
+  0x10006b9d: pop edi
+  0x10006b9e: xor eax, eax
+  0x10006ba6: pop esi
+  0x10006ba7: mov word ptr [0x1001f0f8], ax
+  0x10006bad: pop ebx
+  0x10006baf: ret 
+Disassembly:
+  0x10006af0: push ebp
+  0x10006af1: mov ebp, esp
+  0x10006af3: sub esp, 0x804
+  0x10006af9: push ebx
+  0x10006afa: push esi
+  0x10006afb: mov esi, dword ptr [0x1001f108]
+  0x10006b01: xor eax, eax
+  0x10006b03: push edi
+  0x10006b04: mov word ptr [0x1001b110], ax
+  0x10006b0a: lea eax, [ebp - 4]
+  0x10006b0d: push eax
+  0x10006b0e: xor edi, edi
+  0x10006b10: push 1
+  0x10006b12: mov dword ptr [ebp - 4], edi
+  0x10006b15: call 0x1000711f
+  0x10006b1a: mov ebx, eax
+  0x10006b1c: test ebx, ebx
+  0x10006b1e: je 0x10006b9d
+  0x10006b20: mov eax, dword ptr [ebp - 4]
+  0x10006b23: mov eax, dword ptr [eax]
+  0x10006b25: push dword ptr [eax + 4]
+  0x10006b28: push dword ptr [eax]
+  0x10006b2a: lea eax, [ebp - 0x804]
+  0x10006b30: push 0x10013ff8
+  0x10006b35: push eax
+  0x10006b36: call dword ptr [0x1000d258]
+  0x10006b3c: lea eax, [ebp - 0x804]
+  0x10006b42: add esp, 0x10
+  0x10006b45: lea ecx, [eax + 2]
+  0x10006b48: mov dx, word ptr [eax]
+  0x10006b4b: add eax, 2
+  0x10006b4e: test dx, dx
+  0x10006b51: jne 0x10006b48
+  0x10006b53: sub eax, ecx
+  0x10006b55: sar eax, 1
+  0x10006b57: lea esi, [eax + edi]
+  0x10006b5a: cmp esi, 0x1ff5
+  0x10006b60: jae 0x10006b8d
+  0x10006b62: lea eax, [ebp - 0x804]
+  0x10006b68: push eax
+  0x10006b69: push 0x1001b110
+  0x10006b6e: call dword ptr [0x1000d238]
+  0x10006b74: and dword ptr [ebp - 4], 0
+  0x10006b78: lea eax, [ebp - 4]
+  0x10006b7b: mov edi, esi
+  0x10006b7d: mov esi, dword ptr [0x1001f108]
+  0x10006b83: push eax
+  0x10006b84: call 0x10007167
+  0x10006b89: test eax, eax
+  0x10006b8b: jne 0x10006b20
+  0x10006b8d: push ebx
+  0x10006b8e: push 0
+  0x10006b90: call dword ptr [0x1000d1c0]
+  0x10006b96: push eax
+  0x10006b97: call dword ptr [0x1000d1d4]
+  0x10006b9d: pop edi
+  0x10006b9e: xor eax, eax
+  0x10006ba0: and dword ptr [0x10016010], eax
+  0x10006ba6: pop esi
+  0x10006ba7: mov word ptr [0x1001f0f8], ax
+  0x10006bad: pop ebx
+  0x10006bae: leave 
+  0x10006baf: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000724d at 0x1000724d (size: 75)
+Suspicious Score: 0.06256300403225623
+API Calls:
+Suspicious Instructions:
+  0x1000724d: push ebp
+  0x1000724e: mov ebp, esp
+  0x10007250: push ecx
+  0x10007251: push esi
+  0x10007252: push edi
+  0x10007253: mov esi, eax
+  0x10007255: xor edi, edi
+  0x1000725b: push esi
+  0x1000725c: call dword ptr [0x1000d1d0]
+  0x10007262: xor eax, eax
+  0x10007264: mov dword ptr [ebp - 4], eax
+  0x1000726b: mov eax, dword ptr [ebx]
+  0x10007270: push ecx
+  0x10007271: push dword ptr [ebp + 8]
+  0x10007274: call 0x100071d6
+  0x10007279: mov edi, eax
+  0x1000727f: mov eax, dword ptr [ebp - 4]
+  0x10007282: mov dword ptr [eax + 4], 1
+  0x10007289: push esi
+  0x1000728a: call dword ptr [0x1000d158]
+  0x10007290: mov eax, edi
+  0x10007292: pop edi
+  0x10007293: pop esi
+  0x10007295: ret 4
+Disassembly:
+  0x1000724d: push ebp
+  0x1000724e: mov ebp, esp
+  0x10007250: push ecx
+  0x10007251: push esi
+  0x10007252: push edi
+  0x10007253: mov esi, eax
+  0x10007255: xor edi, edi
+  0x10007257: test esi, esi
+  0x10007259: je 0x10007290
+  0x1000725b: push esi
+  0x1000725c: call dword ptr [0x1000d1d0]
+  0x10007262: xor eax, eax
+  0x10007264: mov dword ptr [ebp - 4], eax
+  0x10007267: cmp ebx, eax
+  0x10007269: je 0x1000726d
+  0x1000726b: mov eax, dword ptr [ebx]
+  0x1000726d: lea ecx, [ebp - 4]
+  0x10007270: push ecx
+  0x10007271: push dword ptr [ebp + 8]
+  0x10007274: call 0x100071d6
+  0x10007279: mov edi, eax
+  0x1000727b: test edi, edi
+  0x1000727d: je 0x10007289
+  0x1000727f: mov eax, dword ptr [ebp - 4]
+  0x10007282: mov dword ptr [eax + 4], 1
+  0x10007289: push esi
+  0x1000728a: call dword ptr [0x1000d158]
+  0x10007290: mov eax, edi
+  0x10007292: pop edi
+  0x10007293: pop esi
+  0x10007294: leave 
+  0x10007295: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10007003 at 0x10007003 (size: 142)
+Suspicious Score: 0.03279584341126937
+API Calls:
+Suspicious Instructions:
+  0x10007003: push ebp
+  0x10007004: mov ebp, esp
+  0x10007006: push ecx
+  0x10007013: push ebx
+  0x10007014: mov ebx, dword ptr [0x1000d1c0]
+  0x1000701a: push edi
+  0x1000701b: mov edi, dword ptr [0x1000d1d4]
+  0x10007023: mov eax, dword ptr [esi + 0x24]
+  0x1000702e: mov eax, dword ptr [esi + 0x18]
+  0x10007031: mov ecx, dword ptr [ebp - 4]
+  0x1000703c: mov eax, dword ptr [eax]
+  0x10007043: mov ecx, dword ptr [esi + 0x30]
+  0x1000704a: push dword ptr [eax]
+  0x1000704c: call ecx
+  0x1000704e: mov eax, dword ptr [esi + 0x18]
+  0x10007051: mov ecx, dword ptr [ebp - 4]
+  0x10007054: mov eax, dword ptr [eax + ecx*4]
+  0x10007057: push dword ptr [eax]
+  0x10007059: push 0
+  0x1000705b: call ebx
+  0x1000705d: push eax
+  0x1000705e: call edi
+  0x10007060: mov eax, dword ptr [esi + 0x18]
+  0x10007063: mov ecx, dword ptr [ebp - 4]
+  0x10007066: push dword ptr [eax + ecx*4]
+  0x10007069: push 0
+  0x1000706b: call ebx
+  0x1000706d: push eax
+  0x1000706e: call edi
+  0x10007073: mov eax, dword ptr [esi + 0x24]
+  0x1000707b: push dword ptr [esi + 0x18]
+  0x1000707e: push 0
+  0x10007080: call ebx
+  0x10007082: push eax
+  0x10007083: call edi
+  0x10007085: push esi
+  0x10007086: push 0
+  0x10007088: call ebx
+  0x1000708a: push eax
+  0x1000708b: call edi
+  0x1000708d: pop edi
+  0x1000708e: pop ebx
+  0x10007090: ret 
+Disassembly:
+  0x10007003: push ebp
+  0x10007004: mov ebp, esp
+  0x10007006: push ecx
+  0x10007007: test esi, esi
+  0x10007009: je 0x1000708f
+  0x1000700f: cmp dword ptr [esi + 0x18], 0
+  0x10007013: push ebx
+  0x10007014: mov ebx, dword ptr [0x1000d1c0]
+  0x1000701a: push edi
+  0x1000701b: mov edi, dword ptr [0x1000d1d4]
+  0x10007021: je 0x10007085
+  0x10007023: mov eax, dword ptr [esi + 0x24]
+  0x10007026: and dword ptr [ebp - 4], 0
+  0x1000702a: test eax, eax
+  0x1000702c: je 0x1000707b
+  0x1000702e: mov eax, dword ptr [esi + 0x18]
+  0x10007031: mov ecx, dword ptr [ebp - 4]
+  0x10007034: lea eax, [eax + ecx*4]
+  0x10007037: cmp dword ptr [eax], 0
+  0x1000703a: je 0x10007070
+  0x1000703c: mov eax, dword ptr [eax]
+  0x1000703e: cmp dword ptr [eax], 0
+  0x10007041: je 0x10007060
+  0x10007043: mov ecx, dword ptr [esi + 0x30]
+  0x10007046: test ecx, ecx
+  0x10007048: je 0x1000704e
+  0x1000704a: push dword ptr [eax]
+  0x1000704c: call ecx
+  0x1000704e: mov eax, dword ptr [esi + 0x18]
+  0x10007051: mov ecx, dword ptr [ebp - 4]
+  0x10007054: mov eax, dword ptr [eax + ecx*4]
+  0x10007057: push dword ptr [eax]
+  0x10007059: push 0
+  0x1000705b: call ebx
+  0x1000705d: push eax
+  0x1000705e: call edi
+  0x10007060: mov eax, dword ptr [esi + 0x18]
+  0x10007063: mov ecx, dword ptr [ebp - 4]
+  0x10007066: push dword ptr [eax + ecx*4]
+  0x10007069: push 0
+  0x1000706b: call ebx
+  0x1000706d: push eax
+  0x1000706e: call edi
+  0x10007070: inc dword ptr [ebp - 4]
+  0x10007073: mov eax, dword ptr [esi + 0x24]
+  0x10007076: cmp dword ptr [ebp - 4], eax
+  0x10007079: jb 0x1000702e
+  0x1000707b: push dword ptr [esi + 0x18]
+  0x1000707e: push 0
+  0x10007080: call ebx
+  0x10007082: push eax
+  0x10007083: call edi
+  0x10007085: push esi
+  0x10007086: push 0
+  0x10007088: call ebx
+  0x1000708a: push eax
+  0x1000708b: call edi
+  0x1000708d: pop edi
+  0x1000708e: pop ebx
+  0x1000708f: leave 
+  0x10007090: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100071d6 at 0x100071d6 (size: 119)
+Suspicious Score: 0.038476041304095605
+API Calls:
+Suspicious Instructions:
+  0x100071d6: push ebp
+  0x100071d7: mov ebp, esp
+  0x100071d9: push ecx
+  0x100071de: push ebx
+  0x100071df: mov ebx, eax
+  0x100071e5: push edi
+  0x100071e6: push esi
+  0x100071e7: call dword ptr [0x1000d1d0]
+  0x100071ed: mov eax, dword ptr [esi + 0x24]
+  0x100071f2: mov edi, ebx
+  0x100071f8: mov ecx, dword ptr [esi + 0x24]
+  0x100071fb: xor edx, edx
+  0x100071fd: mov eax, edi
+  0x10007201: push dword ptr [esi + 0x1c]
+  0x10007204: mov eax, dword ptr [esi + 0x18]
+  0x10007207: push dword ptr [ebp + 8]
+  0x1000720a: mov eax, dword ptr [eax + edx*4]
+  0x1000720d: push dword ptr [eax]
+  0x1000720f: call dword ptr [esi + 0x2c]
+  0x10007212: mov dword ptr [ebp - 4], eax
+  0x10007219: mov eax, dword ptr [esi + 0x24]
+  0x10007223: jmp 0x1000723d
+  0x10007225: mov ecx, dword ptr [ebp + 0xc]
+  0x1000722c: mov ebx, dword ptr [esi + 0x24]
+  0x1000722f: mov eax, edi
+  0x10007231: xor edx, edx
+  0x10007235: mov eax, dword ptr [esi + 0x18]
+  0x10007238: mov eax, dword ptr [eax + edx*4]
+  0x1000723b: mov dword ptr [ecx], eax
+  0x1000723d: push esi
+  0x1000723e: call dword ptr [0x1000d158]
+  0x10007244: pop edi
+  0x10007245: mov eax, dword ptr [ebp - 4]
+  0x10007248: pop ebx
+  0x1000724a: ret 8
+Disassembly:
+  0x100071d6: push ebp
+  0x100071d7: mov ebp, esp
+  0x100071d9: push ecx
+  0x100071da: and dword ptr [ebp - 4], 0
+  0x100071de: push ebx
+  0x100071df: mov ebx, eax
+  0x100071e1: test esi, esi
+  0x100071e3: je 0x10007245
+  0x100071e5: push edi
+  0x100071e6: push esi
+  0x100071e7: call dword ptr [0x1000d1d0]
+  0x100071ed: mov eax, dword ptr [esi + 0x24]
+  0x100071f0: add eax, ebx
+  0x100071f2: mov edi, ebx
+  0x100071f4: cmp ebx, eax
+  0x100071f6: jae 0x1000723d
+  0x100071f8: mov ecx, dword ptr [esi + 0x24]
+  0x100071fb: xor edx, edx
+  0x100071fd: mov eax, edi
+  0x100071ff: div ecx
+  0x10007201: push dword ptr [esi + 0x1c]
+  0x10007204: mov eax, dword ptr [esi + 0x18]
+  0x10007207: push dword ptr [ebp + 8]
+  0x1000720a: mov eax, dword ptr [eax + edx*4]
+  0x1000720d: push dword ptr [eax]
+  0x1000720f: call dword ptr [esi + 0x2c]
+  0x10007212: mov dword ptr [ebp - 4], eax
+  0x10007215: test eax, eax
+  0x10007217: jne 0x10007225
+  0x10007219: mov eax, dword ptr [esi + 0x24]
+  0x1000721c: inc edi
+  0x1000721d: add eax, ebx
+  0x1000721f: cmp edi, eax
+  0x10007221: jb 0x100071f8
+  0x10007223: jmp 0x1000723d
+  0x10007225: mov ecx, dword ptr [ebp + 0xc]
+  0x10007228: test ecx, ecx
+  0x1000722a: je 0x1000723d
+  0x1000722c: mov ebx, dword ptr [esi + 0x24]
+  0x1000722f: mov eax, edi
+  0x10007231: xor edx, edx
+  0x10007233: div ebx
+  0x10007235: mov eax, dword ptr [esi + 0x18]
+  0x10007238: mov eax, dword ptr [eax + edx*4]
+  0x1000723b: mov dword ptr [ecx], eax
+  0x1000723d: push esi
+  0x1000723e: call dword ptr [0x1000d158]
+  0x10007244: pop edi
+  0x10007245: mov eax, dword ptr [ebp - 4]
+  0x10007248: pop ebx
+  0x10007249: leave 
+  0x1000724a: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000a4f0 at 0x1000a4f0 (size: 43)
+Suspicious Score: 0.10527935497332394
+API Calls:
+Suspicious Instructions:
+  0x1000a4f0: push ecx
+  0x1000a4fd: mov eax, esp
+  0x1000a508: mov eax, ecx
+  0x1000a50a: pop ecx
+  0x1000a50c: mov eax, dword ptr [eax]
+  0x1000a50e: mov dword ptr [esp], eax
+  0x1000a511: ret 
+  0x1000a519: jmp 0x1000a504
+Disassembly:
+  0x1000a4f0: push ecx
+  0x1000a4f1: lea ecx, [esp + 4]
+  0x1000a4f5: sub ecx, eax
+  0x1000a4f7: sbb eax, eax
+  0x1000a4f9: not eax
+  0x1000a4fb: and ecx, eax
+  0x1000a4fd: mov eax, esp
+  0x1000a4ff: and eax, 0xfffff000
+  0x1000a504: cmp ecx, eax
+  0x1000a506: jb 0x1000a512
+  0x1000a508: mov eax, ecx
+  0x1000a50a: pop ecx
+  0x1000a50b: xchg esp, eax
+  0x1000a50c: mov eax, dword ptr [eax]
+  0x1000a50e: mov dword ptr [esp], eax
+  0x1000a511: ret 
+  0x1000a512: sub eax, 0x1000
+  0x1000a517: test dword ptr [eax], eax
+  0x1000a519: jmp 0x1000a504
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100073ae at 0x100073ae (size: 79)
+Suspicious Score: 0.05714285714212794
+API Calls:
+Suspicious Instructions:
+  0x100073ae: push ebp
+  0x100073af: mov ebp, esp
+  0x100073b1: push esi
+  0x100073b2: push edi
+  0x100073b3: xor esi, esi
+  0x100073b5: push esi
+  0x100073b6: push 2
+  0x100073b8: push 2
+  0x100073ba: push esi
+  0x100073bb: push esi
+  0x100073bc: push 0x40000000
+  0x100073c1: push dword ptr [ebp + 8]
+  0x100073c4: call dword ptr [0x1000d184]
+  0x100073ca: mov edi, eax
+  0x100073d1: push esi
+  0x100073d5: push eax
+  0x100073d6: push ebx
+  0x100073d7: push dword ptr [ebp + 0xc]
+  0x100073da: mov dword ptr [ebp + 8], esi
+  0x100073dd: push edi
+  0x100073de: call dword ptr [0x1000d1bc]
+  0x100073ee: push edi
+  0x100073ef: call dword ptr [0x1000d1a8]
+  0x100073f5: pop edi
+  0x100073f6: mov eax, esi
+  0x100073f8: pop esi
+  0x100073f9: pop ebp
+  0x100073fa: ret 8
+Disassembly:
+  0x100073ae: push ebp
+  0x100073af: mov ebp, esp
+  0x100073b1: push esi
+  0x100073b2: push edi
+  0x100073b3: xor esi, esi
+  0x100073b5: push esi
+  0x100073b6: push 2
+  0x100073b8: push 2
+  0x100073ba: push esi
+  0x100073bb: push esi
+  0x100073bc: push 0x40000000
+  0x100073c1: push dword ptr [ebp + 8]
+  0x100073c4: call dword ptr [0x1000d184]
+  0x100073ca: mov edi, eax
+  0x100073cc: cmp edi, -1
+  0x100073cf: je 0x100073f5
+  0x100073d1: push esi
+  0x100073d2: lea eax, [ebp + 8]
+  0x100073d5: push eax
+  0x100073d6: push ebx
+  0x100073d7: push dword ptr [ebp + 0xc]
+  0x100073da: mov dword ptr [ebp + 8], esi
+  0x100073dd: push edi
+  0x100073de: call dword ptr [0x1000d1bc]
+  0x100073e4: test eax, eax
+  0x100073e6: je 0x100073ee
+  0x100073e8: cmp ebx, dword ptr [ebp + 8]
+  0x100073eb: jne 0x100073ee
+  0x100073ed: inc esi
+  0x100073ee: push edi
+  0x100073ef: call dword ptr [0x1000d1a8]
+  0x100073f5: pop edi
+  0x100073f6: mov eax, esi
+  0x100073f8: pop esi
+  0x100073f9: pop ebp
+  0x100073fa: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100070fa at 0x100070fa (size: 37)
+Suspicious Score: 0.14281763668083497
+API Calls:
+Suspicious Instructions:
+  0x100070fe: push esi
+  0x100070ff: call dword ptr [0x1000d1d0]
+  0x10007105: push 1
+  0x1000710a: push eax
+  0x1000710b: call dword ptr [0x1000d154]
+  0x10007111: push esi
+  0x10007112: call dword ptr [0x1000d158]
+  0x10007118: xor eax, eax
+  0x1000711b: ret 
+  0x1000711c: xor eax, eax
+  0x1000711e: ret 
+Disassembly:
+  0x100070fa: test esi, esi
+  0x100070fc: je 0x1000711c
+  0x100070fe: push esi
+  0x100070ff: call dword ptr [0x1000d1d0]
+  0x10007105: push 1
+  0x10007107: lea eax, [esi + 0x28]
+  0x1000710a: push eax
+  0x1000710b: call dword ptr [0x1000d154]
+  0x10007111: push esi
+  0x10007112: call dword ptr [0x1000d158]
+  0x10007118: xor eax, eax
+  0x1000711a: inc eax
+  0x1000711b: ret 
+  0x1000711c: xor eax, eax
+  0x1000711e: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100081ba at 0x100081ba (size: 137)
+Suspicious Score: 0.036375880012243636
+API Calls:
+Suspicious Instructions:
+  0x100081ba: push ebp
+  0x100081bb: mov ebp, esp
+  0x100081c0: push ebx
+  0x100081c1: push esi
+  0x100081c2: push edi
+  0x100081c3: xor esi, esi
+  0x100081c5: xor eax, eax
+  0x100081c7: mov dword ptr [ebp - 0x18], esi
+  0x100081d3: push eax
+  0x100081d4: push 0x28
+  0x100081d6: xor ebx, ebx
+  0x100081d8: mov dword ptr [ebp - 8], esi
+  0x100081db: mov dword ptr [ebp - 4], esi
+  0x100081de: call dword ptr [0x1000d128]
+  0x100081e4: push eax
+  0x100081e5: call dword ptr [0x1000d038]
+  0x100081f2: push eax
+  0x100081f3: push dword ptr [ebp + 8]
+  0x100081f6: push esi
+  0x100081f7: call dword ptr [0x1000d034]
+  0x10008201: push esi
+  0x10008202: push esi
+  0x10008203: push esi
+  0x10008207: push eax
+  0x10008208: push esi
+  0x10008209: push dword ptr [ebp - 4]
+  0x1000820c: mov dword ptr [ebp - 0x18], 1
+  0x10008213: mov dword ptr [ebp - 0xc], 2
+  0x1000821a: call dword ptr [0x1000d030]
+  0x10008220: mov ebx, eax
+  0x10008222: call dword ptr [0x1000d1b0]
+  0x10008228: mov dword ptr [ebp - 8], eax
+  0x1000822f: xor ebx, ebx
+  0x10008231: push dword ptr [ebp - 8]
+  0x10008234: call dword ptr [0x1000d0f4]
+  0x1000823a: pop edi
+  0x1000823b: pop esi
+  0x1000823c: mov eax, ebx
+  0x1000823e: pop ebx
+  0x10008240: ret 4
+Disassembly:
+  0x100081ba: push ebp
+  0x100081bb: mov ebp, esp
+  0x100081bd: sub esp, 0x18
+  0x100081c0: push ebx
+  0x100081c1: push esi
+  0x100081c2: push edi
+  0x100081c3: xor esi, esi
+  0x100081c5: xor eax, eax
+  0x100081c7: mov dword ptr [ebp - 0x18], esi
+  0x100081ca: lea edi, [ebp - 0x14]
+  0x100081cd: stosd dword ptr es:[edi], eax
+  0x100081ce: stosd dword ptr es:[edi], eax
+  0x100081cf: stosd dword ptr es:[edi], eax
+  0x100081d0: lea eax, [ebp - 4]
+  0x100081d3: push eax
+  0x100081d4: push 0x28
+  0x100081d6: xor ebx, ebx
+  0x100081d8: mov dword ptr [ebp - 8], esi
+  0x100081db: mov dword ptr [ebp - 4], esi
+  0x100081de: call dword ptr [0x1000d128]
+  0x100081e4: push eax
+  0x100081e5: call dword ptr [0x1000d038]
+  0x100081eb: test eax, eax
+  0x100081ed: je 0x10008231
+  0x100081ef: lea eax, [ebp - 0x14]
+  0x100081f2: push eax
+  0x100081f3: push dword ptr [ebp + 8]
+  0x100081f6: push esi
+  0x100081f7: call dword ptr [0x1000d034]
+  0x100081fd: test eax, eax
+  0x100081ff: je 0x10008231
+  0x10008201: push esi
+  0x10008202: push esi
+  0x10008203: push esi
+  0x10008204: lea eax, [ebp - 0x18]
+  0x10008207: push eax
+  0x10008208: push esi
+  0x10008209: push dword ptr [ebp - 4]
+  0x1000820c: mov dword ptr [ebp - 0x18], 1
+  0x10008213: mov dword ptr [ebp - 0xc], 2
+  0x1000821a: call dword ptr [0x1000d030]
+  0x10008220: mov ebx, eax
+  0x10008222: call dword ptr [0x1000d1b0]
+  0x10008228: mov dword ptr [ebp - 8], eax
+  0x1000822b: cmp eax, esi
+  0x1000822d: je 0x10008231
+  0x1000822f: xor ebx, ebx
+  0x10008231: push dword ptr [ebp - 8]
+  0x10008234: call dword ptr [0x1000d0f4]
+  0x1000823a: pop edi
+  0x1000823b: pop esi
+  0x1000823c: mov eax, ebx
+  0x1000823e: pop ebx
+  0x1000823f: leave 
+  0x10008240: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10008320 at 0x10008320 (size: 62)
+Suspicious Score: 0.09090878014698164
+API Calls:
+Suspicious Instructions:
+  0x10008320: push ebp
+  0x10008321: mov ebp, esp
+  0x10008323: push esi
+  0x10008324: push 0x1001f148
+  0x10008329: xor esi, esi
+  0x1000832b: call dword ptr [0x1000d224]
+  0x10008331: push eax
+  0x10008332: push 0x10014164
+  0x10008337: push dword ptr [ebp + 8]
+  0x1000833a: call dword ptr [0x1000d244]
+  0x10008344: push dword ptr [ebp + 8]
+  0x10008347: call dword ptr [0x1000d240]
+  0x10008351: xor ecx, ecx
+  0x10008353: mov word ptr [eax], cx
+  0x10008357: mov eax, esi
+  0x10008359: pop esi
+  0x1000835a: pop ebp
+  0x1000835b: ret 4
+Disassembly:
+  0x10008320: push ebp
+  0x10008321: mov ebp, esp
+  0x10008323: push esi
+  0x10008324: push 0x1001f148
+  0x10008329: xor esi, esi
+  0x1000832b: call dword ptr [0x1000d224]
+  0x10008331: push eax
+  0x10008332: push 0x10014164
+  0x10008337: push dword ptr [ebp + 8]
+  0x1000833a: call dword ptr [0x1000d244]
+  0x10008340: test eax, eax
+  0x10008342: je 0x10008357
+  0x10008344: push dword ptr [ebp + 8]
+  0x10008347: call dword ptr [0x1000d240]
+  0x1000834d: test eax, eax
+  0x1000834f: je 0x10008357
+  0x10008351: xor ecx, ecx
+  0x10008353: mov word ptr [eax], cx
+  0x10008356: inc esi
+  0x10008357: mov eax, esi
+  0x10008359: pop esi
+  0x1000835a: pop ebp
+  0x1000835b: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10008acf at 0x10008acf (size: 161)
+Suspicious Score: 0.03226659388273827
+API Calls:
+Suspicious Instructions:
+  0x10008acf: push ebp
+  0x10008ad0: mov ebp, esp
+  0x10008ad5: push edi
+  0x10008ad6: xor edi, edi
+  0x10008ad8: push edi
+  0x10008ad9: push edi
+  0x10008ada: push 3
+  0x10008adc: push edi
+  0x10008add: push 1
+  0x10008adf: push 0x80000000
+  0x10008ae4: push 0x1001f148
+  0x10008ae9: mov dword ptr [ebp - 0xc], edi
+  0x10008aec: call dword ptr [0x1000d184]
+  0x10008af2: mov dword ptr [ebp - 8], eax
+  0x10008afa: push esi
+  0x10008afb: push edi
+  0x10008afc: push eax
+  0x10008afd: call dword ptr [0x1000d0ec]
+  0x10008b03: mov esi, eax
+  0x10008b09: push ebx
+  0x10008b0a: push esi
+  0x10008b0b: push edi
+  0x10008b0c: call dword ptr [0x1000d1c0]
+  0x10008b12: push eax
+  0x10008b13: call dword ptr [0x1000d1dc]
+  0x10008b19: mov ebx, eax
+  0x10008b1f: push edi
+  0x10008b23: push eax
+  0x10008b24: push esi
+  0x10008b25: push ebx
+  0x10008b26: push dword ptr [ebp - 8]
+  0x10008b29: mov dword ptr [ebp - 4], edi
+  0x10008b2c: call dword ptr [0x1000d1b8]
+  0x10008b3b: push ebx
+  0x10008b3c: push edi
+  0x10008b3d: call dword ptr [0x1000d1c0]
+  0x10008b43: push eax
+  0x10008b44: call dword ptr [0x1000d1d4]
+  0x10008b4a: jmp 0x10008b5f
+  0x10008b4c: mov dword ptr [0x1001f0fc], ebx
+  0x10008b52: mov dword ptr [0x1001f11c], esi
+  0x10008b58: mov dword ptr [ebp - 0xc], 1
+  0x10008b5f: pop ebx
+  0x10008b60: push dword ptr [ebp - 8]
+  0x10008b63: call dword ptr [0x1000d1a8]
+  0x10008b69: pop esi
+  0x10008b6a: mov eax, dword ptr [ebp - 0xc]
+  0x10008b6d: pop edi
+  0x10008b6f: ret 
+Disassembly:
+  0x10008acf: push ebp
+  0x10008ad0: mov ebp, esp
+  0x10008ad2: sub esp, 0xc
+  0x10008ad5: push edi
+  0x10008ad6: xor edi, edi
+  0x10008ad8: push edi
+  0x10008ad9: push edi
+  0x10008ada: push 3
+  0x10008adc: push edi
+  0x10008add: push 1
+  0x10008adf: push 0x80000000
+  0x10008ae4: push 0x1001f148
+  0x10008ae9: mov dword ptr [ebp - 0xc], edi
+  0x10008aec: call dword ptr [0x1000d184]
+  0x10008af2: mov dword ptr [ebp - 8], eax
+  0x10008af5: cmp eax, -1
+  0x10008af8: je 0x10008b6a
+  0x10008afa: push esi
+  0x10008afb: push edi
+  0x10008afc: push eax
+  0x10008afd: call dword ptr [0x1000d0ec]
+  0x10008b03: mov esi, eax
+  0x10008b05: cmp esi, edi
+  0x10008b07: je 0x10008b60
+  0x10008b09: push ebx
+  0x10008b0a: push esi
+  0x10008b0b: push edi
+  0x10008b0c: call dword ptr [0x1000d1c0]
+  0x10008b12: push eax
+  0x10008b13: call dword ptr [0x1000d1dc]
+  0x10008b19: mov ebx, eax
+  0x10008b1b: cmp ebx, edi
+  0x10008b1d: je 0x10008b5f
+  0x10008b1f: push edi
+  0x10008b20: lea eax, [ebp - 4]
+  0x10008b23: push eax
+  0x10008b24: push esi
+  0x10008b25: push ebx
+  0x10008b26: push dword ptr [ebp - 8]
+  0x10008b29: mov dword ptr [ebp - 4], edi
+  0x10008b2c: call dword ptr [0x1000d1b8]
+  0x10008b32: test eax, eax
+  0x10008b34: jne 0x10008b4c
+  0x10008b36: cmp dword ptr [ebp - 4], esi
+  0x10008b39: jne 0x10008b4c
+  0x10008b3b: push ebx
+  0x10008b3c: push edi
+  0x10008b3d: call dword ptr [0x1000d1c0]
+  0x10008b43: push eax
+  0x10008b44: call dword ptr [0x1000d1d4]
+  0x10008b4a: jmp 0x10008b5f
+  0x10008b4c: mov dword ptr [0x1001f0fc], ebx
+  0x10008b52: mov dword ptr [0x1001f11c], esi
+  0x10008b58: mov dword ptr [ebp - 0xc], 1
+  0x10008b5f: pop ebx
+  0x10008b60: push dword ptr [ebp - 8]
+  0x10008b63: call dword ptr [0x1000d1a8]
+  0x10008b69: pop esi
+  0x10008b6a: mov eax, dword ptr [ebp - 0xc]
+  0x10008b6d: pop edi
+  0x10008b6e: leave 
+  0x10008b6f: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10007cc0 at 0x10007cc0 (size: 121)
+Suspicious Score: 0.060606015292880976
+API Calls:
+Suspicious Instructions:
+  0x10007cc0: push esi
+  0x10007cc1: xor esi, esi
+  0x10007ccb: call dword ptr [0x1000d164]
+  0x10007cd1: push 0x10014118
+  0x10007cd6: mov dword ptr [0x1001f118], eax
+  0x10007cdb: call 0x100081ba
+  0x10007ce5: push 0x10014140
+  0x10007cea: call 0x100081ba
+  0x10007cf6: push 0x100140f8
+  0x10007cfb: call 0x100081ba
+  0x10007d07: mov dword ptr [0x1001f144], esi
+  0x10007d0d: call 0x10008677
+  0x10007d12: push 0x30c
+  0x10007d17: push 0x1001f148
+  0x10007d1c: push dword ptr [0x1001f120]
+  0x10007d22: mov dword ptr [0x1001f104], eax
+  0x10007d27: call dword ptr [0x1000d0dc]
+  0x10007d31: pop esi
+  0x10007d32: jmp 0x10008acf
+  0x10007d37: pop esi
+  0x10007d38: ret 
+Disassembly:
+  0x10007cc0: push esi
+  0x10007cc1: xor esi, esi
+  0x10007cc3: cmp dword ptr [0x1001f114], esi
+  0x10007cc9: jne 0x10007d37
+  0x10007ccb: call dword ptr [0x1000d164]
+  0x10007cd1: push 0x10014118
+  0x10007cd6: mov dword ptr [0x1001f118], eax
+  0x10007cdb: call 0x100081ba
+  0x10007ce0: test eax, eax
+  0x10007ce2: je 0x10007ce5
+  0x10007ce4: inc esi
+  0x10007ce5: push 0x10014140
+  0x10007cea: call 0x100081ba
+  0x10007cef: test eax, eax
+  0x10007cf1: je 0x10007cf6
+  0x10007cf3: or esi, 2
+  0x10007cf6: push 0x100140f8
+  0x10007cfb: call 0x100081ba
+  0x10007d00: test eax, eax
+  0x10007d02: je 0x10007d07
+  0x10007d04: or esi, 4
+  0x10007d07: mov dword ptr [0x1001f144], esi
+  0x10007d0d: call 0x10008677
+  0x10007d12: push 0x30c
+  0x10007d17: push 0x1001f148
+  0x10007d1c: push dword ptr [0x1001f120]
+  0x10007d22: mov dword ptr [0x1001f104], eax
+  0x10007d27: call dword ptr [0x1000d0dc]
+  0x10007d2d: test eax, eax
+  0x10007d2f: je 0x10007d37
+  0x10007d31: pop esi
+  0x10007d32: jmp 0x10008acf
+  0x10007d37: pop esi
+  0x10007d38: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10007091 at 0x10007091 (size: 105)
+Suspicious Score: 0.04761904761904354
+API Calls:
+Suspicious Instructions:
+  0x10007091: push ebp
+  0x10007092: mov ebp, esp
+  0x10007094: push ebx
+  0x10007095: push esi
+  0x10007096: push edi
+  0x10007097: mov edi, dword ptr [0x1000d1c0]
+  0x1000709d: push 0x34
+  0x1000709f: push 8
+  0x100070a1: call edi
+  0x100070a3: mov ebx, dword ptr [0x1000d1dc]
+  0x100070a9: push eax
+  0x100070aa: call ebx
+  0x100070ac: mov esi, eax
+  0x100070b2: push esi
+  0x100070b3: call dword ptr [0x1000d1c4]
+  0x100070b9: mov eax, dword ptr [ebp + 0x14]
+  0x100070bc: mov ecx, dword ptr [ebp + 8]
+  0x100070bf: mov dword ptr [esi + 0x20], eax
+  0x100070c2: mov dword ptr [esi + 0x1c], ecx
+  0x100070c5: mov ecx, dword ptr [ebp + 0xc]
+  0x100070c8: shl eax, 2
+  0x100070cb: mov dword ptr [esi + 0x2c], ecx
+  0x100070ce: mov ecx, dword ptr [ebp + 0x10]
+  0x100070d1: push eax
+  0x100070d2: push 8
+  0x100070d4: mov dword ptr [esi + 0x24], 0
+  0x100070db: mov dword ptr [esi + 0x30], ecx
+  0x100070de: call edi
+  0x100070e0: push eax
+  0x100070e1: call ebx
+  0x100070e3: mov dword ptr [esi + 0x18], eax
+  0x100070ea: call 0x10007003
+  0x100070ef: xor esi, esi
+  0x100070f1: pop edi
+  0x100070f2: mov eax, esi
+  0x100070f4: pop esi
+  0x100070f5: pop ebx
+  0x100070f6: pop ebp
+  0x100070f7: ret 0x10
+Disassembly:
+  0x10007091: push ebp
+  0x10007092: mov ebp, esp
+  0x10007094: push ebx
+  0x10007095: push esi
+  0x10007096: push edi
+  0x10007097: mov edi, dword ptr [0x1000d1c0]
+  0x1000709d: push 0x34
+  0x1000709f: push 8
+  0x100070a1: call edi
+  0x100070a3: mov ebx, dword ptr [0x1000d1dc]
+  0x100070a9: push eax
+  0x100070aa: call ebx
+  0x100070ac: mov esi, eax
+  0x100070ae: test esi, esi
+  0x100070b0: je 0x100070f1
+  0x100070b2: push esi
+  0x100070b3: call dword ptr [0x1000d1c4]
+  0x100070b9: mov eax, dword ptr [ebp + 0x14]
+  0x100070bc: mov ecx, dword ptr [ebp + 8]
+  0x100070bf: mov dword ptr [esi + 0x20], eax
+  0x100070c2: mov dword ptr [esi + 0x1c], ecx
+  0x100070c5: mov ecx, dword ptr [ebp + 0xc]
+  0x100070c8: shl eax, 2
+  0x100070cb: mov dword ptr [esi + 0x2c], ecx
+  0x100070ce: mov ecx, dword ptr [ebp + 0x10]
+  0x100070d1: push eax
+  0x100070d2: push 8
+  0x100070d4: mov dword ptr [esi + 0x24], 0
+  0x100070db: mov dword ptr [esi + 0x30], ecx
+  0x100070de: call edi
+  0x100070e0: push eax
+  0x100070e1: call ebx
+  0x100070e3: mov dword ptr [esi + 0x18], eax
+  0x100070e6: test eax, eax
+  0x100070e8: jne 0x100070f1
+  0x100070ea: call 0x10007003
+  0x100070ef: xor esi, esi
+  0x100070f1: pop edi
+  0x100070f2: mov eax, esi
+  0x100070f4: pop esi
+  0x100070f5: pop ebx
+  0x100070f6: pop ebp
+  0x100070f7: ret 0x10
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000835e at 0x1000835e (size: 94)
+Suspicious Score: 0.06244434700343496
+API Calls:
+Suspicious Instructions:
+  0x1000835e: push ebp
+  0x1000835f: mov ebp, esp
+  0x10008367: push esi
+  0x1000836e: push eax
+  0x1000836f: xor esi, esi
+  0x10008371: call 0x10008320
+  0x10008380: push eax
+  0x10008381: call dword ptr [0x1000d228]
+  0x10008387: push esi
+  0x1000838c: push 0x4000000
+  0x10008391: push 2
+  0x10008393: push esi
+  0x10008394: push esi
+  0x10008395: push 0x40000000
+  0x100083a0: push eax
+  0x100083a1: call dword ptr [0x1000d184]
+  0x100083a7: xor ecx, ecx
+  0x100083af: mov esi, ecx
+  0x100083b1: mov eax, esi
+  0x100083b3: pop esi
+  0x100083b5: ret 
+  0x100083b6: call dword ptr [0x1000d0d4]
+Disassembly:
+  0x1000835e: push ebp
+  0x1000835f: mov ebp, esp
+  0x10008361: sub esp, 0x618
+  0x10008367: push esi
+  0x10008368: lea eax, [ebp - 0x618]
+  0x1000836e: push eax
+  0x1000836f: xor esi, esi
+  0x10008371: call 0x10008320
+  0x10008376: test eax, eax
+  0x10008378: je 0x100083b1
+  0x1000837a: lea eax, [ebp - 0x618]
+  0x10008380: push eax
+  0x10008381: call dword ptr [0x1000d228]
+  0x10008387: push esi
+  0x10008388: test eax, eax
+  0x1000838a: jne 0x100083b6
+  0x1000838c: push 0x4000000
+  0x10008391: push 2
+  0x10008393: push esi
+  0x10008394: push esi
+  0x10008395: push 0x40000000
+  0x1000839a: lea eax, [ebp - 0x618]
+  0x100083a0: push eax
+  0x100083a1: call dword ptr [0x1000d184]
+  0x100083a7: xor ecx, ecx
+  0x100083a9: cmp eax, -1
+  0x100083ac: setne cl
+  0x100083af: mov esi, ecx
+  0x100083b1: mov eax, esi
+  0x100083b3: pop esi
+  0x100083b4: leave 
+  0x100083b5: ret 
+  0x100083b6: call dword ptr [0x1000d0d4]
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10001eef at 0x10001eef (size: 133)
+Suspicious Score: 0.03449318892375683
+API Calls:
+Suspicious Instructions:
+  0x10001eef: push ebp
+  0x10001ef0: mov ebp, esp
+  0x10001ef2: push ecx
+  0x10001ef3: push ecx
+  0x10001ef4: push ebx
+  0x10001ef5: push esi
+  0x10001ef6: push edi
+  0x10001ef7: call dword ptr [0x1000d190]
+  0x10001efd: push 0x1f
+  0x10001eff: mov ebx, eax
+  0x10001f01: pop edi
+  0x10001f02: xor esi, esi
+  0x10001f04: xor eax, eax
+  0x10001f07: mov ecx, edi
+  0x10001f09: shl eax, cl
+  0x10001f0f: push 0x3a
+  0x10001f14: mov word ptr [ebp - 8], ax
+  0x10001f18: pop eax
+  0x10001f19: mov word ptr [ebp - 6], ax
+  0x10001f1d: push 0x5c
+  0x10001f1f: pop eax
+  0x10001f20: mov word ptr [ebp - 4], ax
+  0x10001f24: xor eax, eax
+  0x10001f26: mov word ptr [ebp - 2], ax
+  0x10001f2d: push eax
+  0x10001f2e: call dword ptr [0x1000d198]
+  0x10001f39: push 0x20
+  0x10001f3b: push 0x40
+  0x10001f3d: call dword ptr [0x1000d178]
+  0x10001f47: push esi
+  0x10001f48: push esi
+  0x10001f49: push eax
+  0x10001f4a: mov dword ptr [eax + 0x10], 0x10010550
+  0x10001f51: mov dword ptr [eax + 0x1c], esi
+  0x10001f54: mov ecx, dword ptr [ebp - 8]
+  0x10001f57: push 0x10001e51
+  0x10001f5c: mov dword ptr [eax], ecx
+  0x10001f5e: mov ecx, dword ptr [ebp - 4]
+  0x10001f61: push esi
+  0x10001f62: push esi
+  0x10001f63: mov dword ptr [eax + 4], ecx
+  0x10001f66: call dword ptr [0x1000d168]
+  0x10001f6f: pop edi
+  0x10001f70: pop esi
+  0x10001f71: pop ebx
+  0x10001f73: ret 
+Disassembly:
+  0x10001eef: push ebp
+  0x10001ef0: mov ebp, esp
+  0x10001ef2: push ecx
+  0x10001ef3: push ecx
+  0x10001ef4: push ebx
+  0x10001ef5: push esi
+  0x10001ef6: push edi
+  0x10001ef7: call dword ptr [0x1000d190]
+  0x10001efd: push 0x1f
+  0x10001eff: mov ebx, eax
+  0x10001f01: pop edi
+  0x10001f02: xor esi, esi
+  0x10001f04: xor eax, eax
+  0x10001f06: inc eax
+  0x10001f07: mov ecx, edi
+  0x10001f09: shl eax, cl
+  0x10001f0b: test ebx, eax
+  0x10001f0d: je 0x10001f6c
+  0x10001f0f: push 0x3a
+  0x10001f11: lea eax, [edi + 0x41]
+  0x10001f14: mov word ptr [ebp - 8], ax
+  0x10001f18: pop eax
+  0x10001f19: mov word ptr [ebp - 6], ax
+  0x10001f1d: push 0x5c
+  0x10001f1f: pop eax
+  0x10001f20: mov word ptr [ebp - 4], ax
+  0x10001f24: xor eax, eax
+  0x10001f26: mov word ptr [ebp - 2], ax
+  0x10001f2a: lea eax, [ebp - 8]
+  0x10001f2d: push eax
+  0x10001f2e: call dword ptr [0x1000d198]
+  0x10001f34: cmp eax, 3
+  0x10001f37: jne 0x10001f6c
+  0x10001f39: push 0x20
+  0x10001f3b: push 0x40
+  0x10001f3d: call dword ptr [0x1000d178]
+  0x10001f43: cmp eax, esi
+  0x10001f45: je 0x10001f6c
+  0x10001f47: push esi
+  0x10001f48: push esi
+  0x10001f49: push eax
+  0x10001f4a: mov dword ptr [eax + 0x10], 0x10010550
+  0x10001f51: mov dword ptr [eax + 0x1c], esi
+  0x10001f54: mov ecx, dword ptr [ebp - 8]
+  0x10001f57: push 0x10001e51
+  0x10001f5c: mov dword ptr [eax], ecx
+  0x10001f5e: mov ecx, dword ptr [ebp - 4]
+  0x10001f61: push esi
+  0x10001f62: push esi
+  0x10001f63: mov dword ptr [eax + 4], ecx
+  0x10001f66: call dword ptr [0x1000d168]
+  0x10001f6c: dec edi
+  0x10001f6d: jns 0x10001f04
+  0x10001f6f: pop edi
+  0x10001f70: pop esi
+  0x10001f71: pop ebx
+  0x10001f72: leave 
+  0x10001f73: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006bb0 at 0x10006bb0 (size: 196)
+Suspicious Score: 0.030310093946457582
+API Calls:
+Suspicious Instructions:
+  0x10006bb0: push ebp
+  0x10006bb1: mov ebp, esp
+  0x10006bb9: call 0x10006973
+  0x10006bc3: push 0xa
+  0x10006bc5: pop eax
+  0x10006bc6: push eax
+  0x10006bcd: push 0x10014010
+  0x10006bd2: push eax
+  0x10006bd3: call dword ptr [0x1000d258]
+  0x10006be5: mov cx, word ptr [eax]
+  0x10006bf0: push ebx
+  0x10006bf1: push esi
+  0x10006bf4: push edi
+  0x10006bf5: sar eax, 1
+  0x10006bf7: push 0x1001f124
+  0x10006bfc: mov esi, eax
+  0x10006bfe: call dword ptr [0x1000d1d0]
+  0x10006c0d: call 0x10006af0
+  0x10006c12: mov ebx, 0x1001b110
+  0x10006c17: mov eax, ebx
+  0x10006c1c: mov cx, word ptr [eax]
+  0x10006c29: sar eax, 1
+  0x10006c36: mov eax, dword ptr [ebp + 8]
+  0x10006c39: mov esi, dword ptr [0x1000d238]
+  0x10006c3f: xor ecx, ecx
+  0x10006c41: mov word ptr [eax], cx
+  0x10006c4a: push ecx
+  0x10006c4b: push eax
+  0x10006c4c: call esi
+  0x10006c4e: push ebx
+  0x10006c4f: push dword ptr [ebp + 8]
+  0x10006c52: call esi
+  0x10006c54: mov esi, edi
+  0x10006c56: jmp 0x10006c60
+  0x10006c58: push 0x7a
+  0x10006c5a: call dword ptr [0x1000d0f4]
+  0x10006c60: push 0x1001f124
+  0x10006c65: call dword ptr [0x1000d158]
+  0x10006c6b: pop edi
+  0x10006c6c: mov eax, esi
+  0x10006c6e: pop esi
+  0x10006c6f: pop ebx
+  0x10006c71: ret 4
+Disassembly:
+  0x10006bb0: push ebp
+  0x10006bb1: mov ebp, esp
+  0x10006bb3: sub esp, 0x800
+  0x10006bb9: call 0x10006973
+  0x10006bbe: cmp eax, 0xa
+  0x10006bc1: jae 0x10006bc6
+  0x10006bc3: push 0xa
+  0x10006bc5: pop eax
+  0x10006bc6: push eax
+  0x10006bc7: lea eax, [ebp - 0x800]
+  0x10006bcd: push 0x10014010
+  0x10006bd2: push eax
+  0x10006bd3: call dword ptr [0x1000d258]
+  0x10006bd9: lea eax, [ebp - 0x800]
+  0x10006bdf: add esp, 0xc
+  0x10006be2: lea edx, [eax + 2]
+  0x10006be5: mov cx, word ptr [eax]
+  0x10006be8: add eax, 2
+  0x10006beb: test cx, cx
+  0x10006bee: jne 0x10006be5
+  0x10006bf0: push ebx
+  0x10006bf1: push esi
+  0x10006bf2: sub eax, edx
+  0x10006bf4: push edi
+  0x10006bf5: sar eax, 1
+  0x10006bf7: push 0x1001f124
+  0x10006bfc: mov esi, eax
+  0x10006bfe: call dword ptr [0x1000d1d0]
+  0x10006c04: cmp dword ptr [0x10016010], 0
+  0x10006c0b: je 0x10006c12
+  0x10006c0d: call 0x10006af0
+  0x10006c12: mov ebx, 0x1001b110
+  0x10006c17: mov eax, ebx
+  0x10006c19: lea edx, [eax + 2]
+  0x10006c1c: mov cx, word ptr [eax]
+  0x10006c1f: add eax, 2
+  0x10006c22: test cx, cx
+  0x10006c25: jne 0x10006c1c
+  0x10006c27: sub eax, edx
+  0x10006c29: sar eax, 1
+  0x10006c2b: lea edi, [eax + esi]
+  0x10006c2e: cmp edi, 0x1ffe
+  0x10006c34: jae 0x10006c58
+  0x10006c36: mov eax, dword ptr [ebp + 8]
+  0x10006c39: mov esi, dword ptr [0x1000d238]
+  0x10006c3f: xor ecx, ecx
+  0x10006c41: mov word ptr [eax], cx
+  0x10006c44: lea ecx, [ebp - 0x800]
+  0x10006c4a: push ecx
+  0x10006c4b: push eax
+  0x10006c4c: call esi
+  0x10006c4e: push ebx
+  0x10006c4f: push dword ptr [ebp + 8]
+  0x10006c52: call esi
+  0x10006c54: mov esi, edi
+  0x10006c56: jmp 0x10006c60
+  0x10006c58: push 0x7a
+  0x10006c5a: call dword ptr [0x1000d0f4]
+  0x10006c60: push 0x1001f124
+  0x10006c65: call dword ptr [0x1000d158]
+  0x10006c6b: pop edi
+  0x10006c6c: mov eax, esi
+  0x10006c6e: pop esi
+  0x10006c6f: pop ebx
+  0x10006c70: leave 
+  0x10006c71: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10007d6f at 0x10007d6f (size: 121)
+Suspicious Score: 0.04881021473146019
+API Calls:
+Suspicious Instructions:
+  0x10007d6f: push ebp
+  0x10007d70: mov ebp, esp
+  0x10007d78: push esi
+  0x10007d79: xor esi, esi
+  0x10007d8b: mov eax, dword ptr [ebp + 8]
+  0x10007d91: mov cx, word ptr [eax]
+  0x10007d9e: sar eax, 1
+  0x10007da0: push eax
+  0x10007da1: push dword ptr [ebp + 8]
+  0x10007da4: push 0x100140d0
+  0x10007da9: call 0x100096c7
+  0x10007db2: push 0xbb8
+  0x10007db7: call dword ptr [0x1000d188]
+  0x10007dc3: push eax
+  0x10007dc4: call 0x10008320
+  0x10007dd3: push eax
+  0x10007dd4: call dword ptr [0x1000d228]
+  0x10007dde: xor esi, esi
+  0x10007de1: mov eax, esi
+  0x10007de3: pop esi
+  0x10007de5: ret 4
+Disassembly:
+  0x10007d6f: push ebp
+  0x10007d70: mov ebp, esp
+  0x10007d72: sub esp, 0x618
+  0x10007d78: push esi
+  0x10007d79: xor esi, esi
+  0x10007d7b: cmp dword ptr [0x1001f0fc], esi
+  0x10007d81: je 0x10007de1
+  0x10007d83: cmp dword ptr [0x1001f11c], esi
+  0x10007d89: je 0x10007de1
+  0x10007d8b: mov eax, dword ptr [ebp + 8]
+  0x10007d8e: lea edx, [eax + 2]
+  0x10007d91: mov cx, word ptr [eax]
+  0x10007d94: add eax, 2
+  0x10007d97: cmp cx, si
+  0x10007d9a: jne 0x10007d91
+  0x10007d9c: sub eax, edx
+  0x10007d9e: sar eax, 1
+  0x10007da0: push eax
+  0x10007da1: push dword ptr [ebp + 8]
+  0x10007da4: push 0x100140d0
+  0x10007da9: call 0x100096c7
+  0x10007dae: test eax, eax
+  0x10007db0: je 0x10007de1
+  0x10007db2: push 0xbb8
+  0x10007db7: call dword ptr [0x1000d188]
+  0x10007dbd: lea eax, [ebp - 0x618]
+  0x10007dc3: push eax
+  0x10007dc4: call 0x10008320
+  0x10007dc9: test eax, eax
+  0x10007dcb: je 0x10007de1
+  0x10007dcd: lea eax, [ebp - 0x618]
+  0x10007dd3: push eax
+  0x10007dd4: call dword ptr [0x1000d228]
+  0x10007dda: test eax, eax
+  0x10007ddc: je 0x10007de1
+  0x10007dde: xor esi, esi
+  0x10007de0: inc esi
+  0x10007de1: mov eax, esi
+  0x10007de3: pop esi
+  0x10007de4: leave 
+  0x10007de5: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10008494 at 0x10008494 (size: 75)
+Suspicious Score: 0.08348403742287241
+API Calls:
+Suspicious Instructions:
+  0x10008494: push ebp
+  0x10008495: mov ebp, esp
+  0x1000849d: push edi
+  0x1000849e: push 0x114
+  0x100084a3: xor edi, edi
+  0x100084ab: push edi
+  0x100084ac: push eax
+  0x100084ad: call 0x1000a4e4
+  0x100084bb: push eax
+  0x100084bc: mov dword ptr [ebp - 0x114], 0x114
+  0x100084c6: call dword ptr [0x1000d0d8]
+  0x100084da: mov eax, edi
+  0x100084dc: pop edi
+  0x100084de: ret 
+Disassembly:
+  0x10008494: push ebp
+  0x10008495: mov ebp, esp
+  0x10008497: sub esp, 0x114
+  0x1000849d: push edi
+  0x1000849e: push 0x114
+  0x100084a3: xor edi, edi
+  0x100084a5: lea eax, [ebp - 0x114]
+  0x100084ab: push edi
+  0x100084ac: push eax
+  0x100084ad: call 0x1000a4e4
+  0x100084b2: add esp, 0xc
+  0x100084b5: lea eax, [ebp - 0x114]
+  0x100084bb: push eax
+  0x100084bc: mov dword ptr [ebp - 0x114], 0x114
+  0x100084c6: call dword ptr [0x1000d0d8]
+  0x100084cc: test eax, eax
+  0x100084ce: je 0x100084da
+  0x100084d0: cmp dword ptr [ebp - 0x110], 5
+  0x100084d7: jbe 0x100084da
+  0x100084d9: inc edi
+  0x100084da: mov eax, edi
+  0x100084dc: pop edi
+  0x100084dd: leave 
+  0x100084de: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000a520 at 0x1000a520 (size: 136)
+Suspicious Score: 0.03773584905657611
+API Calls:
+Suspicious Instructions:
+  0x1000a520: push ebp
+  0x1000a521: mov ebp, esp
+  0x1000a526: mov eax, dword ptr [ebp + 0x10]
+  0x1000a531: push edi
+  0x1000a532: mov edi, dword ptr [ebp + 0xc]
+  0x1000a535: mov dword ptr [ebp - 0x38], eax
+  0x1000a538: mov eax, dword ptr [ebp + 0x14]
+  0x1000a53b: mov dword ptr [ebp - 0x34], eax
+  0x1000a53e: mov eax, dword ptr [ebp + 8]
+  0x1000a541: mov dword ptr [ebp - 0x2c], eax
+  0x1000a544: mov eax, dword ptr [edi]
+  0x1000a546: push 0x38
+  0x1000a548: mov dword ptr [ebp - 0x28], eax
+  0x1000a54e: push 0x1000d2c8
+  0x1000a553: push eax
+  0x1000a554: call 0x1000bb31
+  0x1000a55d: push esi
+  0x1000a55e: push 4
+  0x1000a563: push eax
+  0x1000a564: call 0x1000a5cc
+  0x1000a569: mov esi, eax
+  0x1000a573: push eax
+  0x1000a574: call 0x1000ba60
+  0x1000a589: mov eax, esi
+  0x1000a58b: jmp 0x1000a5a0
+  0x1000a58d: push -3
+  0x1000a58f: pop eax
+  0x1000a590: jmp 0x1000a5a0
+  0x1000a592: mov eax, dword ptr [ebp - 0x24]
+  0x1000a595: mov dword ptr [edi], eax
+  0x1000a59a: push eax
+  0x1000a59b: call 0x1000ba60
+  0x1000a5a0: pop esi
+  0x1000a5a1: pop edi
+  0x1000a5a2: mov esp, ebp
+  0x1000a5a4: pop ebp
+  0x1000a5a5: ret 0x10
+Disassembly:
+  0x1000a520: push ebp
+  0x1000a521: mov ebp, esp
+  0x1000a523: sub esp, 0x38
+  0x1000a526: mov eax, dword ptr [ebp + 0x10]
+  0x1000a529: and dword ptr [ebp - 0x18], 0
+  0x1000a52d: and dword ptr [ebp - 0x14], 0
+  0x1000a531: push edi
+  0x1000a532: mov edi, dword ptr [ebp + 0xc]
+  0x1000a535: mov dword ptr [ebp - 0x38], eax
+  0x1000a538: mov eax, dword ptr [ebp + 0x14]
+  0x1000a53b: mov dword ptr [ebp - 0x34], eax
+  0x1000a53e: mov eax, dword ptr [ebp + 8]
+  0x1000a541: mov dword ptr [ebp - 0x2c], eax
+  0x1000a544: mov eax, dword ptr [edi]
+  0x1000a546: push 0x38
+  0x1000a548: mov dword ptr [ebp - 0x28], eax
+  0x1000a54b: lea eax, [ebp - 0x38]
+  0x1000a54e: push 0x1000d2c8
+  0x1000a553: push eax
+  0x1000a554: call 0x1000bb31
+  0x1000a559: test eax, eax
+  0x1000a55b: jne 0x1000a5a1
+  0x1000a55d: push esi
+  0x1000a55e: push 4
+  0x1000a560: lea eax, [ebp - 0x38]
+  0x1000a563: push eax
+  0x1000a564: call 0x1000a5cc
+  0x1000a569: mov esi, eax
+  0x1000a56b: cmp esi, 1
+  0x1000a56e: je 0x1000a592
+  0x1000a570: lea eax, [ebp - 0x38]
+  0x1000a573: push eax
+  0x1000a574: call 0x1000ba60
+  0x1000a579: cmp esi, 2
+  0x1000a57c: je 0x1000a58d
+  0x1000a57e: cmp esi, -5
+  0x1000a581: jne 0x1000a589
+  0x1000a583: cmp dword ptr [ebp - 0x34], 0
+  0x1000a587: je 0x1000a58d
+  0x1000a589: mov eax, esi
+  0x1000a58b: jmp 0x1000a5a0
+  0x1000a58d: push -3
+  0x1000a58f: pop eax
+  0x1000a590: jmp 0x1000a5a0
+  0x1000a592: mov eax, dword ptr [ebp - 0x24]
+  0x1000a595: mov dword ptr [edi], eax
+  0x1000a597: lea eax, [ebp - 0x38]
+  0x1000a59a: push eax
+  0x1000a59b: call 0x1000ba60
+  0x1000a5a0: pop esi
+  0x1000a5a1: pop edi
+  0x1000a5a2: mov esp, ebp
+  0x1000a5a4: pop ebp
+  0x1000a5a5: ret 0x10
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10008946 at 0x10008946 (size: 83)
+Suspicious Score: 0.05263157894698489
+API Calls:
+Suspicious Instructions:
+  0x10008946: push ebp
+  0x10008947: mov ebp, esp
+  0x10008949: push esi
+  0x1000894a: xor esi, esi
+  0x1000894c: xor eax, eax
+  0x10008951: push edi
+  0x10008955: push esi
+  0x10008956: push esi
+  0x10008958: push eax
+  0x10008959: push esi
+  0x1000895a: push esi
+  0x1000895b: push 0x40000000
+  0x10008960: push dword ptr [ebp + 8]
+  0x10008963: call dword ptr [0x1000d184]
+  0x10008969: mov edi, eax
+  0x10008970: push esi
+  0x10008974: push eax
+  0x10008975: push ebx
+  0x10008976: push dword ptr [ebp + 0xc]
+  0x10008979: push edi
+  0x1000897a: call dword ptr [0x1000d1bc]
+  0x1000898a: push edi
+  0x1000898b: call dword ptr [0x1000d1a8]
+  0x10008991: pop edi
+  0x10008992: mov eax, esi
+  0x10008994: pop esi
+  0x10008995: pop ebp
+  0x10008996: ret 0xc
+Disassembly:
+  0x10008946: push ebp
+  0x10008947: mov ebp, esp
+  0x10008949: push esi
+  0x1000894a: xor esi, esi
+  0x1000894c: xor eax, eax
+  0x1000894e: cmp dword ptr [ebp + 0x10], esi
+  0x10008951: push edi
+  0x10008952: setne al
+  0x10008955: push esi
+  0x10008956: push esi
+  0x10008957: inc eax
+  0x10008958: push eax
+  0x10008959: push esi
+  0x1000895a: push esi
+  0x1000895b: push 0x40000000
+  0x10008960: push dword ptr [ebp + 8]
+  0x10008963: call dword ptr [0x1000d184]
+  0x10008969: mov edi, eax
+  0x1000896b: cmp edi, -1
+  0x1000896e: je 0x10008991
+  0x10008970: push esi
+  0x10008971: lea eax, [ebp + 0x10]
+  0x10008974: push eax
+  0x10008975: push ebx
+  0x10008976: push dword ptr [ebp + 0xc]
+  0x10008979: push edi
+  0x1000897a: call dword ptr [0x1000d1bc]
+  0x10008980: test eax, eax
+  0x10008982: je 0x1000898a
+  0x10008984: cmp dword ptr [ebp + 0x10], ebx
+  0x10008987: jne 0x1000898a
+  0x10008989: inc esi
+  0x1000898a: push edi
+  0x1000898b: call dword ptr [0x1000d1a8]
+  0x10008991: pop edi
+  0x10008992: mov eax, esi
+  0x10008994: pop esi
+  0x10008995: pop ebp
+  0x10008996: ret 0xc
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000a3d9 at 0x1000a3d9 (size: 50)
+Suspicious Score: 0.10526253125411134
+API Calls:
+Suspicious Instructions:
+  0x1000a3d9: push ebp
+  0x1000a3da: mov ebp, esp
+  0x1000a3dc: push esi
+  0x1000a3dd: push 0x1bd
+  0x1000a3e2: push dword ptr [ebp + 8]
+  0x1000a3e5: xor esi, esi
+  0x1000a3e7: call 0x1000a2e8
+  0x1000a3f0: push 0x8b
+  0x1000a3f5: push dword ptr [ebp + 8]
+  0x1000a3f8: call 0x1000a2e8
+  0x1000a401: xor esi, esi
+  0x1000a404: mov eax, esi
+  0x1000a406: pop esi
+  0x1000a407: pop ebp
+  0x1000a408: ret 4
+Disassembly:
+  0x1000a3d9: push ebp
+  0x1000a3da: mov ebp, esp
+  0x1000a3dc: push esi
+  0x1000a3dd: push 0x1bd
+  0x1000a3e2: push dword ptr [ebp + 8]
+  0x1000a3e5: xor esi, esi
+  0x1000a3e7: call 0x1000a2e8
+  0x1000a3ec: test eax, eax
+  0x1000a3ee: jne 0x1000a401
+  0x1000a3f0: push 0x8b
+  0x1000a3f5: push dword ptr [ebp + 8]
+  0x1000a3f8: call 0x1000a2e8
+  0x1000a3fd: test eax, eax
+  0x1000a3ff: je 0x1000a404
+  0x1000a401: xor esi, esi
+  0x1000a403: inc esi
+  0x1000a404: mov eax, esi
+  0x1000a406: pop esi
+  0x1000a407: pop ebp
+  0x1000a408: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006916 at 0x10006916 (size: 93)
+Suspicious Score: 0.045478570049469695
+API Calls:
+Suspicious Instructions:
+  0x10006916: push ebp
+  0x10006917: mov ebp, esp
+  0x1000691c: push ebx
+  0x1000691d: push esi
+  0x1000691e: mov esi, dword ptr [0x1000d15c]
+  0x10006924: push edi
+  0x10006925: xor ebx, ebx
+  0x10006927: push ebx
+  0x10006928: push ebx
+  0x10006929: push -1
+  0x1000692b: push dword ptr [ebp + 8]
+  0x1000692e: mov edi, 0xfde9
+  0x10006933: push ebx
+  0x10006934: push edi
+  0x10006935: call esi
+  0x10006937: mov dword ptr [ebp - 4], eax
+  0x10006940: push eax
+  0x10006941: push ebx
+  0x10006942: call dword ptr [0x1000d1c0]
+  0x10006948: push eax
+  0x10006949: call dword ptr [0x1000d1dc]
+  0x1000694f: mov dword ptr [ebp - 8], eax
+  0x10006956: push dword ptr [ebp - 4]
+  0x10006959: push eax
+  0x1000695a: push -1
+  0x1000695c: push dword ptr [ebp + 8]
+  0x1000695f: push ebx
+  0x10006960: push edi
+  0x10006961: call esi
+  0x10006965: mov eax, dword ptr [ebp - 8]
+  0x1000696a: mov eax, ebx
+  0x1000696c: pop edi
+  0x1000696d: pop esi
+  0x1000696e: pop ebx
+  0x10006970: ret 4
+Disassembly:
+  0x10006916: push ebp
+  0x10006917: mov ebp, esp
+  0x10006919: sub esp, 0xc
+  0x1000691c: push ebx
+  0x1000691d: push esi
+  0x1000691e: mov esi, dword ptr [0x1000d15c]
+  0x10006924: push edi
+  0x10006925: xor ebx, ebx
+  0x10006927: push ebx
+  0x10006928: push ebx
+  0x10006929: push -1
+  0x1000692b: push dword ptr [ebp + 8]
+  0x1000692e: mov edi, 0xfde9
+  0x10006933: push ebx
+  0x10006934: push edi
+  0x10006935: call esi
+  0x10006937: mov dword ptr [ebp - 4], eax
+  0x1000693a: cmp eax, ebx
+  0x1000693c: je 0x1000696a
+  0x1000693e: add eax, eax
+  0x10006940: push eax
+  0x10006941: push ebx
+  0x10006942: call dword ptr [0x1000d1c0]
+  0x10006948: push eax
+  0x10006949: call dword ptr [0x1000d1dc]
+  0x1000694f: mov dword ptr [ebp - 8], eax
+  0x10006952: cmp eax, ebx
+  0x10006954: je 0x1000696a
+  0x10006956: push dword ptr [ebp - 4]
+  0x10006959: push eax
+  0x1000695a: push -1
+  0x1000695c: push dword ptr [ebp + 8]
+  0x1000695f: push ebx
+  0x10006960: push edi
+  0x10006961: call esi
+  0x10006963: test eax, eax
+  0x10006965: mov eax, dword ptr [ebp - 8]
+  0x10006968: jne 0x1000696c
+  0x1000696a: mov eax, ebx
+  0x1000696c: pop edi
+  0x1000696d: pop esi
+  0x1000696e: pop ebx
+  0x1000696f: leave 
+  0x10006970: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10008243 at 0x10008243 (size: 63)
+Suspicious Score: 0.06905045002430701
+API Calls:
+Suspicious Instructions:
+  0x10008243: push ebp
+  0x10008244: mov ebp, esp
+  0x10008246: push ecx
+  0x10008247: push esi
+  0x1000824b: push eax
+  0x1000824c: xor esi, esi
+  0x10008251: push 0x65
+  0x10008253: push esi
+  0x10008254: call dword ptr [0x1000d208]
+  0x1000825a: mov ecx, dword ptr [ebp - 4]
+  0x10008261: mov eax, dword ptr [ecx + 0x10]
+  0x1000826f: xor esi, esi
+  0x10008276: push ecx
+  0x10008277: call dword ptr [0x1000d204]
+  0x1000827d: mov eax, esi
+  0x1000827f: pop esi
+  0x10008281: ret 
+Disassembly:
+  0x10008243: push ebp
+  0x10008244: mov ebp, esp
+  0x10008246: push ecx
+  0x10008247: push esi
+  0x10008248: lea eax, [ebp - 4]
+  0x1000824b: push eax
+  0x1000824c: xor esi, esi
+  0x1000824e: and dword ptr [ebp - 4], esi
+  0x10008251: push 0x65
+  0x10008253: push esi
+  0x10008254: call dword ptr [0x1000d208]
+  0x1000825a: mov ecx, dword ptr [ebp - 4]
+  0x1000825d: test eax, eax
+  0x1000825f: jne 0x10008272
+  0x10008261: mov eax, dword ptr [ecx + 0x10]
+  0x10008264: test eax, 0x8000
+  0x10008269: jne 0x1000826f
+  0x1000826b: test al, 0x18
+  0x1000826d: je 0x10008272
+  0x1000826f: xor esi, esi
+  0x10008271: inc esi
+  0x10008272: test ecx, ecx
+  0x10008274: je 0x1000827d
+  0x10008276: push ecx
+  0x10008277: call dword ptr [0x1000d204]
+  0x1000827d: mov eax, esi
+  0x1000827f: pop esi
+  0x10008280: leave 
+  0x10008281: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10009322 at 0x10009322 (size: 69)
+Suspicious Score: 0.06451612711140342
+API Calls:
+Suspicious Instructions:
+  0x10009322: push ebp
+  0x10009323: mov ebp, esp
+  0x10009331: push edi
+  0x10009332: xor eax, eax
+  0x10009334: xor edi, edi
+  0x1000933a: push ebx
+  0x1000933b: push esi
+  0x1000933c: mov esi, dword ptr [edx + 0xc]
+  0x10009344: mov ebx, dword ptr [edx + 0x10]
+  0x10009356: jmp 0x10009360
+  0x10009358: mov eax, dword ptr [edx + 0x14]
+  0x10009360: pop esi
+  0x10009361: pop ebx
+  0x10009362: pop edi
+  0x10009363: pop ebp
+  0x10009364: ret 4
+Disassembly:
+  0x10009322: push ebp
+  0x10009323: mov ebp, esp
+  0x10009325: movzx edx, word ptr [ecx + 0x14]
+  0x10009329: lea edx, [edx + ecx + 0x18]
+  0x1000932d: movzx ecx, word ptr [ecx + 6]
+  0x10009331: push edi
+  0x10009332: xor eax, eax
+  0x10009334: xor edi, edi
+  0x10009336: test ecx, ecx
+  0x10009338: jle 0x10009362
+  0x1000933a: push ebx
+  0x1000933b: push esi
+  0x1000933c: mov esi, dword ptr [edx + 0xc]
+  0x1000933f: cmp esi, dword ptr [ebp + 8]
+  0x10009342: ja 0x1000934e
+  0x10009344: mov ebx, dword ptr [edx + 0x10]
+  0x10009347: add ebx, esi
+  0x10009349: cmp ebx, dword ptr [ebp + 8]
+  0x1000934c: jae 0x10009358
+  0x1000934e: add edx, 0x28
+  0x10009351: inc edi
+  0x10009352: cmp edi, ecx
+  0x10009354: jl 0x1000933c
+  0x10009356: jmp 0x10009360
+  0x10009358: mov eax, dword ptr [edx + 0x14]
+  0x1000935b: sub eax, esi
+  0x1000935d: add eax, dword ptr [ebp + 8]
+  0x10009360: pop esi
+  0x10009361: pop ebx
+  0x10009362: pop edi
+  0x10009363: pop ebp
+  0x10009364: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.100091fa at 0x100091fa (size: 140)
+Suspicious Score: 0.03847604130211279
+API Calls:
+Suspicious Instructions:
+  0x100091fa: push ebp
+  0x100091fb: mov ebp, esp
+  0x100091fd: push ecx
+  0x100091fe: push ecx
+  0x100091ff: mov edx, dword ptr [ecx]
+  0x10009201: mov dword ptr [ebp - 8], 1
+  0x1000920c: push ebx
+  0x1000920d: push esi
+  0x1000920e: push edi
+  0x10009215: mov eax, dword ptr [ebp + 8]
+  0x1000921f: mov eax, dword ptr [ecx + 4]
+  0x10009237: mov eax, edx
+  0x1000923e: mov ebx, 0x3000
+  0x10009248: mov eax, dword ptr [ebp + 8]
+  0x1000925a: jmp 0x10009260
+  0x10009260: mov eax, dword ptr [ecx + 4]
+  0x10009269: shr eax, 1
+  0x10009276: mov edx, dword ptr [ecx]
+  0x1000927c: pop edi
+  0x1000927d: pop esi
+  0x1000927e: pop ebx
+  0x1000927f: mov eax, dword ptr [ebp - 8]
+  0x10009283: ret 4
+Disassembly:
+  0x100091fa: push ebp
+  0x100091fb: mov ebp, esp
+  0x100091fd: push ecx
+  0x100091fe: push ecx
+  0x100091ff: mov edx, dword ptr [ecx]
+  0x10009201: mov dword ptr [ebp - 8], 1
+  0x10009208: test edx, edx
+  0x1000920a: je 0x1000927f
+  0x1000920c: push ebx
+  0x1000920d: push esi
+  0x1000920e: push edi
+  0x1000920f: cmp dword ptr [ebp - 8], 0
+  0x10009213: je 0x1000927c
+  0x10009215: mov eax, dword ptr [ebp + 8]
+  0x10009218: and dword ptr [ebp - 4], 0
+  0x1000921c: lea edi, [edx + eax]
+  0x1000921f: mov eax, dword ptr [ecx + 4]
+  0x10009222: sub eax, 8
+  0x10009225: lea esi, [ecx + 8]
+  0x10009228: test eax, 0xfffffffe
+  0x1000922d: jbe 0x10009273
+  0x1000922f: movzx edx, word ptr [esi]
+  0x10009232: test dx, dx
+  0x10009235: je 0x10009260
+  0x10009237: mov eax, edx
+  0x10009239: and eax, 0xf000
+  0x1000923e: mov ebx, 0x3000
+  0x10009243: cmp ax, bx
+  0x10009246: jne 0x1000925c
+  0x10009248: mov eax, dword ptr [ebp + 8]
+  0x1000924b: sub eax, dword ptr [0x1001f120]
+  0x10009251: and edx, 0xfff
+  0x10009257: add dword ptr [edx + edi], eax
+  0x1000925a: jmp 0x10009260
+  0x1000925c: and dword ptr [ebp - 8], 0
+  0x10009260: mov eax, dword ptr [ecx + 4]
+  0x10009263: inc dword ptr [ebp - 4]
+  0x10009266: sub eax, 8
+  0x10009269: shr eax, 1
+  0x1000926b: add esi, 2
+  0x1000926e: cmp dword ptr [ebp - 4], eax
+  0x10009271: jb 0x1000922f
+  0x10009273: add ecx, dword ptr [ecx + 4]
+  0x10009276: mov edx, dword ptr [ecx]
+  0x10009278: test edx, edx
+  0x1000927a: jne 0x1000920f
+  0x1000927c: pop edi
+  0x1000927d: pop esi
+  0x1000927e: pop ebx
+  0x1000927f: mov eax, dword ptr [ebp - 8]
+  0x10009282: leave 
+  0x10009283: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10009286 at 0x10009286 (size: 156)
+Suspicious Score: 0.03279584337180278
+API Calls:
+Suspicious Instructions:
+  0x10009286: push ebp
+  0x10009287: mov ebp, esp
+  0x10009290: push ebx
+  0x10009291: mov ebx, dword ptr [0x1000d138]
+  0x1000929a: push eax
+  0x1000929b: push 2
+  0x1000929d: push dword ptr [esi + 0x54]
+  0x100092a0: push dword ptr [ebp + 8]
+  0x100092a3: call ebx
+  0x100092b1: xor ecx, ecx
+  0x100092b3: mov dword ptr [ebp - 4], 1
+  0x100092c4: push edi
+  0x100092ce: mov eax, dword ptr [edi]
+  0x100092d0: push 2
+  0x100092d2: pop ecx
+  0x100092e9: jmp 0x100092f2
+  0x100092ef: push 4
+  0x100092f1: pop ecx
+  0x100092f5: push eax
+  0x100092f6: mov eax, dword ptr [edi - 0x18]
+  0x100092fc: push ecx
+  0x100092fd: push dword ptr [edi - 0x1c]
+  0x10009300: push eax
+  0x10009301: call ebx
+  0x10009319: pop edi
+  0x1000931a: mov eax, dword ptr [ebp - 4]
+  0x1000931d: pop ebx
+  0x1000931f: ret 4
+Disassembly:
+  0x10009286: push ebp
+  0x10009287: mov ebp, esp
+  0x10009289: sub esp, 0xc
+  0x1000928c: and dword ptr [ebp - 4], 0
+  0x10009290: push ebx
+  0x10009291: mov ebx, dword ptr [0x1000d138]
+  0x10009297: lea eax, [ebp - 0xc]
+  0x1000929a: push eax
+  0x1000929b: push 2
+  0x1000929d: push dword ptr [esi + 0x54]
+  0x100092a0: push dword ptr [ebp + 8]
+  0x100092a3: call ebx
+  0x100092a5: test eax, eax
+  0x100092a7: je 0x1000931a
+  0x100092a9: movzx eax, word ptr [esi + 0x14]
+  0x100092ad: and dword ptr [ebp - 8], 0
+  0x100092b1: xor ecx, ecx
+  0x100092b3: mov dword ptr [ebp - 4], 1
+  0x100092ba: lea eax, [eax + esi + 0x18]
+  0x100092be: cmp cx, word ptr [esi + 6]
+  0x100092c2: jae 0x1000931a
+  0x100092c4: push edi
+  0x100092c5: lea edi, [eax + 0x24]
+  0x100092c8: cmp dword ptr [ebp - 4], 0
+  0x100092cc: je 0x10009319
+  0x100092ce: mov eax, dword ptr [edi]
+  0x100092d0: push 2
+  0x100092d2: pop ecx
+  0x100092d3: test eax, 0x20000000
+  0x100092d8: je 0x100092eb
+  0x100092da: and eax, 0x80000000
+  0x100092df: neg eax
+  0x100092e1: sbb eax, eax
+  0x100092e3: and eax, 0x20
+  0x100092e6: lea ecx, [eax + 0x20]
+  0x100092e9: jmp 0x100092f2
+  0x100092eb: test eax, eax
+  0x100092ed: jns 0x100092f2
+  0x100092ef: push 4
+  0x100092f1: pop ecx
+  0x100092f2: lea eax, [ebp - 0xc]
+  0x100092f5: push eax
+  0x100092f6: mov eax, dword ptr [edi - 0x18]
+  0x100092f9: add eax, dword ptr [ebp + 8]
+  0x100092fc: push ecx
+  0x100092fd: push dword ptr [edi - 0x1c]
+  0x10009300: push eax
+  0x10009301: call ebx
+  0x10009303: test eax, eax
+  0x10009305: jne 0x1000930a
+  0x10009307: and dword ptr [ebp - 4], eax
+  0x1000930a: movzx eax, word ptr [esi + 6]
+  0x1000930e: add edi, 0x28
+  0x10009311: inc dword ptr [ebp - 8]
+  0x10009314: cmp dword ptr [ebp - 8], eax
+  0x10009317: jl 0x100092c8
+  0x10009319: pop edi
+  0x1000931a: mov eax, dword ptr [ebp - 4]
+  0x1000931d: pop ebx
+  0x1000931e: leave 
+  0x1000931f: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10009683 at 0x10009683 (size: 68)
+Suspicious Score: 0.07692293237728857
+API Calls:
+Suspicious Instructions:
+  0x10009683: push ebp
+  0x10009684: mov ebp, esp
+  0x10009686: push esi
+  0x10009687: push dword ptr [ebp + 8]
+  0x1000968a: xor esi, esi
+  0x1000968c: call dword ptr [0x1000d264]
+  0x10009696: mov eax, dword ptr [eax + 0xc]
+  0x10009699: mov eax, dword ptr [eax]
+  0x1000969f: push ecx
+  0x100096a4: push ecx
+  0x100096ac: push ecx
+  0x100096ad: push eax
+  0x100096ae: push 0x100143f0
+  0x100096b3: push dword ptr [ebp + 8]
+  0x100096b6: call dword ptr [0x1000d254]
+  0x100096c0: mov eax, esi
+  0x100096c2: pop esi
+  0x100096c3: pop ebp
+  0x100096c4: ret 4
+Disassembly:
+  0x10009683: push ebp
+  0x10009684: mov ebp, esp
+  0x10009686: push esi
+  0x10009687: push dword ptr [ebp + 8]
+  0x1000968a: xor esi, esi
+  0x1000968c: call dword ptr [0x1000d264]
+  0x10009692: test eax, eax
+  0x10009694: je 0x100096c0
+  0x10009696: mov eax, dword ptr [eax + 0xc]
+  0x10009699: mov eax, dword ptr [eax]
+  0x1000969b: movzx ecx, byte ptr [eax + 3]
+  0x1000969f: push ecx
+  0x100096a0: movzx ecx, byte ptr [eax + 2]
+  0x100096a4: push ecx
+  0x100096a5: movzx ecx, byte ptr [eax + 1]
+  0x100096a9: movzx eax, byte ptr [eax]
+  0x100096ac: push ecx
+  0x100096ad: push eax
+  0x100096ae: push 0x100143f0
+  0x100096b3: push dword ptr [ebp + 8]
+  0x100096b6: call dword ptr [0x1000d254]
+  0x100096bc: add esp, 0x18
+  0x100096bf: inc esi
+  0x100096c0: mov eax, esi
+  0x100096c2: pop esi
+  0x100096c3: pop ebp
+  0x100096c4: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000668a at 0x1000668a (size: 157)
+Suspicious Score: 0.03704997799886861
+API Calls:
+Suspicious Instructions:
+  0x1000668a: push ebp
+  0x1000668b: mov ebp, esp
+  0x10006690: push esi
+  0x10006691: push edi
+  0x10006692: push 0x54
+  0x10006697: push 0
+  0x10006699: push eax
+  0x1000669a: call 0x1000a4e4
+  0x100066a2: call dword ptr [0x1000d164]
+  0x100066a8: push dword ptr [ebp + 0x20]
+  0x100066ab: mov esi, 0x1bd
+  0x100066b0: push dword ptr [ebp + 0x1c]
+  0x100066b3: mov word ptr [0x1001fb48], ax
+  0x100066b9: push dword ptr [ebp + 0x18]
+  0x100066bf: push dword ptr [ebp + 0x14]
+  0x100066c2: mov byte ptr [0x1001f8fd], 0
+  0x100066c9: push dword ptr [ebp + 0x10]
+  0x100066cc: push dword ptr [ebp + 0xc]
+  0x100066cf: push 0
+  0x100066d1: push esi
+  0x100066d2: push dword ptr [ebp + 8]
+  0x100066d5: push eax
+  0x100066d6: call 0x10005a7e
+  0x100066db: mov edi, eax
+  0x100066e4: call 0x10002068
+  0x100066e9: mov eax, edi
+  0x100066eb: jmp 0x10006721
+  0x100066ed: push dword ptr [ebp + 0x20]
+  0x100066f0: mov byte ptr [0x1001f8fd], 0
+  0x100066f7: push dword ptr [ebp + 0x1c]
+  0x100066fa: push dword ptr [ebp + 0x18]
+  0x100066fd: push dword ptr [ebp + 0x14]
+  0x10006700: push dword ptr [ebp + 0x10]
+  0x10006703: push dword ptr [ebp + 0xc]
+  0x10006706: push 0x10001f74
+  0x1000670b: push esi
+  0x1000670c: push dword ptr [ebp + 8]
+  0x1000670f: push eax
+  0x10006710: call 0x10005a7e
+  0x10006715: mov esi, eax
+  0x1000671a: call 0x10002068
+  0x1000671f: mov eax, esi
+  0x10006721: pop edi
+  0x10006722: pop esi
+  0x10006724: ret 0x1c
+Disassembly:
+  0x1000668a: push ebp
+  0x1000668b: mov ebp, esp
+  0x1000668d: sub esp, 0x54
+  0x10006690: push esi
+  0x10006691: push edi
+  0x10006692: push 0x54
+  0x10006694: lea eax, [ebp - 0x54]
+  0x10006697: push 0
+  0x10006699: push eax
+  0x1000669a: call 0x1000a4e4
+  0x1000669f: add esp, 0xc
+  0x100066a2: call dword ptr [0x1000d164]
+  0x100066a8: push dword ptr [ebp + 0x20]
+  0x100066ab: mov esi, 0x1bd
+  0x100066b0: push dword ptr [ebp + 0x1c]
+  0x100066b3: mov word ptr [0x1001fb48], ax
+  0x100066b9: push dword ptr [ebp + 0x18]
+  0x100066bc: lea eax, [ebp - 0x54]
+  0x100066bf: push dword ptr [ebp + 0x14]
+  0x100066c2: mov byte ptr [0x1001f8fd], 0
+  0x100066c9: push dword ptr [ebp + 0x10]
+  0x100066cc: push dword ptr [ebp + 0xc]
+  0x100066cf: push 0
+  0x100066d1: push esi
+  0x100066d2: push dword ptr [ebp + 8]
+  0x100066d5: push eax
+  0x100066d6: call 0x10005a7e
+  0x100066db: mov edi, eax
+  0x100066dd: lea eax, [ebp - 0x54]
+  0x100066e0: test edi, edi
+  0x100066e2: je 0x100066ed
+  0x100066e4: call 0x10002068
+  0x100066e9: mov eax, edi
+  0x100066eb: jmp 0x10006721
+  0x100066ed: push dword ptr [ebp + 0x20]
+  0x100066f0: mov byte ptr [0x1001f8fd], 0
+  0x100066f7: push dword ptr [ebp + 0x1c]
+  0x100066fa: push dword ptr [ebp + 0x18]
+  0x100066fd: push dword ptr [ebp + 0x14]
+  0x10006700: push dword ptr [ebp + 0x10]
+  0x10006703: push dword ptr [ebp + 0xc]
+  0x10006706: push 0x10001f74
+  0x1000670b: push esi
+  0x1000670c: push dword ptr [ebp + 8]
+  0x1000670f: push eax
+  0x10006710: call 0x10005a7e
+  0x10006715: mov esi, eax
+  0x10006717: lea eax, [ebp - 0x54]
+  0x1000671a: call 0x10002068
+  0x1000671f: mov eax, esi
+  0x10006721: pop edi
+  0x10006722: pop esi
+  0x10006723: leave 
+  0x10006724: ret 0x1c
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10008b70 at 0x10008b70 (size: 86)
+Suspicious Score: 0.05882349130039427
+API Calls:
+Suspicious Instructions:
+  0x10008b70: push ebp
+  0x10008b71: mov ebp, esp
+  0x10008b73: push edi
+  0x10008b74: xor edi, edi
+  0x10008b7b: push 0x1001f148
+  0x10008b80: call dword ptr [0x1000d224]
+  0x10008b8a: mov ecx, eax
+  0x10008b8c: push esi
+  0x10008b90: mov dx, word ptr [ecx]
+  0x10008b9d: sar ecx, 1
+  0x10008b9f: pop esi
+  0x10008ba8: mov edx, dword ptr [ebp + 8]
+  0x10008bb0: mov word ptr [edx + eax], cx
+  0x10008bbc: xor edi, edi
+  0x10008bbf: mov eax, edi
+  0x10008bc1: pop edi
+  0x10008bc2: pop ebp
+  0x10008bc3: ret 4
+Disassembly:
+  0x10008b70: push ebp
+  0x10008b71: mov ebp, esp
+  0x10008b73: push edi
+  0x10008b74: xor edi, edi
+  0x10008b76: cmp dword ptr [ebp + 8], edi
+  0x10008b79: je 0x10008bbf
+  0x10008b7b: push 0x1001f148
+  0x10008b80: call dword ptr [0x1000d224]
+  0x10008b86: cmp eax, edi
+  0x10008b88: je 0x10008bbf
+  0x10008b8a: mov ecx, eax
+  0x10008b8c: push esi
+  0x10008b8d: lea esi, [ecx + 2]
+  0x10008b90: mov dx, word ptr [ecx]
+  0x10008b93: add ecx, 2
+  0x10008b96: cmp dx, di
+  0x10008b99: jne 0x10008b90
+  0x10008b9b: sub ecx, esi
+  0x10008b9d: sar ecx, 1
+  0x10008b9f: pop esi
+  0x10008ba0: cmp ecx, 0x104
+  0x10008ba6: jae 0x10008bbf
+  0x10008ba8: mov edx, dword ptr [ebp + 8]
+  0x10008bab: sub edx, eax
+  0x10008bad: movzx ecx, word ptr [eax]
+  0x10008bb0: mov word ptr [edx + eax], cx
+  0x10008bb4: add eax, 2
+  0x10008bb7: cmp cx, di
+  0x10008bba: jne 0x10008bad
+  0x10008bbc: xor edi, edi
+  0x10008bbe: inc edi
+  0x10008bbf: mov eax, edi
+  0x10008bc1: pop edi
+  0x10008bc2: pop ebp
+  0x10008bc3: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006f78 at 0x10006f78 (size: 25)
+Suspicious Score: 0.2499999993547063
+API Calls:
+Suspicious Instructions:
+  0x10006f78: push ebp
+  0x10006f79: mov ebp, esp
+  0x10006f7b: push dword ptr [ebp + 8]
+  0x10006f7e: push 0
+  0x10006f80: call dword ptr [0x1000d1c0]
+  0x10006f86: push eax
+  0x10006f87: call dword ptr [0x1000d1d4]
+  0x10006f8d: pop ebp
+  0x10006f8e: ret 4
+Disassembly:
+  0x10006f78: push ebp
+  0x10006f79: mov ebp, esp
+  0x10006f7b: push dword ptr [ebp + 8]
+  0x10006f7e: push 0
+  0x10006f80: call dword ptr [0x1000d1c0]
+  0x10006f86: push eax
+  0x10006f87: call dword ptr [0x1000d1d4]
+  0x10006f8d: pop ebp
+  0x10006f8e: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006f40 at 0x10006f40 (size: 56)
+Suspicious Score: 0.08347800927746156
+API Calls:
+Suspicious Instructions:
+  0x10006f40: push ebp
+  0x10006f41: mov ebp, esp
+  0x10006f43: push ecx
+  0x10006f48: push esi
+  0x10006f4c: push eax
+  0x10006f4d: push 0
+  0x10006f4f: mov esi, ecx
+  0x10006f51: call 0x1000711f
+  0x10006f5a: mov ecx, dword ptr [ebp - 4]
+  0x10006f5d: mov edx, dword ptr [ecx]
+  0x10006f5f: mov esi, dword ptr [ebp + 8]
+  0x10006f65: mov word ptr [esi], cx
+  0x10006f73: pop esi
+  0x10006f75: ret 4
+Disassembly:
+  0x10006f40: push ebp
+  0x10006f41: mov ebp, esp
+  0x10006f43: push ecx
+  0x10006f44: and dword ptr [ebp - 4], 0
+  0x10006f48: push esi
+  0x10006f49: lea eax, [ebp - 4]
+  0x10006f4c: push eax
+  0x10006f4d: push 0
+  0x10006f4f: mov esi, ecx
+  0x10006f51: call 0x1000711f
+  0x10006f56: test eax, eax
+  0x10006f58: je 0x10006f73
+  0x10006f5a: mov ecx, dword ptr [ebp - 4]
+  0x10006f5d: mov edx, dword ptr [ecx]
+  0x10006f5f: mov esi, dword ptr [ebp + 8]
+  0x10006f62: movzx ecx, word ptr [edx]
+  0x10006f65: mov word ptr [esi], cx
+  0x10006f68: add edx, 2
+  0x10006f6b: add esi, 2
+  0x10006f6e: test cx, cx
+  0x10006f71: jne 0x10006f62
+  0x10006f73: pop esi
+  0x10006f74: leave 
+  0x10006f75: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006f91 at 0x10006f91 (size: 54)
+Suspicious Score: 0.10026315633203127
+API Calls:
+Suspicious Instructions:
+  0x10006f91: push ebp
+  0x10006f92: mov ebp, esp
+  0x10006f9a: mov dword ptr [ebp - 4], 1
+  0x10006fa6: mov word ptr [eax + ecx], dx
+  0x10006fb2: push ebx
+  0x10006fb3: mov ebx, dword ptr [ebp + 0xc]
+  0x10006fb9: push eax
+  0x10006fba: mov eax, dword ptr [ebp + 8]
+  0x10006fbd: call 0x1000724d
+  0x10006fc2: pop ebx
+  0x10006fc4: ret 8
+Disassembly:
+  0x10006f91: push ebp
+  0x10006f92: mov ebp, esp
+  0x10006f94: sub esp, 0x24
+  0x10006f97: lea eax, [ebp - 0x24]
+  0x10006f9a: mov dword ptr [ebp - 4], 1
+  0x10006fa1: sub eax, ecx
+  0x10006fa3: movzx edx, word ptr [ecx]
+  0x10006fa6: mov word ptr [eax + ecx], dx
+  0x10006faa: add ecx, 2
+  0x10006fad: test dx, dx
+  0x10006fb0: jne 0x10006fa3
+  0x10006fb2: push ebx
+  0x10006fb3: mov ebx, dword ptr [ebp + 0xc]
+  0x10006fb6: lea eax, [ebp - 0x24]
+  0x10006fb9: push eax
+  0x10006fba: mov eax, dword ptr [ebp + 8]
+  0x10006fbd: call 0x1000724d
+  0x10006fc2: pop ebx
+  0x10006fc3: leave 
+  0x10006fc4: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10006f02 at 0x10006f02 (size: 62)
+Suspicious Score: 0.08013312032768002
+API Calls:
+Suspicious Instructions:
+  0x10006f02: push ebp
+  0x10006f03: mov ebp, esp
+  0x10006f05: push ecx
+  0x10006f0d: push eax
+  0x10006f0e: call 0x10007167
+  0x10006f17: mov eax, dword ptr [ebp - 4]
+  0x10006f1a: mov ecx, dword ptr [eax]
+  0x10006f1c: mov edx, dword ptr [ebp + 8]
+  0x10006f22: mov word ptr [edx], ax
+  0x10006f30: xor eax, eax
+  0x10006f38: jmp 0x10006f3c
+  0x10006f3a: xor eax, eax
+  0x10006f3d: ret 4
+Disassembly:
+  0x10006f02: push ebp
+  0x10006f03: mov ebp, esp
+  0x10006f05: push ecx
+  0x10006f06: and dword ptr [ebp - 4], 0
+  0x10006f0a: lea eax, [ebp - 4]
+  0x10006f0d: push eax
+  0x10006f0e: call 0x10007167
+  0x10006f13: test eax, eax
+  0x10006f15: je 0x10006f3a
+  0x10006f17: mov eax, dword ptr [ebp - 4]
+  0x10006f1a: mov ecx, dword ptr [eax]
+  0x10006f1c: mov edx, dword ptr [ebp + 8]
+  0x10006f1f: movzx eax, word ptr [ecx]
+  0x10006f22: mov word ptr [edx], ax
+  0x10006f25: add ecx, 2
+  0x10006f28: add edx, 2
+  0x10006f2b: test ax, ax
+  0x10006f2e: jne 0x10006f1f
+  0x10006f30: xor eax, eax
+  0x10006f32: cmp dword ptr [ebp + 8], eax
+  0x10006f35: setne al
+  0x10006f38: jmp 0x10006f3c
+  0x10006f3a: xor eax, eax
+  0x10006f3c: leave 
+  0x10006f3d: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10009e05 at 0x10009e05 (size: 159)
+Suspicious Score: 0.034482758620689655
+API Calls:
+Suspicious Instructions:
+  0x10009e05: push ebp
+  0x10009e06: mov ebp, esp
+  0x10009e0e: push ebx
+  0x10009e0f: push esi
+  0x10009e10: push edi
+  0x10009e11: mov esi, eax
+  0x10009e17: push eax
+  0x10009e18: xor edi, edi
+  0x10009e1a: push 3
+  0x10009e1c: mov dword ptr [esp + 0x18], edi
+  0x10009e20: mov dword ptr [esp + 0x1c], edi
+  0x10009e24: call 0x1000711f
+  0x10009e29: mov ebx, eax
+  0x10009e2f: mov eax, dword ptr [esp + 0x14]
+  0x10009e33: mov eax, dword ptr [eax]
+  0x10009e39: push ecx
+  0x10009e3a: push dword ptr [eax + 4]
+  0x10009e3d: mov dword ptr [esp + 0x1c], edi
+  0x10009e41: push dword ptr [eax]
+  0x10009e43: push dword ptr [ebp + 8]
+  0x10009e46: call 0x10009987
+  0x10009e4b: mov dword ptr [esp + 0x10], eax
+  0x10009e4f: mov eax, dword ptr [esp + 0x14]
+  0x10009e7a: push eax
+  0x10009e7b: mov dword ptr [esp + 0x18], edi
+  0x10009e7f: call 0x10007167
+  0x10009e88: push ebx
+  0x10009e89: push edi
+  0x10009e8a: call dword ptr [0x1000d1c0]
+  0x10009e90: push eax
+  0x10009e91: call dword ptr [0x1000d1d4]
+  0x10009e97: mov eax, dword ptr [esp + 0x10]
+  0x10009e9b: pop edi
+  0x10009e9c: pop esi
+  0x10009e9d: pop ebx
+  0x10009e9e: mov esp, ebp
+  0x10009ea0: pop ebp
+  0x10009ea1: ret 4
+Disassembly:
+  0x10009e05: push ebp
+  0x10009e06: mov ebp, esp
+  0x10009e08: and esp, 0xfffffff8
+  0x10009e0b: sub esp, 0xc
+  0x10009e0e: push ebx
+  0x10009e0f: push esi
+  0x10009e10: push edi
+  0x10009e11: mov esi, eax
+  0x10009e13: lea eax, [esp + 0x14]
+  0x10009e17: push eax
+  0x10009e18: xor edi, edi
+  0x10009e1a: push 3
+  0x10009e1c: mov dword ptr [esp + 0x18], edi
+  0x10009e20: mov dword ptr [esp + 0x1c], edi
+  0x10009e24: call 0x1000711f
+  0x10009e29: mov ebx, eax
+  0x10009e2b: cmp ebx, edi
+  0x10009e2d: je 0x10009e97
+  0x10009e2f: mov eax, dword ptr [esp + 0x14]
+  0x10009e33: mov eax, dword ptr [eax]
+  0x10009e35: lea ecx, [esp + 0x14]
+  0x10009e39: push ecx
+  0x10009e3a: push dword ptr [eax + 4]
+  0x10009e3d: mov dword ptr [esp + 0x1c], edi
+  0x10009e41: push dword ptr [eax]
+  0x10009e43: push dword ptr [ebp + 8]
+  0x10009e46: call 0x10009987
+  0x10009e4b: mov dword ptr [esp + 0x10], eax
+  0x10009e4f: mov eax, dword ptr [esp + 0x14]
+  0x10009e53: cmp eax, 0x4b3
+  0x10009e58: je 0x10009e88
+  0x10009e5a: cmp eax, 0x4c6
+  0x10009e5f: je 0x10009e88
+  0x10009e61: cmp eax, 0x35
+  0x10009e64: je 0x10009e88
+  0x10009e66: cmp eax, 0x40
+  0x10009e69: je 0x10009e88
+  0x10009e6b: cmp eax, 0x43
+  0x10009e6e: je 0x10009e88
+  0x10009e70: cmp dword ptr [esp + 0x10], edi
+  0x10009e74: jne 0x10009e88
+  0x10009e76: lea eax, [esp + 0x14]
+  0x10009e7a: push eax
+  0x10009e7b: mov dword ptr [esp + 0x18], edi
+  0x10009e7f: call 0x10007167
+  0x10009e84: cmp eax, edi
+  0x10009e86: jne 0x10009e2f
+  0x10009e88: push ebx
+  0x10009e89: push edi
+  0x10009e8a: call dword ptr [0x1000d1c0]
+  0x10009e90: push eax
+  0x10009e91: call dword ptr [0x1000d1d4]
+  0x10009e97: mov eax, dword ptr [esp + 0x10]
+  0x10009e9b: pop edi
+  0x10009e9c: pop esi
+  0x10009e9d: pop ebx
+  0x10009e9e: mov esp, ebp
+  0x10009ea0: pop ebp
+  0x10009ea1: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.10009dc3 at 0x10009dc3 (size: 66)
+Suspicious Score: 0.08712837257149438
+API Calls:
+Suspicious Instructions:
+  0x10009dc3: push ebp
+  0x10009dc4: mov ebp, esp
+  0x10009dc6: mov eax, 0x4000
+  0x10009dcb: call 0x1000a4f0
+  0x10009dd0: xor eax, eax
+  0x10009dd2: push esi
+  0x10009dd3: mov word ptr [ebp - 0x4000], ax
+  0x10009de0: push eax
+  0x10009de1: xor esi, esi
+  0x10009de3: call 0x10006bb0
+  0x10009dec: push eax
+  0x10009df3: push eax
+  0x10009df4: push dword ptr [ebp + 8]
+  0x10009df7: call 0x100096c7
+  0x10009dfc: mov esi, eax
+  0x10009dfe: mov eax, esi
+  0x10009e00: pop esi
+  0x10009e02: ret 4
+Disassembly:
+  0x10009dc3: push ebp
+  0x10009dc4: mov ebp, esp
+  0x10009dc6: mov eax, 0x4000
+  0x10009dcb: call 0x1000a4f0
+  0x10009dd0: xor eax, eax
+  0x10009dd2: push esi
+  0x10009dd3: mov word ptr [ebp - 0x4000], ax
+  0x10009dda: lea eax, [ebp - 0x4000]
+  0x10009de0: push eax
+  0x10009de1: xor esi, esi
+  0x10009de3: call 0x10006bb0
+  0x10009de8: test eax, eax
+  0x10009dea: je 0x10009dfe
+  0x10009dec: push eax
+  0x10009ded: lea eax, [ebp - 0x4000]
+  0x10009df3: push eax
+  0x10009df4: push dword ptr [ebp + 8]
+  0x10009df7: call 0x100096c7
+  0x10009dfc: mov esi, eax
+  0x10009dfe: mov eax, esi
+  0x10009e00: pop esi
+  0x10009e01: leave 
+  0x10009e02: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000bb31 at 0x1000bb31 (size: 23)
+Suspicious Score: 0.2499999993547063
+API Calls:
+Suspicious Instructions:
+  0x1000bb31: push ebp
+  0x1000bb32: mov ebp, esp
+  0x1000bb34: push dword ptr [ebp + 0x10]
+  0x1000bb37: push dword ptr [ebp + 0xc]
+  0x1000bb3a: push 0xf
+  0x1000bb3c: push dword ptr [ebp + 8]
+  0x1000bb3f: call 0x1000baa4
+  0x1000bb44: pop ebp
+  0x1000bb45: ret 0xc
+Disassembly:
+  0x1000bb31: push ebp
+  0x1000bb32: mov ebp, esp
+  0x1000bb34: push dword ptr [ebp + 0x10]
+  0x1000bb37: push dword ptr [ebp + 0xc]
+  0x1000bb3a: push 0xf
+  0x1000bb3c: push dword ptr [ebp + 8]
+  0x1000bb3f: call 0x1000baa4
+  0x1000bb44: pop ebp
+  0x1000bb45: ret 0xc
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000baa4 at 0x1000baa4 (size: 141)
+Suspicious Score: 0.034482758620689655
+API Calls:
+Suspicious Instructions:
+  0x1000baa4: push ebp
+  0x1000baa5: mov ebp, esp
+  0x1000baa7: mov eax, dword ptr [ebp + 0x10]
+  0x1000baaa: push ebx
+  0x1000baab: push esi
+  0x1000baac: push edi
+  0x1000babc: mov esi, dword ptr [ebp + 8]
+  0x1000bac3: push -2
+  0x1000bac5: jmp 0x1000bb29
+  0x1000bac7: xor ebx, ebx
+  0x1000bac9: mov dword ptr [esi + 0x18], ebx
+  0x1000bad1: mov dword ptr [esi + 0x20], 0x1000c223
+  0x1000bad8: mov dword ptr [esi + 0x28], ebx
+  0x1000bae0: mov dword ptr [esi + 0x24], 0x1000c236
+  0x1000bae7: push 0x1bcc
+  0x1000baec: push 1
+  0x1000baee: push dword ptr [esi + 0x28]
+  0x1000baf1: call dword ptr [esi + 0x20]
+  0x1000baf4: mov edi, eax
+  0x1000bafd: push -4
+  0x1000baff: jmp 0x1000bb29
+  0x1000bb01: push dword ptr [ebp + 0xc]
+  0x1000bb04: mov dword ptr [esi + 0x1c], edi
+  0x1000bb07: push esi
+  0x1000bb08: mov dword ptr [edi + 0x34], ebx
+  0x1000bb0b: call 0x1000bb48
+  0x1000bb10: mov ebx, eax
+  0x1000bb16: push edi
+  0x1000bb17: push dword ptr [esi + 0x28]
+  0x1000bb1a: call dword ptr [esi + 0x24]
+  0x1000bb21: pop ecx
+  0x1000bb22: pop ecx
+  0x1000bb23: mov eax, ebx
+  0x1000bb25: jmp 0x1000bb2a
+  0x1000bb27: push -6
+  0x1000bb29: pop eax
+  0x1000bb2a: pop edi
+  0x1000bb2b: pop esi
+  0x1000bb2c: pop ebx
+  0x1000bb2d: pop ebp
+  0x1000bb2e: ret 0x10
+Disassembly:
+  0x1000baa4: push ebp
+  0x1000baa5: mov ebp, esp
+  0x1000baa7: mov eax, dword ptr [ebp + 0x10]
+  0x1000baaa: push ebx
+  0x1000baab: push esi
+  0x1000baac: push edi
+  0x1000baad: test eax, eax
+  0x1000baaf: je 0x1000bb27
+  0x1000bab1: cmp byte ptr [eax], 0x31
+  0x1000bab4: jne 0x1000bb27
+  0x1000bab6: cmp dword ptr [ebp + 0x14], 0x38
+  0x1000baba: jne 0x1000bb27
+  0x1000babc: mov esi, dword ptr [ebp + 8]
+  0x1000babf: test esi, esi
+  0x1000bac1: jne 0x1000bac7
+  0x1000bac3: push -2
+  0x1000bac5: jmp 0x1000bb29
+  0x1000bac7: xor ebx, ebx
+  0x1000bac9: mov dword ptr [esi + 0x18], ebx
+  0x1000bacc: cmp dword ptr [esi + 0x20], ebx
+  0x1000bacf: jne 0x1000badb
+  0x1000bad1: mov dword ptr [esi + 0x20], 0x1000c223
+  0x1000bad8: mov dword ptr [esi + 0x28], ebx
+  0x1000badb: cmp dword ptr [esi + 0x24], ebx
+  0x1000bade: jne 0x1000bae7
+  0x1000bae0: mov dword ptr [esi + 0x24], 0x1000c236
+  0x1000bae7: push 0x1bcc
+  0x1000baec: push 1
+  0x1000baee: push dword ptr [esi + 0x28]
+  0x1000baf1: call dword ptr [esi + 0x20]
+  0x1000baf4: mov edi, eax
+  0x1000baf6: add esp, 0xc
+  0x1000baf9: test edi, edi
+  0x1000bafb: jne 0x1000bb01
+  0x1000bafd: push -4
+  0x1000baff: jmp 0x1000bb29
+  0x1000bb01: push dword ptr [ebp + 0xc]
+  0x1000bb04: mov dword ptr [esi + 0x1c], edi
+  0x1000bb07: push esi
+  0x1000bb08: mov dword ptr [edi + 0x34], ebx
+  0x1000bb0b: call 0x1000bb48
+  0x1000bb10: mov ebx, eax
+  0x1000bb12: test ebx, ebx
+  0x1000bb14: je 0x1000bb23
+  0x1000bb16: push edi
+  0x1000bb17: push dword ptr [esi + 0x28]
+  0x1000bb1a: call dword ptr [esi + 0x24]
+  0x1000bb1d: and dword ptr [esi + 0x1c], 0
+  0x1000bb21: pop ecx
+  0x1000bb22: pop ecx
+  0x1000bb23: mov eax, ebx
+  0x1000bb25: jmp 0x1000bb2a
+  0x1000bb27: push -6
+  0x1000bb29: pop eax
+  0x1000bb2a: pop edi
+  0x1000bb2b: pop esi
+  0x1000bb2c: pop ebx
+  0x1000bb2d: pop ebp
+  0x1000bb2e: ret 0x10
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000ba60 at 0x1000ba60 (size: 68)
+Suspicious Score: 0.06451612903225629
+API Calls:
+Suspicious Instructions:
+  0x1000ba60: push ebp
+  0x1000ba61: mov ebp, esp
+  0x1000ba63: push esi
+  0x1000ba64: mov esi, dword ptr [ebp + 8]
+  0x1000ba6b: mov eax, dword ptr [esi + 0x1c]
+  0x1000ba72: mov ecx, dword ptr [esi + 0x24]
+  0x1000ba7f: push dword ptr [eax + 0x34]
+  0x1000ba82: push dword ptr [esi + 0x28]
+  0x1000ba85: call ecx
+  0x1000ba87: pop ecx
+  0x1000ba88: pop ecx
+  0x1000ba89: push dword ptr [esi + 0x1c]
+  0x1000ba8c: push dword ptr [esi + 0x28]
+  0x1000ba8f: call dword ptr [esi + 0x24]
+  0x1000ba96: xor eax, eax
+  0x1000ba98: pop ecx
+  0x1000ba99: pop ecx
+  0x1000ba9a: jmp 0x1000ba9f
+  0x1000ba9c: push -2
+  0x1000ba9e: pop eax
+  0x1000ba9f: pop esi
+  0x1000baa0: pop ebp
+  0x1000baa1: ret 4
+Disassembly:
+  0x1000ba60: push ebp
+  0x1000ba61: mov ebp, esp
+  0x1000ba63: push esi
+  0x1000ba64: mov esi, dword ptr [ebp + 8]
+  0x1000ba67: test esi, esi
+  0x1000ba69: je 0x1000ba9c
+  0x1000ba6b: mov eax, dword ptr [esi + 0x1c]
+  0x1000ba6e: test eax, eax
+  0x1000ba70: je 0x1000ba9c
+  0x1000ba72: mov ecx, dword ptr [esi + 0x24]
+  0x1000ba75: test ecx, ecx
+  0x1000ba77: je 0x1000ba9c
+  0x1000ba79: cmp dword ptr [eax + 0x34], 0
+  0x1000ba7d: je 0x1000ba89
+  0x1000ba7f: push dword ptr [eax + 0x34]
+  0x1000ba82: push dword ptr [esi + 0x28]
+  0x1000ba85: call ecx
+  0x1000ba87: pop ecx
+  0x1000ba88: pop ecx
+  0x1000ba89: push dword ptr [esi + 0x1c]
+  0x1000ba8c: push dword ptr [esi + 0x28]
+  0x1000ba8f: call dword ptr [esi + 0x24]
+  0x1000ba92: and dword ptr [esi + 0x1c], 0
+  0x1000ba96: xor eax, eax
+  0x1000ba98: pop ecx
+  0x1000ba99: pop ecx
+  0x1000ba9a: jmp 0x1000ba9f
+  0x1000ba9c: push -2
+  0x1000ba9e: pop eax
+  0x1000ba9f: pop esi
+  0x1000baa0: pop ebp
+  0x1000baa1: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000bf51 at 0x1000bf51 (size: 34)
+Suspicious Score: 0.16575633437976348
+API Calls:
+Suspicious Instructions:
+  0x1000bf51: push ebp
+  0x1000bf52: mov ebp, esp
+  0x1000bf5a: xor eax, eax
+  0x1000bf5c: jmp 0x1000bf6f
+  0x1000bf5e: push dword ptr [ebp + 0x10]
+  0x1000bf61: push dword ptr [ebp + 0xc]
+  0x1000bf64: push dword ptr [ebp + 8]
+  0x1000bf67: call 0x1000bf73
+  0x1000bf6f: pop ebp
+  0x1000bf70: ret 0xc
+Disassembly:
+  0x1000bf51: push ebp
+  0x1000bf52: mov ebp, esp
+  0x1000bf54: cmp dword ptr [ebp + 0xc], 0
+  0x1000bf58: jne 0x1000bf5e
+  0x1000bf5a: xor eax, eax
+  0x1000bf5c: jmp 0x1000bf6f
+  0x1000bf5e: push dword ptr [ebp + 0x10]
+  0x1000bf61: push dword ptr [ebp + 0xc]
+  0x1000bf64: push dword ptr [ebp + 8]
+  0x1000bf67: call 0x1000bf73
+  0x1000bf6c: add esp, 0xc
+  0x1000bf6f: pop ebp
+  0x1000bf70: ret 0xc
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000a5a8 at 0x1000a5a8 (size: 36)
+Suspicious Score: 0.2499999993547063
+API Calls:
+Suspicious Instructions:
+  0x1000a5a8: push ebp
+  0x1000a5a9: mov ebp, esp
+  0x1000a5ab: mov eax, dword ptr [ebp + 8]
+  0x1000a5ae: mov dword ptr [eax + 0x4c], 0x1000d2d0
+  0x1000a5b5: mov dword ptr [eax + 0x54], 9
+  0x1000a5bc: mov dword ptr [eax + 0x50], 0x1000dad0
+  0x1000a5c3: mov dword ptr [eax + 0x58], 5
+  0x1000a5ca: pop ebp
+  0x1000a5cb: ret 
+Disassembly:
+  0x1000a5a8: push ebp
+  0x1000a5a9: mov ebp, esp
+  0x1000a5ab: mov eax, dword ptr [ebp + 8]
+  0x1000a5ae: mov dword ptr [eax + 0x4c], 0x1000d2d0
+  0x1000a5b5: mov dword ptr [eax + 0x54], 9
+  0x1000a5bc: mov dword ptr [eax + 0x50], 0x1000dad0
+  0x1000a5c3: mov dword ptr [eax + 0x58], 5
+  0x1000a5ca: pop ebp
+  0x1000a5cb: ret 
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000bb48 at 0x1000bb48 (size: 119)
+Suspicious Score: 0.03846153846153846
+API Calls:
+Suspicious Instructions:
+  0x1000bb48: push ebp
+  0x1000bb49: mov ebp, esp
+  0x1000bb4b: push ebx
+  0x1000bb4c: push esi
+  0x1000bb4d: push edi
+  0x1000bb4e: mov edi, dword ptr [ebp + 8]
+  0x1000bb55: mov ebx, dword ptr [edi + 0x1c]
+  0x1000bb5c: mov esi, dword ptr [ebp + 0xc]
+  0x1000bb69: jmp 0x1000bb7c
+  0x1000bb6b: mov eax, esi
+  0x1000bb6d: sar eax, 4
+  0x1000bb71: mov dword ptr [ebp + 8], eax
+  0x1000bb95: push dword ptr [ebx + 0x34]
+  0x1000bb98: push dword ptr [edi + 0x28]
+  0x1000bb9b: call dword ptr [edi + 0x24]
+  0x1000bba2: pop ecx
+  0x1000bba3: pop ecx
+  0x1000bba4: mov eax, dword ptr [ebp + 8]
+  0x1000bba7: push edi
+  0x1000bba8: mov dword ptr [ebx + 8], eax
+  0x1000bbab: mov dword ptr [ebx + 0x24], esi
+  0x1000bbae: call 0x1000bbbf
+  0x1000bbb3: jmp 0x1000bbb8
+  0x1000bbb5: push -2
+  0x1000bbb7: pop eax
+  0x1000bbb8: pop edi
+  0x1000bbb9: pop esi
+  0x1000bbba: pop ebx
+  0x1000bbbb: pop ebp
+  0x1000bbbc: ret 8
+Disassembly:
+  0x1000bb48: push ebp
+  0x1000bb49: mov ebp, esp
+  0x1000bb4b: push ebx
+  0x1000bb4c: push esi
+  0x1000bb4d: push edi
+  0x1000bb4e: mov edi, dword ptr [ebp + 8]
+  0x1000bb51: test edi, edi
+  0x1000bb53: je 0x1000bbb5
+  0x1000bb55: mov ebx, dword ptr [edi + 0x1c]
+  0x1000bb58: test ebx, ebx
+  0x1000bb5a: je 0x1000bbb5
+  0x1000bb5c: mov esi, dword ptr [ebp + 0xc]
+  0x1000bb5f: test esi, esi
+  0x1000bb61: jns 0x1000bb6b
+  0x1000bb63: and dword ptr [ebp + 8], 0
+  0x1000bb67: neg esi
+  0x1000bb69: jmp 0x1000bb7c
+  0x1000bb6b: mov eax, esi
+  0x1000bb6d: sar eax, 4
+  0x1000bb70: inc eax
+  0x1000bb71: mov dword ptr [ebp + 8], eax
+  0x1000bb74: cmp esi, 0x30
+  0x1000bb77: jge 0x1000bb7c
+  0x1000bb79: and esi, 0xf
+  0x1000bb7c: test esi, esi
+  0x1000bb7e: je 0x1000bb8a
+  0x1000bb80: cmp esi, 8
+  0x1000bb83: jl 0x1000bbb5
+  0x1000bb85: cmp esi, 0xf
+  0x1000bb88: jg 0x1000bbb5
+  0x1000bb8a: cmp dword ptr [ebx + 0x34], 0
+  0x1000bb8e: je 0x1000bba4
+  0x1000bb90: cmp dword ptr [ebx + 0x24], esi
+  0x1000bb93: je 0x1000bba4
+  0x1000bb95: push dword ptr [ebx + 0x34]
+  0x1000bb98: push dword ptr [edi + 0x28]
+  0x1000bb9b: call dword ptr [edi + 0x24]
+  0x1000bb9e: and dword ptr [ebx + 0x34], 0
+  0x1000bba2: pop ecx
+  0x1000bba3: pop ecx
+  0x1000bba4: mov eax, dword ptr [ebp + 8]
+  0x1000bba7: push edi
+  0x1000bba8: mov dword ptr [ebx + 8], eax
+  0x1000bbab: mov dword ptr [ebx + 0x24], esi
+  0x1000bbae: call 0x1000bbbf
+  0x1000bbb3: jmp 0x1000bbb8
+  0x1000bbb5: push -2
+  0x1000bbb7: pop eax
+  0x1000bbb8: pop edi
+  0x1000bbb9: pop esi
+  0x1000bbba: pop ebx
+  0x1000bbbb: pop ebp
+  0x1000bbbc: ret 8
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000bbbf at 0x1000bbbf (size: 43)
+Suspicious Score: 0.11111111111111016
+API Calls:
+Suspicious Instructions:
+  0x1000bbbf: push ebp
+  0x1000bbc0: mov ebp, esp
+  0x1000bbc2: mov eax, dword ptr [ebp + 8]
+  0x1000bbc9: mov ecx, dword ptr [eax + 0x1c]
+  0x1000bbd0: xor edx, edx
+  0x1000bbd2: push eax
+  0x1000bbd3: mov dword ptr [ecx + 0x28], edx
+  0x1000bbd6: mov dword ptr [ecx + 0x2c], edx
+  0x1000bbd9: mov dword ptr [ecx + 0x30], edx
+  0x1000bbdc: call 0x1000bbea
+  0x1000bbe1: jmp 0x1000bbe6
+  0x1000bbe3: push -2
+  0x1000bbe5: pop eax
+  0x1000bbe6: pop ebp
+  0x1000bbe7: ret 4
+Disassembly:
+  0x1000bbbf: push ebp
+  0x1000bbc0: mov ebp, esp
+  0x1000bbc2: mov eax, dword ptr [ebp + 8]
+  0x1000bbc5: test eax, eax
+  0x1000bbc7: je 0x1000bbe3
+  0x1000bbc9: mov ecx, dword ptr [eax + 0x1c]
+  0x1000bbcc: test ecx, ecx
+  0x1000bbce: je 0x1000bbe3
+  0x1000bbd0: xor edx, edx
+  0x1000bbd2: push eax
+  0x1000bbd3: mov dword ptr [ecx + 0x28], edx
+  0x1000bbd6: mov dword ptr [ecx + 0x2c], edx
+  0x1000bbd9: mov dword ptr [ecx + 0x30], edx
+  0x1000bbdc: call 0x1000bbea
+  0x1000bbe1: jmp 0x1000bbe6
+  0x1000bbe3: push -2
+  0x1000bbe5: pop eax
+  0x1000bbe6: pop ebp
+  0x1000bbe7: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: fcn.1000bbea at 0x1000bbea (size: 113)
+Suspicious Score: 0.052631578947368425
+API Calls:
+Suspicious Instructions:
+  0x1000bbea: push ebp
+  0x1000bbeb: mov ebp, esp
+  0x1000bbed: mov eax, dword ptr [ebp + 8]
+  0x1000bbf4: mov ecx, dword ptr [eax + 0x1c]
+  0x1000bbfb: push esi
+  0x1000bbfc: xor esi, esi
+  0x1000bbfe: mov dword ptr [ecx + 0x1c], esi
+  0x1000bc01: mov dword ptr [eax + 0x14], esi
+  0x1000bc04: mov dword ptr [eax + 8], esi
+  0x1000bc07: mov dword ptr [eax + 0x18], esi
+  0x1000bc0a: mov edx, dword ptr [ecx + 8]
+  0x1000bc14: mov dword ptr [eax + 0x30], edx
+  0x1000bc24: mov dword ptr [ecx], esi
+  0x1000bc26: mov dword ptr [ecx + 4], esi
+  0x1000bc29: mov dword ptr [ecx + 0xc], esi
+  0x1000bc2c: mov dword ptr [ecx + 0x20], esi
+  0x1000bc2f: mov dword ptr [ecx + 0x38], esi
+  0x1000bc32: mov dword ptr [ecx + 0x3c], esi
+  0x1000bc35: mov dword ptr [ecx + 0x6c], eax
+  0x1000bc38: mov dword ptr [ecx + 0x50], eax
+  0x1000bc3b: mov dword ptr [ecx + 0x4c], eax
+  0x1000bc3e: xor eax, eax
+  0x1000bc40: mov dword ptr [ecx + 0x14], 0x8000
+  0x1000bc47: mov dword ptr [ecx + 0x1bc0], 1
+  0x1000bc51: pop esi
+  0x1000bc52: jmp 0x1000bc57
+  0x1000bc54: push -2
+  0x1000bc56: pop eax
+  0x1000bc57: pop ebp
+  0x1000bc58: ret 4
+Disassembly:
+  0x1000bbea: push ebp
+  0x1000bbeb: mov ebp, esp
+  0x1000bbed: mov eax, dword ptr [ebp + 8]
+  0x1000bbf0: test eax, eax
+  0x1000bbf2: je 0x1000bc54
+  0x1000bbf4: mov ecx, dword ptr [eax + 0x1c]
+  0x1000bbf7: test ecx, ecx
+  0x1000bbf9: je 0x1000bc54
+  0x1000bbfb: push esi
+  0x1000bbfc: xor esi, esi
+  0x1000bbfe: mov dword ptr [ecx + 0x1c], esi
+  0x1000bc01: mov dword ptr [eax + 0x14], esi
+  0x1000bc04: mov dword ptr [eax + 8], esi
+  0x1000bc07: mov dword ptr [eax + 0x18], esi
+  0x1000bc0a: mov edx, dword ptr [ecx + 8]
+  0x1000bc0d: test edx, edx
+  0x1000bc0f: je 0x1000bc17
+  0x1000bc11: and edx, 1
+  0x1000bc14: mov dword ptr [eax + 0x30], edx
+  0x1000bc17: or dword ptr [ecx + 0x1bc4], 0xffffffff
+  0x1000bc1e: lea eax, [ecx + 0x530]
+  0x1000bc24: mov dword ptr [ecx], esi
+  0x1000bc26: mov dword ptr [ecx + 4], esi
+  0x1000bc29: mov dword ptr [ecx + 0xc], esi
+  0x1000bc2c: mov dword ptr [ecx + 0x20], esi
+  0x1000bc2f: mov dword ptr [ecx + 0x38], esi
+  0x1000bc32: mov dword ptr [ecx + 0x3c], esi
+  0x1000bc35: mov dword ptr [ecx + 0x6c], eax
+  0x1000bc38: mov dword ptr [ecx + 0x50], eax
+  0x1000bc3b: mov dword ptr [ecx + 0x4c], eax
+  0x1000bc3e: xor eax, eax
+  0x1000bc40: mov dword ptr [ecx + 0x14], 0x8000
+  0x1000bc47: mov dword ptr [ecx + 0x1bc0], 1
+  0x1000bc51: pop esi
+  0x1000bc52: jmp 0x1000bc57
+  0x1000bc54: push -2
+  0x1000bc56: pop eax
+  0x1000bc57: pop ebp
+  0x1000bc58: ret 4
+
+--------------------------------------------------------------------------------
+
+Function: sub.msvcrt.dll_malloc at 0x1000a4d8 (size: 6)
+Suspicious Score: 2.0
+API Calls:
+Suspicious Instructions:
+  0x1000a4d8: jmp dword ptr [0x1000d29c]
+Disassembly:
+  0x1000a4d8: jmp dword ptr [0x1000d29c]
+
+--------------------------------------------------------------------------------
+
+Function: sub.msvcrt.dll_free at 0x1000a4d2 (size: 6)
+Suspicious Score: 2.0
+API Calls:
+Suspicious Instructions:
+  0x1000a4d2: jmp dword ptr [0x1000d2a4]
+Disassembly:
+  0x1000a4d2: jmp dword ptr [0x1000d2a4]
+
+--------------------------------------------------------------------------------
+
